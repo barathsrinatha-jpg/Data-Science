@@ -1,0 +1,11 @@
+airport_id,icao_code,iata_code,name,city,country,continent,latitude,longitude,timezone
+1,BGAA,JEG,Aasiaat,Aasiaat,Greenland,North America,68.7218,-52.7847,America/Nuuk
+2,CYXS,YXS,Prince George,Prince George,Canada,North America,53.8894,-122.679,America/Vancouver
+4,DTNH,NBE,Enfidha - Hammamet,Enfidha,Tunisia,Africa,36.075832,10.438611,Africa/Tunis
+5,FACT,CPT,Cape Town,Cape Town,South Africa,Africa,-33.9648,18.6017,Africa/Johannesburg
+6,GCRR,ACE,Lanzarote Island Lanzarote,Lanzarote Island,Spain,Europe,28.9455,-13.605199,Atlantic/Canary
+7,KATS,ATS,Artesia Municipal,Artesia,United States,North America,32.8525,-104.468,America/Denver
+8,KLYH,LYH,Lynchburg Regional Preston Glenn Field,Lynchburg,United States,North America,37.3267,-79.2004,America/New_York
+12,EGLC,LCY,London City,London,United Kingdom,Europe,51.5053,0.055277,Europe/London
+15,KAFW,AFW,Fort Worth Alliance,Fort Worth,United States,North America,32.9876,-97.3188,America/Chicago
+17,MMBT,HUX,Santa María Huatulco Bahías de Huatulco,Santa María Huatulco,Mexico,North America,15.7753,-96.2626,America/Mexico_City
