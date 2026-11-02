@@ -1,0 +1,150 @@
+flight_number,aircraft,origin_airport,destination_airport,flight_time
+CA 423,Airbus A350-900,Chengdu,London Heathrow,2026-11-01 19:40:00
+AI 2256,Airbus A320 NEO,Jeddah King Abdulaziz,New Delhi,2026-11-01 18:50:00
+SV 553,Airbus A321,Dubai,Riyadh,2026-11-01 18:30:00
+QP 552,Boeing 737,Mumbai,Jeddah King Abdulaziz,2026-11-01 17:45:00
+XY 210,Airbus A320 NEO,Dubai,Riyadh,2026-11-01 17:35:00
+SV 552,Airbus A321,Riyadh,Dubai,2026-11-01 17:00:00
+XY 209,Airbus A320 NEO,Riyadh,Dubai,2026-11-01 16:45:00
+AA 91,Boeing 787-9,London Heathrow,Chicago,2026-11-01 16:30:00
+6E 63,Airbus A320,New Delhi Indira Gandhi,Jeddah,2026-11-01 16:10:00
+BA 463,Airbus A320 NEO,Madrid,London Heathrow,2026-11-01 16:05:00
+IA 120,,Dubai,Kirkuk,2026-11-01 15:45:00
+6E 61,Airbus A320,Mumbai,Jeddah King Abdulaziz,2026-11-01 15:40:00
+XY 212,Airbus A320 NEO,Dubai,Riyadh,2026-11-01 15:15:00
+UA 5065,Bombardier CRJ,Lynchburg Regional Preston Glenn Field,Chicago,2026-11-01 15:12:00
+6E 83,Airbus A320,New Delhi Indira Gandhi,Ad Dammam,2026-11-01 15:05:00
+IA 119,,Kirkuk,Dubai,2026-11-01 14:45:00
+UA 5038,Bombardier CRJ200,Washington,Lynchburg Regional Preston Glenn Field,2026-11-01 14:36:00
+XY 211,Airbus A320 NEO,Riyadh,Dubai,2026-11-01 14:25:00
+RX 243,Boeing 787-9,Riyadh,Dubai,2026-11-01 14:05:00
+AZ 227,EI-HLB,London City,Milan,2026-11-01 13:45:00
+BA 503,Airbus A320 NEO,Lisbon,London Heathrow,2026-11-01 13:35:00
+BA 341,Airbus A320,Nice,London Heathrow,2026-11-01 13:15:00
+6E 71,Airbus A320,New Delhi Indira Gandhi,Riyadh,2026-11-01 13:10:00
+XY 206,Airbus A320 NEO,Dubai,Riyadh,2026-11-01 12:15:00
+AA 39,N770AN,London Heathrow,Miami,2026-11-01 12:10:00
+LA 8180,Boeing 787-9,São Paulo,New York John F Kennedy,2026-11-01 11:45:00
+BA 473,Airbus A320 NEO,Barcelona,London Heathrow,2026-11-01 11:40:00
+BA 901,Airbus A319,Frankfurt-am-Main,London Heathrow,2026-11-01 11:35:00
+QF 10,Boeing 787-9,London Heathrow,Perth,2026-11-01 11:30:00
+XY 218,Airbus A320 NEO,Dubai,Riyadh,2026-11-01 11:30:00
+XY 205,Airbus A320 NEO,Riyadh,Dubai,2026-11-01 11:25:00
+AI 2255,Airbus A320 NEO,New Delhi Indira Gandhi,Jeddah,2026-11-01 11:10:00
+AI 2716,Airbus A320 NEO,Ahmedabad,New Delhi Indira Gandhi,2026-11-01 10:30:00
+SG 181,Airbus A320,Srinagar,New Delhi Indira Gandhi,2026-11-01 10:20:00
+XY 217,Airbus A320 NEO,Riyadh,Dubai,2026-11-01 10:20:00
+BA 462,Airbus A320 NEO,London Heathrow,Madrid,2026-11-01 10:05:00
+BA 1357,Airbus A320 NEO,St Helier,London Heathrow,2026-11-01 08:20:00
+XY 812,Airbus A320 NEO,Dubai,Ad Dammam,2026-11-01 08:00:00
+BA 340,Airbus A320,London Heathrow,Nice,2026-11-01 07:55:00
+SG 5060,VT-SGV,Mumbai,Dubai,2026-11-01 07:55:00
+RX 241,,Riyadh,Dubai,2026-11-01 07:15:00
+BA 900,Airbus A319,London Heathrow,Frankfurt-am-Main,2026-11-01 07:10:00
+BA 502,Airbus A320 NEO,London Heathrow,Lisbon,2026-11-01 07:00:00
+XY 811,Airbus A320 NEO,Ad Dammam,Dubai,2026-11-01 06:55:00
+AI 1118,Airbus A320 NEO,New Delhi Indira Gandhi,Ahmedabad,2026-11-01 06:25:00
+BA 472,Airbus A320 NEO,London Heathrow,Barcelona,2026-11-01 06:05:00
+QF 219,Boeing 787-9,Singapore,London Heathrow,2026-11-01 05:30:00
+QP 561,Boeing 737,Mumbai,Jeddah King Abdulaziz,2026-11-01 05:05:00
+AV 7390,Airbus A320 NEO,Quito,New York John F Kennedy,2026-11-01 04:45:00
+UA 5045,Bombardier CRJ200,Chicago,Lynchburg Regional Preston Glenn Field,2026-11-01 04:18:00
+LA 1454,Airbus A320,Guayaquil,New York John F Kennedy,2026-11-01 03:59:00
+AV 7392,Airbus A320 NEO,Guayaquil,New York John F Kennedy,2026-11-01 03:35:00
+XY 216,Airbus A320 NEO,Dubai,Riyadh,2026-11-01 03:05:00
+AI 224,Airbus A320,Kathmandu,New Delhi Indira Gandhi,2026-11-01 02:45:00
+XY 215,Airbus A320 NEO,Riyadh,Dubai,2026-11-01 02:15:00
+6E 2191,VT-IQU,Kolkata,New Delhi Indira Gandhi,2026-11-01 02:05:00
+AA 66,N303NY,New York John F Kennedy,Barcelona,2026-11-01 01:30:00
+LA 8181,Boeing 787-9,New York John F Kennedy,São Paulo,2026-11-01 00:25:00
+KQ 311,Boeing 737-800,Dubai,Nairobi,2026-10-31 22:20:00
+LX 243,Airbus A340-300,Dubai,Zurich,2026-10-31 21:50:00
+RJ 261,Boeing 787-8,Amman,New York John F Kennedy,2026-10-31 21:15:00
+BA 1356,Airbus A320 NEO,London Heathrow,St Helier,2026-10-31 21:00:00
+QP 562,Boeing 737,Jeddah King Abdulaziz,Mumbai,2026-10-31 20:55:00
+KQ 310,Boeing 737-800,Nairobi,Dubai,2026-10-31 20:30:00
+LS 1496,Boeing 737-800,Larnarca Larnaca,London,2026-10-31 20:10:00
+NT 583,E295,Lanzarote Island Lanzarote,Gran Canaria Island,2026-10-31 19:30:00
+6E 62,Airbus A320,Jeddah King Abdulaziz,Mumbai,2026-10-31 19:25:00
+GL 814,,Aasiaat,Nuuk,2026-10-31 19:15:00
+NT 570,E295,Gran Canaria Island,Lanzarote Island Lanzarote,2026-10-31 19:00:00
+AI 2252,Airbus A320 NEO,Jeddah King Abdulaziz,Mumbai,2026-10-31 18:50:00
+GL 814,,Neerlerit Inaat,Aasiaat,2026-10-31 18:50:00
+QP 553,Boeing 737,Jeddah King Abdulaziz,Mumbai,2026-10-31 18:45:00
+AI 2245,Airbus A320 NEO,Mumbai,Jeddah King Abdulaziz,2026-10-31 18:25:00
+LX 242,Airbus A340-300,Zurich,Dubai,2026-10-31 18:25:00
+AI 2251,Airbus A320 NEO,Mumbai,Jeddah King Abdulaziz,2026-10-31 17:50:00
+QP 552,Boeing 737,Mumbai,Jeddah King Abdulaziz,2026-10-31 17:45:00
+6E 92,Airbus A320,Jeddah King Abdulaziz,Mumbai,2026-10-31 16:40:00
+W6 2301,Airbus A320,Budapest,Jeddah King Abdulaziz,2026-10-31 15:50:00
+SG 5114A,,Dubai,Mumbai,2026-10-31 15:25:00
+AA 4808,Embraer 175,Columbus,New York John F Kennedy,2026-10-31 14:30:00
+SG 5060A,,Mumbai,Dubai,2026-10-31 14:25:00
+RX 243,Boeing 787-9,Riyadh,Dubai,2026-10-31 14:05:00
+SG 2612,,New Delhi Indira Gandhi,Mumbai,2026-10-31 13:50:00
+SV 761,Boeing 777,New Delhi Indira Gandhi,Medina,2026-10-31 13:49:00
+UA 5038,Bombardier CRJ200,Washington,Lynchburg Regional Preston Glenn Field,2026-10-31 13:36:00
+GL 813,,Aasiaat,Neerlerit Inaat,2026-10-31 13:15:00
+GL 813,,Nuuk,Aasiaat,2026-10-31 12:50:00
+BA 8716,G-LCAH,London City,Edinburgh,2026-10-31 12:10:00
+SV 760,HZ-AK28,Medina,New Delhi Indira Gandhi,2026-10-31 11:55:00
+AI 2966,Airbus A321,Amritsar,New Delhi Indira Gandhi,2026-10-31 11:50:00
+FZ 8271,,Dubai,Jeddah,2026-10-31 11:45:00
+LA 8180,Boeing 787-9,São Paulo,New York John F Kennedy,2026-10-31 11:45:00
+BA 305,Airbus A320,Paris,London Heathrow,2026-10-31 11:40:00
+FZ 870,Boeing 737,Ad Dammam,Dubai,2026-10-31 10:40:00
+FZ 863,Boeing 737,Dubai,Ad Dammam,2026-10-31 09:50:00
+RX 402,Boeing 787-9,London Heathrow,Riyadh,2026-10-31 09:30:00
+FZ 813,Boeing 737,Dubai,Abha,2026-10-31 09:25:00
+AZ 221,EI-HLE,London City,Milan,2026-10-31 09:00:00
+BA 753,Airbus A320 NEO,Geneva,London Heathrow,2026-10-31 09:00:00
+FZ 848,Boeing 737,Riyadh,Dubai,2026-10-31 08:50:00
+AI 2836,Airbus A320 NEO,Chennai,New Delhi Indira Gandhi,2026-10-31 08:40:00
+AI 2967,Airbus A321,New Delhi Indira Gandhi,Amritsar,2026-10-31 08:40:00
+KL 1002,Airbus A321 NEO,London Heathrow,Amsterdam,2026-10-31 08:40:00
+KL 980,PH-EZM,London City,Amsterdam,2026-10-31 08:40:00
+BA 1357,Airbus A320 NEO,St Helier,London Heathrow,2026-10-31 08:20:00
+UA 123,N37278,London Heathrow,Newark,2026-10-31 08:00:00
+BA 304,Airbus A320,London Heathrow,Paris,2026-10-31 07:55:00
+BA 993,Airbus A321 NEO,Berlin,London Heathrow,2026-10-31 07:45:00
+IX 2229,Airbus A320 NEO,Guwahati,New Delhi Indira Gandhi,2026-10-31 07:45:00
+KL 1001,PH-AXT,Amsterdam,London Heathrow,2026-10-31 07:40:00
+LG 4592,LX-LQB,London City,Luxembourg,2026-10-31 07:35:00
+RX 401,Boeing 787-9,Riyadh,London Heathrow,2026-10-31 07:30:00
+AV 7394,Airbus A320 NEO,Guayaquil,New York John F Kennedy,2026-10-31 07:25:00
+FZ 884,Boeing 737,Ad Dammam,Dubai,2026-10-31 06:55:00
+FZ 869,Boeing 737,Dubai,Ad Dammam,2026-10-31 06:50:00
+RX 241,,Riyadh,Dubai,2026-10-31 06:15:00
+BA 32,Airbus A350-1000,Hong Kong,London Heathrow,2026-10-31 05:35:00
+SG 904,Airbus A320,Siliguri,New Delhi Indira Gandhi,2026-10-31 05:30:00
+UA 5045,Bombardier CRJ200,Chicago,Lynchburg Regional Preston Glenn Field,2026-10-31 04:18:00
+FZ 847,Boeing 737,Dubai,Riyadh,2026-10-31 03:50:00
+AV 7392,Airbus A320 NEO,Guayaquil,New York John F Kennedy,2026-10-31 03:35:00
+FZ 883,Boeing 737,Dubai,Ad Dammam,2026-10-31 03:00:00
+FZ 996,Boeing 737-800,Samara,Dubai,2026-10-31 02:55:00
+KQ 305,Boeing 737-800,Dubai,Nairobi,2026-10-31 02:55:00
+EY 604,Airbus A321,Jeddah King Abdulaziz,Abu Dhabi,2026-10-31 02:50:00
+AI 2833,Airbus A320 NEO,New Delhi Indira Gandhi,Chennai,2026-10-31 02:10:00
+A4 6094,Sukhoi Superjet 100,Jeddah King Abdulaziz,Mineralnyye Vody,2026-10-31 01:50:00
+IX 1672,Airbus A320 NEO,New Delhi Indira Gandhi,Guwahati,2026-10-31 01:50:00
+KQ 304,,Nairobi,Dubai,2026-10-31 01:45:00
+EK 802,Boeing 777-300ER,Jeddah,Dubai,2026-10-31 01:20:00
+6E 91,Airbus A320,Mumbai,Jeddah King Abdulaziz,2026-10-31 00:10:00
+SG 5147,,Dubai,Ahmedabad,2026-10-30 23:00:00
+BA 469,Airbus A320 NEO,Madrid,London Heathrow,2026-10-30 22:40:00
+SK 916,Airbus A330-300,New York John F Kennedy,Copenhagen,2026-10-30 22:35:00
+IX 196,VT-ATH,Sharjah,New Delhi Indira Gandhi,2026-10-30 22:30:00
+SG 5148,,Amritsar,Dubai,2026-10-30 22:00:00
+SG 5118,,Dubai,Kochi,2026-10-30 21:55:00
+BA 1335,Airbus A320,Newcastle upon Tyne,London Heathrow,2026-10-30 20:55:00
+SG 5113,,Mumbai,Dubai,2026-10-30 20:55:00
+BA 317,Airbus A320,Paris,London Heathrow,2026-10-30 20:35:00
+BA 721,Airbus A320 NEO,Zurich,London Heathrow,2026-10-30 20:30:00
+BA 752,Airbus A320 NEO,London Heathrow,Geneva,2026-10-30 20:20:00
+EK 801,Boeing 777-300ER,Dubai,Jeddah,2026-10-30 20:15:00
+BA 1487,Airbus A320 NEO,Glasgow,London Heathrow,2026-10-30 20:05:00
+SG 52,Boeing 737-800,Dubai,Pune,2026-10-30 20:05:00
+BA 1455,Airbus A321 NEO,Edinburgh,London Heathrow,2026-10-30 20:00:00
+AI 2246,Airbus A320 NEO,Jeddah King Abdulaziz,Mumbai,2026-10-30 19:40:00
+GL 812,,Aasiaat,Nuuk,2026-10-30 18:30:00
+SU 527,Boeing 737-800,Dubai,Moscow,2026-10-30 15:40:00

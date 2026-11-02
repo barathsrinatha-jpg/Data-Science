@@ -1,0 +1,1001 @@
+firm_id,firm_name,country,city,tier,founded_year,years_active,total_staff,num_partners,base_annual_revenue_usd,is_iesba_compliant,is_isqm1_compliant,has_consulting_wing,has_advocacy_wing,primary_specialization,num_specializations,international_partnerships,quality_score
+F0001,Firm_1,USA,Los Angeles,Mid-Tier,1963,62,26,2,644561.84,True,True,True,True,Technology,3,6,0.532
+F0002,Firm_2,Saudi Arabia,Dammam,Small Regional,1997,28,24,1,81997.05,False,True,True,False,Real Estate,5,0,0.522
+F0003,Firm_3,Germany,Hamburg,Boutique Specialist,1982,43,11,1,43792.01,True,True,False,False,Technology,4,0,0.602
+F0004,Firm_4,Singapore,Jurong,Small Regional,1988,37,20,1,152941.39,True,True,True,False,Insurance,5,0,0.658
+F0005,Firm_5,India,Chennai,Boutique Specialist,1989,36,14,1,53214.13,False,False,False,False,Energy & Utilities,2,0,0.564
+F0006,Firm_6,India,Chennai,Small Regional,2004,21,13,1,194398.34,True,True,True,True,Education,3,0,0.377
+F0007,Firm_7,Bangladesh,Khulna,Small Regional,1953,72,20,2,88026.07,False,False,True,True,Insurance,2,0,0.554
+F0008,Firm_8,Malaysia,Kuala Lumpur,Boutique Specialist,1983,42,6,1,113515.97,True,True,False,False,Telecommunications,5,0,0.518
+F0009,Firm_9,Singapore,Jurong,Mid-Tier,1979,46,22,2,1783679.45,True,False,True,False,Transportation,3,3,0.598
+F0010,Firm_10,Germany,Munich,Small Regional,1965,60,5,1,81566.19,True,True,True,True,Technology,4,0,0.547
+F0011,Firm_11,Bangladesh,Sylhet,Mid-Tier,1995,30,76,3,747103.52,False,False,True,True,Telecommunications,2,5,0.58
+F0012,Firm_12,Saudi Arabia,Dammam,Boutique Specialist,1989,36,6,1,22340.01,False,False,True,False,Banking & Finance,5,0,0.542
+F0013,Firm_13,Brazil,Curitiba,Boutique Specialist,1979,46,15,1,28884.32,True,False,True,False,NGO & Development,3,0,0.617
+F0014,Firm_14,India,Mumbai,Big 4 Affiliate,1984,41,631,51,6560162.0,True,True,False,True,Real Estate,2,6,0.97
+F0015,Firm_15,India,Chennai,Small Regional,1964,61,16,1,166108.31,True,False,True,False,Manufacturing,5,0,0.565
+F0016,Firm_16,India,Mumbai,Boutique Specialist,1987,38,3,1,54964.66,True,True,False,False,Healthcare,5,0,0.616
+F0017,Firm_17,Pakistan,Karachi,Mid-Tier,1998,27,32,1,1166613.48,True,True,True,True,Banking & Finance,5,6,0.498
+F0018,Firm_18,UAE,Sharjah,Small Regional,1995,30,18,1,298204.21,True,True,True,False,Insurance,5,0,0.558
+F0019,Firm_19,UK,London,Boutique Specialist,1982,43,6,1,109256.69,True,True,False,True,Agriculture,5,0,0.635
+F0020,Firm_20,Pakistan,Karachi,Big 4 Affiliate,1976,49,1774,185,44316436.71,True,True,True,True,Agriculture,3,7,0.728
+F0021,Firm_21,Australia,Sydney,Small Regional,2003,22,10,1,261401.09,False,True,True,False,Insurance,2,0,0.432
+F0022,Firm_22,Bangladesh,Rajshahi,Mid-Tier,1986,39,56,2,1362332.92,False,True,True,True,Agriculture,2,1,0.728
+F0023,Firm_23,Pakistan,Peshawar,Boutique Specialist,1994,31,10,1,147068.78,True,True,False,False,Insurance,5,0,0.365
+F0024,Firm_24,USA,Los Angeles,Boutique Specialist,1998,27,7,1,40038.86,True,True,False,True,Transportation,4,0,0.372
+F0025,Firm_25,UK,Leeds,Boutique Specialist,1960,65,5,1,39567.79,True,False,False,True,Agriculture,3,0,0.75
+F0026,Firm_26,Nigeria,Ibadan,Small Regional,1970,55,19,1,267492.29,False,True,True,True,NGO & Development,5,0,0.737
+F0027,Firm_27,India,Bangalore,Boutique Specialist,1972,53,3,1,93152.52,True,True,False,False,Transportation,3,0,0.456
+F0028,Firm_28,UAE,Sharjah,Boutique Specialist,1996,29,13,1,24002.71,True,False,False,False,Government & Public Sector,5,0,0.42
+F0029,Firm_29,Singapore,Tampines,Mid-Tier,1975,50,38,1,561171.83,False,True,True,True,Hospitality,2,1,0.53
+F0030,Firm_30,Bangladesh,Sylhet,Boutique Specialist,1963,62,5,1,91386.94,False,False,False,False,Telecommunications,2,0,0.461
+F0031,Firm_31,Singapore,Woodlands,Big 4 Affiliate,1957,68,1513,81,17645202.45,True,True,True,True,Banking & Finance,3,0,0.781
+F0032,Firm_32,India,Delhi,Small Regional,2003,22,14,1,255358.0,True,False,True,False,Retail & Consumer,5,0,0.599
+F0033,Firm_33,Bangladesh,Dhaka,Mid-Tier,1987,38,45,3,1487069.69,False,False,False,True,Insurance,3,5,0.597
+F0034,Firm_34,Philippines,Makati,Large National,1978,47,224,20,5809134.87,True,True,True,True,Banking & Finance,3,2,0.688
+F0035,Firm_35,Saudi Arabia,Dammam,Large National,1966,59,219,16,7996263.74,True,False,True,False,Manufacturing,2,2,0.801
+F0036,Firm_36,South Africa,Pretoria,Small Regional,1983,42,17,1,238505.76,True,False,True,False,Banking & Finance,4,0,0.707
+F0037,Firm_37,Pakistan,Lahore,Mid-Tier,2002,23,72,8,681666.82,True,True,False,True,Technology,3,1,0.408
+F0038,Firm_38,Bangladesh,Rajshahi,Small Regional,2007,18,20,1,243230.37,False,False,True,True,Insurance,4,0,0.684
+F0039,Firm_39,Canada,Calgary,Large National,2000,25,284,28,7819361.11,True,True,True,True,Transportation,2,3,0.703
+F0040,Firm_40,UK,Edinburgh,Mid-Tier,2008,17,41,4,858225.35,False,False,False,True,Banking & Finance,2,5,0.578
+F0041,Firm_41,Bangladesh,Rajshahi,Small Regional,1995,30,19,1,65157.23,True,True,True,False,Education,5,0,0.584
+F0042,Firm_42,UK,Leeds,Boutique Specialist,1957,68,5,1,41547.47,True,True,True,False,Transportation,5,0,0.738
+F0043,Firm_43,Bangladesh,Sylhet,Mid-Tier,1975,50,74,7,585122.67,True,False,True,False,NGO & Development,2,3,0.728
+F0044,Firm_44,Kenya,Nakuru,Small Regional,1985,40,13,1,258851.96,True,False,True,False,Education,4,0,0.593
+F0045,Firm_45,India,Delhi,Boutique Specialist,1976,49,6,1,57555.04,False,True,False,False,Real Estate,4,0,0.329
+F0046,Firm_46,Canada,Toronto,Small Regional,1975,50,22,1,275559.1,False,True,True,False,Retail & Consumer,4,0,0.743
+F0047,Firm_47,Pakistan,Islamabad,Mid-Tier,1968,57,95,10,1565797.26,True,True,True,False,Retail & Consumer,3,3,0.384
+F0048,Firm_48,UAE,Abu Dhabi,Big 4 Affiliate,1950,75,470,49,44577345.68,True,True,True,False,Government & Public Sector,2,6,0.866
+F0049,Firm_49,UAE,Ras Al Khaimah,Boutique Specialist,2009,16,11,1,20001.51,True,True,False,False,Education,4,0,0.621
+F0050,Firm_50,India,Kolkata,Big 4 Affiliate,2000,25,736,81,16376612.27,True,True,True,False,Hospitality,3,2,0.868
+F0051,Firm_51,Saudi Arabia,Jeddah,Boutique Specialist,1997,28,8,1,54492.4,True,False,False,False,Technology,3,0,0.651
+F0052,Firm_52,Nigeria,Ibadan,Small Regional,1955,70,13,1,136335.49,True,True,True,False,Technology,2,0,0.476
+F0053,Firm_53,Philippines,Manila,Boutique Specialist,1953,72,4,1,76895.97,True,True,False,True,Banking & Finance,2,0,0.416
+F0054,Firm_54,Kenya,Kisumu,Boutique Specialist,1956,69,11,1,123568.58,True,False,False,False,Agriculture,4,0,0.429
+F0055,Firm_55,Singapore,CBD,Boutique Specialist,2008,17,14,1,72588.56,True,True,True,False,Insurance,3,0,0.489
+F0056,Firm_56,Egypt,Cairo,Mid-Tier,1978,47,27,2,321504.58,False,True,True,True,Transportation,5,7,0.35
+F0057,Firm_57,Bangladesh,Chittagong,Boutique Specialist,1987,38,14,1,91448.81,False,False,False,False,Manufacturing,2,0,0.671
+F0058,Firm_58,India,Mumbai,Small Regional,2008,17,5,1,218014.01,True,False,True,False,Transportation,2,0,0.309
+F0059,Firm_59,Bangladesh,Khulna,Small Regional,1958,67,8,1,284066.78,True,False,False,True,Energy & Utilities,2,0,0.498
+F0060,Firm_60,Pakistan,Karachi,Small Regional,1966,59,23,2,197363.5,True,False,True,True,Insurance,2,0,0.357
+F0061,Firm_61,USA,Chicago,Boutique Specialist,1997,28,3,1,107473.32,True,False,False,False,Technology,5,0,0.344
+F0062,Firm_62,Pakistan,Faisalabad,Boutique Specialist,1958,67,3,1,136394.99,True,False,False,False,Manufacturing,3,0,0.584
+F0063,Firm_63,South Africa,Cape Town,Boutique Specialist,1956,69,11,1,46142.83,True,True,False,False,Education,4,0,0.647
+F0064,Firm_64,USA,Houston,Small Regional,1950,75,7,1,251461.13,True,True,True,True,Manufacturing,4,0,0.616
+F0065,Firm_65,Pakistan,Karachi,Small Regional,1958,67,21,1,75641.99,True,False,True,False,Banking & Finance,2,0,0.523
+F0066,Firm_66,UAE,Ras Al Khaimah,Small Regional,1955,70,21,1,235156.54,False,True,True,True,Real Estate,3,0,0.261
+F0067,Firm_67,Bangladesh,Sylhet,Mid-Tier,1973,52,34,2,1548902.82,True,False,True,False,Agriculture,3,4,0.545
+F0068,Firm_68,South Africa,Bloemfontein,Large National,1975,50,236,23,4073668.96,True,True,True,False,Banking & Finance,4,7,0.932
+F0069,Firm_69,Bangladesh,Chittagong,Mid-Tier,1977,48,35,2,217961.8,True,False,True,True,Healthcare,3,5,0.698
+F0070,Firm_70,Indonesia,Bandung,Mid-Tier,1957,68,67,5,574321.45,False,True,True,True,Hospitality,5,2,0.495
+F0071,Firm_71,Nigeria,Port Harcourt,Mid-Tier,2009,16,74,6,865233.56,False,False,True,True,Retail & Consumer,4,7,0.413
+F0072,Firm_72,India,Kolkata,Mid-Tier,2008,17,83,9,1483824.56,True,True,True,True,Transportation,2,7,0.557
+F0073,Firm_73,Bangladesh,Sylhet,Large National,2008,17,136,12,2690504.4,True,True,True,True,Technology,4,5,0.602
+F0074,Firm_74,South Africa,Cape Town,Big 4 Affiliate,1956,69,1845,190,14842202.58,True,True,True,True,Banking & Finance,5,4,0.627
+F0075,Firm_75,Germany,Munich,Boutique Specialist,1995,30,7,1,101905.18,True,True,False,False,Telecommunications,4,0,0.844
+F0076,Firm_76,Germany,Stuttgart,Small Regional,2008,17,17,1,82520.17,False,True,True,True,Government & Public Sector,5,0,0.409
+F0077,Firm_77,Nigeria,Port Harcourt,Mid-Tier,1978,47,44,4,324790.99,False,True,True,False,Agriculture,4,1,0.633
+F0078,Firm_78,Bangladesh,Sylhet,Small Regional,1976,49,15,1,258207.98,True,True,True,True,Healthcare,2,0,0.742
+F0079,Firm_79,USA,Chicago,Mid-Tier,1995,30,66,6,1015239.93,True,True,True,False,Education,4,5,0.761
+F0080,Firm_80,Bangladesh,Sylhet,Boutique Specialist,1978,47,8,1,111343.23,True,True,False,False,Healthcare,5,0,0.739
+F0081,Firm_81,Malaysia,Kuala Lumpur,Boutique Specialist,1969,56,10,1,142300.53,True,True,False,True,Manufacturing,2,0,0.698
+F0082,Firm_82,Australia,Adelaide,Large National,1989,36,205,9,2162152.77,True,True,False,False,Real Estate,5,5,0.396
+F0083,Firm_83,USA,Chicago,Small Regional,2011,14,15,1,190852.09,True,False,True,True,Healthcare,3,0,0.615
+F0084,Firm_84,Bangladesh,Sylhet,Boutique Specialist,1964,61,14,1,121016.41,True,True,True,False,Energy & Utilities,2,0,0.747
+F0085,Firm_85,Pakistan,Lahore,Boutique Specialist,2008,17,9,1,110808.98,False,True,True,False,Agriculture,2,0,0.578
+F0086,Firm_86,Pakistan,Islamabad,Small Regional,1971,54,17,1,151639.2,True,False,False,True,Energy & Utilities,3,0,0.524
+F0087,Firm_87,Germany,Hamburg,Small Regional,1991,34,17,1,205869.46,False,False,True,True,Insurance,3,0,0.639
+F0088,Firm_88,Australia,Melbourne,Mid-Tier,1962,63,36,3,1467349.89,False,True,True,True,Education,2,0,0.67
+F0089,Firm_89,Malaysia,Kuala Lumpur,Boutique Specialist,1950,75,6,1,140689.86,False,False,True,False,Technology,5,0,0.411
+F0090,Firm_90,UK,Manchester,Mid-Tier,1955,70,59,5,1872460.49,True,True,True,False,Energy & Utilities,4,2,0.623
+F0091,Firm_91,Bangladesh,Rajshahi,Boutique Specialist,1986,39,4,1,100550.07,False,False,True,False,Agriculture,4,0,0.452
+F0092,Firm_92,Germany,Frankfurt,Small Regional,1953,72,16,1,96433.27,True,True,False,False,Telecommunications,5,0,0.4
+F0093,Firm_93,Japan,Osaka,Small Regional,1984,41,20,1,246051.54,True,False,True,True,Retail & Consumer,3,0,0.578
+F0094,Firm_94,UAE,Ras Al Khaimah,Small Regional,2001,24,19,1,287474.92,False,False,True,True,Education,3,0,0.756
+F0095,Firm_95,Nigeria,Port Harcourt,Mid-Tier,2002,23,80,9,1603978.99,True,True,True,False,Education,2,7,0.542
+F0096,Firm_96,UK,Manchester,Mid-Tier,1950,75,50,4,294977.46,True,True,True,False,Healthcare,2,7,0.604
+F0097,Firm_97,UAE,Ras Al Khaimah,Mid-Tier,1963,62,25,2,1218238.71,True,False,True,True,Agriculture,4,5,0.693
+F0098,Firm_98,USA,Los Angeles,Mid-Tier,1962,63,36,2,1870583.3,True,True,True,True,Real Estate,4,0,0.734
+F0099,Firm_99,Bangladesh,Sylhet,Boutique Specialist,2007,18,6,1,73712.43,True,True,True,False,Government & Public Sector,3,0,0.714
+F0100,Firm_100,Bangladesh,Sylhet,Mid-Tier,1967,58,49,3,1554316.19,True,False,True,True,Government & Public Sector,3,6,0.722
+F0101,Firm_101,Bangladesh,Chittagong,Large National,1955,70,175,9,2920692.24,True,True,True,False,NGO & Development,4,4,0.898
+F0102,Firm_102,Australia,Sydney,Boutique Specialist,1972,53,4,1,35650.39,True,False,True,True,Technology,5,0,0.678
+F0103,Firm_103,Pakistan,Islamabad,Boutique Specialist,1959,66,6,1,63631.03,True,True,True,False,Healthcare,2,0,0.539
+F0104,Firm_104,UK,Edinburgh,Boutique Specialist,1951,74,14,1,71698.97,True,True,False,False,Retail & Consumer,5,0,0.545
+F0105,Firm_105,Kenya,Mombasa,Boutique Specialist,1986,39,9,1,26668.2,False,True,False,True,Real Estate,5,0,0.538
+F0106,Firm_106,India,Delhi,Mid-Tier,1971,54,32,1,643735.83,True,True,True,True,Energy & Utilities,4,3,0.5
+F0107,Firm_107,USA,Atlanta,Small Regional,1991,34,16,1,70307.41,True,True,False,True,NGO & Development,3,0,0.572
+F0108,Firm_108,Japan,Tokyo,Boutique Specialist,1953,72,13,1,92304.79,True,True,False,False,Hospitality,2,0,0.601
+F0109,Firm_109,India,Kolkata,Small Regional,1976,49,7,1,131082.34,True,False,True,False,Education,5,0,0.448
+F0110,Firm_110,Bangladesh,Chittagong,Mid-Tier,1959,66,85,2,940474.23,True,True,True,True,Agriculture,5,6,0.7
+F0111,Firm_111,Pakistan,Peshawar,Boutique Specialist,1967,58,12,1,91070.52,True,False,True,True,Energy & Utilities,3,0,0.444
+F0112,Firm_112,India,Chennai,Mid-Tier,1961,64,40,3,1340680.88,True,False,True,False,Agriculture,4,0,0.465
+F0113,Firm_113,Egypt,Luxor,Mid-Tier,1981,44,73,5,365777.76,False,False,True,False,Transportation,2,7,0.455
+F0114,Firm_114,South Africa,Durban,Small Regional,2014,11,24,1,195678.61,True,True,True,False,Insurance,3,0,0.528
+F0115,Firm_115,Australia,Brisbane,Small Regional,1992,33,10,1,73125.11,True,True,True,False,Government & Public Sector,5,0,0.672
+F0116,Firm_116,Malaysia,Johor Bahru,Small Regional,2004,21,16,1,168541.07,True,False,True,True,Telecommunications,3,0,0.606
+F0117,Firm_117,South Africa,Durban,Large National,1974,51,182,10,4263271.14,True,True,True,True,Banking & Finance,4,5,0.872
+F0118,Firm_118,India,Delhi,Boutique Specialist,2006,19,14,1,95365.05,True,True,False,False,Energy & Utilities,5,0,0.58
+F0119,Firm_119,Kenya,Nakuru,Mid-Tier,1956,69,57,2,1019689.64,True,False,True,True,Retail & Consumer,3,0,0.535
+F0120,Firm_120,UAE,Ras Al Khaimah,Large National,1973,52,114,4,1815344.95,True,True,True,True,Insurance,4,2,0.651
+F0121,Firm_121,South Africa,Cape Town,Boutique Specialist,1985,40,14,1,139052.47,False,True,False,False,Manufacturing,2,0,0.715
+F0122,Firm_122,Kenya,Kisumu,Boutique Specialist,1970,55,9,1,147727.77,True,True,False,False,Telecommunications,2,0,0.54
+F0123,Firm_123,Pakistan,Lahore,Boutique Specialist,1971,54,13,1,127424.31,True,False,False,False,Healthcare,4,0,0.569
+F0124,Firm_124,Bangladesh,Chittagong,Boutique Specialist,1952,73,9,1,77438.38,True,True,True,False,Government & Public Sector,3,0,0.698
+F0125,Firm_125,India,Kolkata,Small Regional,2009,16,7,1,269508.38,True,True,True,True,Energy & Utilities,4,0,0.539
+F0126,Firm_126,USA,Chicago,Small Regional,1990,35,18,1,179640.42,True,True,True,True,Energy & Utilities,2,0,0.54
+F0127,Firm_127,South Africa,Durban,Large National,1973,52,233,11,5195518.08,True,True,True,False,Hospitality,2,6,0.76
+F0128,Firm_128,Malaysia,Malacca,Small Regional,2014,11,16,1,172467.62,True,False,True,True,Real Estate,3,0,0.508
+F0129,Firm_129,Bangladesh,Sylhet,Mid-Tier,2003,22,59,5,1187459.15,True,False,True,False,Retail & Consumer,2,2,0.33
+F0130,Firm_130,UAE,Sharjah,Mid-Tier,1970,55,37,3,1236068.17,True,False,True,True,Government & Public Sector,3,7,0.424
+F0131,Firm_131,USA,Atlanta,Small Regional,1969,56,17,1,160134.79,True,True,False,True,Manufacturing,2,0,0.443
+F0132,Firm_132,India,Delhi,Small Regional,1984,41,21,1,140411.77,False,True,True,True,Technology,5,0,0.543
+F0133,Firm_133,Bangladesh,Rajshahi,Large National,1983,42,183,15,2727999.19,True,True,True,False,NGO & Development,3,4,0.687
+F0134,Firm_134,USA,Los Angeles,Mid-Tier,1951,74,98,9,1393448.97,False,True,True,False,Agriculture,2,0,0.67
+F0135,Firm_135,Philippines,Quezon City,Small Regional,2005,20,11,1,128149.51,False,False,True,False,NGO & Development,2,0,0.385
+F0136,Firm_136,Pakistan,Islamabad,Large National,2013,12,265,8,2030589.52,True,True,True,True,Technology,3,0,0.742
+F0137,Firm_137,UAE,Sharjah,Boutique Specialist,1991,34,10,1,30712.78,True,False,False,False,Hospitality,3,0,0.507
+F0138,Firm_138,Germany,Munich,Small Regional,2000,25,15,1,265354.51,False,True,True,True,Banking & Finance,3,0,0.463
+F0139,Firm_139,USA,Houston,Small Regional,1993,32,5,1,168868.93,True,False,True,False,Energy & Utilities,2,0,0.433
+F0140,Firm_140,Saudi Arabia,Riyadh,Small Regional,1999,26,24,1,78147.62,True,True,True,True,Agriculture,4,0,0.719
+F0141,Firm_141,Saudi Arabia,Riyadh,Boutique Specialist,1980,45,15,1,87670.7,True,True,False,True,Agriculture,4,0,0.574
+F0142,Firm_142,India,Mumbai,Mid-Tier,2013,12,88,4,667285.91,True,True,True,False,Insurance,2,6,0.615
+F0143,Firm_143,UK,London,Small Regional,1953,72,5,1,226390.68,True,True,True,True,Technology,5,0,0.654
+F0144,Firm_144,Pakistan,Peshawar,Small Regional,1967,58,14,1,269363.03,False,True,False,True,Hospitality,3,0,0.684
+F0145,Firm_145,Pakistan,Peshawar,Mid-Tier,1996,29,97,10,1745770.57,True,True,True,False,Technology,5,3,0.624
+F0146,Firm_146,Bangladesh,Chittagong,Boutique Specialist,1979,46,4,1,129199.71,True,True,True,False,Transportation,3,0,0.645
+F0147,Firm_147,Singapore,Changi,Boutique Specialist,1970,55,3,1,144208.26,False,True,True,False,Agriculture,5,0,0.404
+F0148,Firm_148,UK,Birmingham,Small Regional,1961,64,6,1,91891.63,False,False,False,False,Energy & Utilities,3,0,0.569
+F0149,Firm_149,Bangladesh,Rajshahi,Boutique Specialist,2006,19,15,1,130880.43,False,True,False,False,Government & Public Sector,5,0,0.4
+F0150,Firm_150,Pakistan,Lahore,Boutique Specialist,1979,46,9,1,127224.9,False,True,True,False,Energy & Utilities,3,0,0.417
+F0151,Firm_151,Kenya,Nairobi,Small Regional,1974,51,5,1,263413.64,True,True,False,True,Retail & Consumer,2,0,0.588
+F0152,Firm_152,India,Kolkata,Boutique Specialist,1966,59,10,1,30523.99,True,True,False,False,Agriculture,3,0,0.748
+F0153,Firm_153,Bangladesh,Sylhet,Small Regional,1975,50,24,1,171846.11,True,False,True,False,NGO & Development,2,0,0.569
+F0154,Firm_154,UK,Edinburgh,Small Regional,2003,22,20,1,60267.04,True,True,True,True,Government & Public Sector,5,0,0.619
+F0155,Firm_155,Indonesia,Medan,Small Regional,1975,50,7,1,291817.8,False,True,True,True,Government & Public Sector,5,0,0.6
+F0156,Firm_156,India,Chennai,Boutique Specialist,2004,21,13,1,142032.9,False,False,False,False,Manufacturing,5,0,0.474
+F0157,Firm_157,Canada,Montreal,Mid-Tier,1997,28,72,3,358641.98,True,False,True,False,NGO & Development,4,7,0.445
+F0158,Firm_158,Japan,Osaka,Boutique Specialist,1983,42,14,1,45073.17,True,False,True,True,Hospitality,3,0,0.68
+F0159,Firm_159,India,Delhi,Boutique Specialist,2000,25,4,1,43892.01,True,True,False,False,Retail & Consumer,3,0,0.508
+F0160,Firm_160,Germany,Hamburg,Big 4 Affiliate,1958,67,415,13,22452542.13,True,True,True,True,Technology,5,6,0.735
+F0161,Firm_161,USA,New York,Boutique Specialist,2006,19,13,1,121790.03,True,False,True,True,NGO & Development,3,0,0.691
+F0162,Firm_162,Australia,Melbourne,Large National,1984,41,254,22,3951988.32,True,True,True,True,Government & Public Sector,3,0,0.674
+F0163,Firm_163,Australia,Perth,Mid-Tier,1968,57,61,2,1335386.76,True,True,False,False,Real Estate,5,1,0.593
+F0164,Firm_164,UAE,Ajman,Boutique Specialist,1951,74,14,1,89267.51,True,True,False,False,Insurance,5,0,0.577
+F0165,Firm_165,Bangladesh,Sylhet,Mid-Tier,2014,11,34,3,531280.59,True,False,True,True,Banking & Finance,4,1,0.56
+F0166,Firm_166,Brazil,Salvador,Boutique Specialist,2003,22,11,1,89987.2,True,False,False,True,Retail & Consumer,3,0,0.558
+F0167,Firm_167,Pakistan,Peshawar,Boutique Specialist,2000,25,15,1,70339.01,True,False,False,False,Telecommunications,5,0,0.627
+F0168,Firm_168,India,Kolkata,Small Regional,1999,26,13,1,83336.12,False,True,True,True,Healthcare,2,0,0.362
+F0169,Firm_169,Bangladesh,Sylhet,Big 4 Affiliate,1951,74,1168,118,31338357.28,True,True,True,False,Real Estate,4,5,0.747
+F0170,Firm_170,Singapore,CBD,Mid-Tier,2005,20,68,3,400071.58,False,False,True,False,Real Estate,3,3,0.539
+F0171,Firm_171,Canada,Calgary,Small Regional,1956,69,23,1,167906.59,True,True,True,False,Real Estate,3,0,0.448
+F0172,Firm_172,Bangladesh,Khulna,Boutique Specialist,2007,18,3,1,22840.07,True,True,True,False,Energy & Utilities,3,0,0.48
+F0173,Firm_173,UAE,Dubai,Small Regional,1970,55,11,1,133954.09,False,True,True,False,Insurance,5,0,0.502
+F0174,Firm_174,India,Bangalore,Mid-Tier,2004,21,44,4,991213.3,True,True,True,True,Government & Public Sector,5,1,0.692
+F0175,Firm_175,Australia,Brisbane,Small Regional,1976,49,24,2,247050.23,True,True,True,False,Agriculture,2,0,0.541
+F0176,Firm_176,India,Kolkata,Small Regional,1961,64,22,2,72639.87,True,False,True,False,Banking & Finance,4,0,0.532
+F0177,Firm_177,Canada,Montreal,Boutique Specialist,1967,58,13,1,44103.15,False,True,False,False,Technology,4,0,0.581
+F0178,Firm_178,USA,Chicago,Large National,1979,46,212,14,4597688.13,True,False,True,True,Insurance,5,1,0.584
+F0179,Firm_179,Philippines,Cebu,Boutique Specialist,1967,58,8,1,119301.35,False,True,True,False,Transportation,2,0,0.665
+F0180,Firm_180,Bangladesh,Khulna,Small Regional,1952,73,22,1,127417.22,True,False,True,True,Technology,5,0,0.618
+F0181,Firm_181,USA,Los Angeles,Boutique Specialist,1952,73,10,1,144106.63,True,True,True,False,Technology,4,0,0.696
+F0182,Firm_182,Bangladesh,Chittagong,Mid-Tier,2004,21,41,4,747370.34,False,False,True,False,Real Estate,2,6,0.421
+F0183,Firm_183,Egypt,Aswan,Small Regional,1983,42,14,1,207930.6,True,True,True,True,Hospitality,2,0,0.628
+F0184,Firm_184,Malaysia,Kota Kinabalu,Boutique Specialist,1986,39,11,1,77024.37,False,True,True,True,Telecommunications,2,0,0.62
+F0185,Firm_185,India,Bangalore,Large National,1962,63,177,15,7139892.93,True,True,True,False,Hospitality,2,7,0.625
+F0186,Firm_186,Australia,Sydney,Boutique Specialist,2000,25,15,1,131566.88,True,True,False,False,Government & Public Sector,2,0,0.591
+F0187,Firm_187,South Africa,Durban,Small Regional,1950,75,7,1,212546.79,False,True,True,False,Manufacturing,4,0,0.508
+F0188,Firm_188,UAE,Abu Dhabi,Large National,1975,50,268,23,6246818.95,True,True,True,False,Agriculture,2,7,0.434
+F0189,Firm_189,UAE,Dubai,Mid-Tier,1970,55,90,2,546487.67,True,False,False,True,Retail & Consumer,5,4,0.702
+F0190,Firm_190,India,Mumbai,Small Regional,1978,47,13,1,121014.6,False,False,True,True,Hospitality,4,0,0.585
+F0191,Firm_191,Bangladesh,Chittagong,Large National,1955,70,259,25,3403106.78,True,True,True,False,Education,3,0,0.762
+F0192,Firm_192,Kenya,Kisumu,Small Regional,2014,11,16,1,62019.74,True,False,True,False,Hospitality,5,0,0.452
+F0193,Firm_193,Kenya,Mombasa,Mid-Tier,2008,17,60,6,838186.78,True,True,True,True,Real Estate,2,6,0.529
+F0194,Firm_194,Australia,Sydney,Small Regional,1971,54,9,1,85345.89,True,False,True,True,Agriculture,5,0,0.44
+F0195,Firm_195,USA,Atlanta,Large National,1980,45,96,5,7236817.19,True,True,True,False,Technology,3,7,0.627
+F0196,Firm_196,USA,Los Angeles,Boutique Specialist,1981,44,5,1,94546.14,False,True,False,False,Energy & Utilities,2,0,0.2
+F0197,Firm_197,Germany,Hamburg,Boutique Specialist,1998,27,4,1,79506.7,False,True,False,False,Transportation,4,0,0.562
+F0198,Firm_198,Kenya,Eldoret,Boutique Specialist,1994,31,8,1,148503.76,False,True,True,False,Healthcare,3,0,0.532
+F0199,Firm_199,Malaysia,Kuala Lumpur,Boutique Specialist,1990,35,4,1,29108.93,True,False,True,False,Government & Public Sector,5,0,0.666
+F0200,Firm_200,Nigeria,Port Harcourt,Large National,1991,34,267,13,5167903.61,True,True,True,False,Agriculture,3,0,0.744
+F0201,Firm_201,Australia,Sydney,Boutique Specialist,1974,51,5,1,130705.58,True,True,False,False,Education,4,0,0.593
+F0202,Firm_202,Bangladesh,Rajshahi,Big 4 Affiliate,1998,27,1295,139,15652421.41,True,True,True,False,Healthcare,2,5,0.851
+F0203,Firm_203,India,Delhi,Big 4 Affiliate,1967,58,877,41,5033646.88,True,True,True,True,Technology,4,1,0.691
+F0204,Firm_204,Kenya,Mombasa,Mid-Tier,2001,24,74,6,596846.87,True,False,True,False,Healthcare,3,2,0.641
+F0205,Firm_205,Singapore,CBD,Small Regional,2012,13,8,1,244205.34,True,True,False,False,Telecommunications,2,0,0.397
+F0206,Firm_206,Bangladesh,Chittagong,Boutique Specialist,1975,50,8,1,131558.06,False,False,False,False,Agriculture,5,0,0.4
+F0207,Firm_207,Bangladesh,Rajshahi,Small Regional,1966,59,8,1,70167.44,False,True,True,False,Education,5,0,0.469
+F0208,Firm_208,Canada,Montreal,Small Regional,1951,74,15,1,85765.49,False,True,True,False,NGO & Development,2,0,0.366
+F0209,Firm_209,Bangladesh,Dhaka,Mid-Tier,1968,57,70,8,1747893.29,True,True,True,False,Telecommunications,5,7,0.79
+F0210,Firm_210,India,Delhi,Boutique Specialist,1988,37,6,1,74337.93,False,False,True,False,Hospitality,5,0,0.793
+F0211,Firm_211,UAE,Abu Dhabi,Small Regional,1956,69,22,1,81700.45,True,True,True,True,Healthcare,4,0,0.547
+F0212,Firm_212,Canada,Ottawa,Small Regional,1982,43,22,1,172578.12,False,True,True,True,Government & Public Sector,2,0,0.694
+F0213,Firm_213,Australia,Melbourne,Mid-Tier,1956,69,80,6,1029211.02,True,True,True,False,Education,5,5,0.721
+F0214,Firm_214,India,Mumbai,Boutique Specialist,1994,31,9,1,93285.82,False,True,True,False,Education,3,0,0.5
+F0215,Firm_215,Germany,Berlin,Small Regional,1975,50,18,1,117435.62,True,True,True,False,Banking & Finance,3,0,0.453
+F0216,Firm_216,India,Delhi,Mid-Tier,1999,26,34,2,1349030.12,True,False,True,False,Telecommunications,5,2,0.559
+F0217,Firm_217,Pakistan,Peshawar,Large National,1977,48,246,23,1440352.33,True,True,False,True,Government & Public Sector,4,1,0.655
+F0218,Firm_218,Japan,Tokyo,Small Regional,1955,70,21,1,259109.93,True,False,True,False,Agriculture,2,0,0.326
+F0219,Firm_219,Australia,Brisbane,Small Regional,2006,19,5,1,280157.03,False,False,True,True,NGO & Development,2,0,0.631
+F0220,Firm_220,Brazil,Rio de Janeiro,Mid-Tier,1956,69,76,4,1605030.91,False,True,True,True,Education,5,3,0.622
+F0221,Firm_221,Australia,Brisbane,Boutique Specialist,1956,69,14,1,104594.17,True,True,True,False,Transportation,4,0,0.518
+F0222,Firm_222,UAE,Sharjah,Mid-Tier,1982,43,47,3,1394282.62,False,True,True,False,Insurance,2,3,0.441
+F0223,Firm_223,Bangladesh,Khulna,Small Regional,1968,57,5,1,260920.13,True,True,False,False,Hospitality,3,0,0.671
+F0224,Firm_224,USA,Chicago,Boutique Specialist,1957,68,8,1,121780.07,True,False,True,True,Hospitality,5,0,0.405
+F0225,Firm_225,India,Kolkata,Small Regional,1959,66,25,1,128641.04,True,False,False,True,Technology,5,0,0.485
+F0226,Firm_226,India,Mumbai,Small Regional,1961,64,8,1,275078.06,True,False,True,True,Telecommunications,4,0,0.358
+F0227,Firm_227,Saudi Arabia,Jeddah,Small Regional,2004,21,12,1,288755.73,True,False,True,False,Real Estate,3,0,0.766
+F0228,Firm_228,USA,Atlanta,Mid-Tier,2003,22,50,1,1905985.25,True,True,True,False,NGO & Development,4,7,0.576
+F0229,Firm_229,Kenya,Kisumu,Boutique Specialist,2013,12,10,1,77278.4,False,True,True,False,Transportation,2,0,0.582
+F0230,Firm_230,Australia,Melbourne,Small Regional,1992,33,19,1,176278.89,True,True,True,False,Transportation,2,0,0.595
+F0231,Firm_231,Nigeria,Kano,Boutique Specialist,2007,18,7,1,69227.65,True,True,False,True,Telecommunications,5,0,0.854
+F0232,Firm_232,UK,London,Mid-Tier,1987,38,80,7,930285.96,True,False,True,False,Technology,3,3,0.547
+F0233,Firm_233,Singapore,Changi,Mid-Tier,2003,22,36,3,410715.94,False,False,True,True,Hospitality,2,3,0.665
+F0234,Firm_234,UK,London,Big 4 Affiliate,1973,52,838,86,28594172.23,True,True,False,False,Hospitality,5,6,0.683
+F0235,Firm_235,India,Delhi,Small Regional,1983,42,11,1,295190.29,True,True,False,True,Telecommunications,5,0,0.535
+F0236,Firm_236,Germany,Munich,Mid-Tier,1968,57,48,3,310418.97,True,False,True,True,Technology,2,0,0.525
+F0237,Firm_237,Pakistan,Faisalabad,Boutique Specialist,1980,45,5,1,118930.78,True,True,False,False,Agriculture,2,0,0.589
+F0238,Firm_238,Bangladesh,Dhaka,Small Regional,1970,55,18,1,92355.6,False,False,True,True,Agriculture,2,0,0.745
+F0239,Firm_239,Australia,Sydney,Boutique Specialist,1976,49,7,1,44838.08,True,True,False,True,Banking & Finance,4,0,0.563
+F0240,Firm_240,India,Chennai,Mid-Tier,1976,49,62,2,551646.13,False,True,False,True,Energy & Utilities,3,5,0.421
+F0241,Firm_241,Philippines,Davao,Boutique Specialist,1988,37,14,1,92263.21,True,False,False,False,Retail & Consumer,2,0,0.514
+F0242,Firm_242,Saudi Arabia,Medina,Boutique Specialist,1987,38,6,1,114170.23,True,False,False,False,Technology,3,0,0.611
+F0243,Firm_243,Egypt,Alexandria,Boutique Specialist,1970,55,7,1,117038.78,False,True,True,False,Education,3,0,0.592
+F0244,Firm_244,USA,Houston,Boutique Specialist,2007,18,13,1,87210.82,True,True,True,True,Government & Public Sector,4,0,0.613
+F0245,Firm_245,Bangladesh,Sylhet,Boutique Specialist,1998,27,11,1,72832.82,False,True,False,False,Technology,5,0,0.667
+F0246,Firm_246,Egypt,Aswan,Small Regional,1986,39,11,1,256895.3,True,False,True,True,NGO & Development,5,0,0.46
+F0247,Firm_247,USA,Chicago,Large National,1977,48,255,24,2197601.77,True,True,True,False,NGO & Development,3,0,0.579
+F0248,Firm_248,Saudi Arabia,Dammam,Big 4 Affiliate,1980,45,899,72,12382861.47,False,True,True,True,Manufacturing,5,1,0.583
+F0249,Firm_249,Saudi Arabia,Jeddah,Boutique Specialist,1988,37,9,1,66151.98,True,False,False,False,Education,5,0,0.506
+F0250,Firm_250,Brazil,Rio de Janeiro,Small Regional,1977,48,17,1,194951.34,True,True,True,True,Hospitality,4,0,0.511
+F0251,Firm_251,Pakistan,Lahore,Boutique Specialist,1983,42,11,1,97689.71,False,False,True,False,Agriculture,3,0,0.587
+F0252,Firm_252,USA,Houston,Small Regional,2006,19,24,1,196401.04,False,False,True,False,Agriculture,3,0,0.464
+F0253,Firm_253,Brazil,São Paulo,Large National,1975,50,183,18,5404027.84,True,True,True,True,Telecommunications,3,2,0.54
+F0254,Firm_254,Pakistan,Lahore,Large National,2014,11,235,16,1208533.53,True,True,True,True,Healthcare,3,5,0.666
+F0255,Firm_255,India,Delhi,Small Regional,1979,46,12,1,50914.08,True,False,True,True,Energy & Utilities,5,0,0.575
+F0256,Firm_256,UAE,Sharjah,Small Regional,1976,49,24,2,144841.4,True,True,True,True,Retail & Consumer,5,0,0.622
+F0257,Firm_257,Philippines,Davao,Mid-Tier,1977,48,96,5,288829.21,False,True,True,True,Transportation,3,2,0.67
+F0258,Firm_258,Canada,Montreal,Small Regional,2011,14,25,1,123203.22,False,True,True,False,Government & Public Sector,4,0,0.54
+F0259,Firm_259,Singapore,CBD,Large National,1969,56,162,9,2358901.39,True,True,False,True,Telecommunications,2,1,0.67
+F0260,Firm_260,Bangladesh,Dhaka,Small Regional,2006,19,15,1,257811.45,True,True,True,True,Real Estate,4,0,0.631
+F0261,Firm_261,Australia,Perth,Mid-Tier,2014,11,100,9,1191242.98,True,False,True,False,Telecommunications,4,5,0.506
+F0262,Firm_262,Indonesia,Bali,Boutique Specialist,1970,55,6,1,54582.78,True,False,False,False,Banking & Finance,3,0,0.349
+F0263,Firm_263,Bangladesh,Chittagong,Mid-Tier,1963,62,35,2,1644781.24,True,True,True,True,Technology,4,5,0.551
+F0264,Firm_264,UAE,Dubai,Small Regional,2013,12,8,1,193493.79,False,True,True,True,Banking & Finance,5,0,0.454
+F0265,Firm_265,Malaysia,Malacca,Big 4 Affiliate,1996,29,1989,61,42725880.68,True,True,True,True,Technology,2,2,0.547
+F0266,Firm_266,Japan,Yokohama,Large National,1958,67,180,7,7356585.81,True,True,True,False,Telecommunications,2,7,0.655
+F0267,Firm_267,Canada,Vancouver,Small Regional,1958,67,15,1,266713.8,False,False,True,True,Telecommunications,4,0,0.644
+F0268,Firm_268,Germany,Munich,Small Regional,1987,38,19,1,232732.01,True,False,True,True,Banking & Finance,2,0,0.483
+F0269,Firm_269,USA,Chicago,Small Regional,1978,47,17,1,297921.54,True,True,True,True,Insurance,2,0,0.572
+F0270,Firm_270,Pakistan,Karachi,Mid-Tier,1957,68,56,4,1579082.78,True,False,False,False,Education,4,4,0.711
+F0271,Firm_271,South Africa,Johannesburg,Small Regional,2006,19,8,1,75878.24,True,True,True,True,Government & Public Sector,4,0,0.479
+F0272,Firm_272,South Africa,Johannesburg,Boutique Specialist,2009,16,13,1,64012.02,True,False,True,False,Telecommunications,2,0,0.541
+F0273,Firm_273,Malaysia,Malacca,Boutique Specialist,1999,26,11,1,138864.26,False,False,False,False,Agriculture,2,0,0.453
+F0274,Firm_274,Egypt,Aswan,Big 4 Affiliate,1982,43,456,19,49666897.34,True,True,True,False,Banking & Finance,2,0,0.927
+F0275,Firm_275,UAE,Sharjah,Small Regional,1951,74,15,1,141030.26,False,False,False,False,NGO & Development,2,0,0.432
+F0276,Firm_276,UK,Leeds,Large National,2014,11,271,13,1275043.62,True,True,True,True,Telecommunications,3,2,0.531
+F0277,Firm_277,Nigeria,Kano,Mid-Tier,1985,40,50,3,456777.83,False,True,True,False,Healthcare,4,0,0.595
+F0278,Firm_278,Australia,Sydney,Boutique Specialist,1986,39,14,1,90279.43,True,False,True,False,Energy & Utilities,2,0,0.633
+F0279,Firm_279,Germany,Stuttgart,Mid-Tier,2003,22,38,3,1430182.08,True,False,True,True,Government & Public Sector,3,6,0.537
+F0280,Firm_280,Nigeria,Ibadan,Small Regional,1985,40,15,1,104203.57,True,True,True,True,Real Estate,4,0,0.408
+F0281,Firm_281,Kenya,Eldoret,Small Regional,2002,23,8,1,147594.11,True,False,True,False,Real Estate,5,0,0.563
+F0282,Firm_282,USA,New York,Small Regional,1982,43,18,1,238402.53,True,False,True,False,NGO & Development,4,0,0.569
+F0283,Firm_283,USA,Los Angeles,Small Regional,1971,54,23,1,299074.2,True,False,False,False,Telecommunications,5,0,0.542
+F0284,Firm_284,Bangladesh,Chittagong,Big 4 Affiliate,1952,73,671,63,5574444.19,True,True,True,True,Telecommunications,4,3,0.397
+F0285,Firm_285,Singapore,Jurong,Mid-Tier,2001,24,75,4,1286454.42,True,False,True,True,Education,3,6,0.296
+F0286,Firm_286,Bangladesh,Chittagong,Small Regional,1952,73,16,1,237090.21,True,False,True,True,Real Estate,5,0,0.532
+F0287,Firm_287,UK,Birmingham,Large National,1988,37,240,25,6883099.25,True,True,False,False,Transportation,2,6,0.685
+F0288,Firm_288,UAE,Ajman,Mid-Tier,1986,39,83,6,1036738.61,True,True,True,False,Hospitality,3,5,0.622
+F0289,Firm_289,Pakistan,Karachi,Big 4 Affiliate,2013,12,1233,116,18411769.94,True,True,True,False,Banking & Finance,5,2,0.57
+F0290,Firm_290,Singapore,CBD,Large National,1967,58,262,26,1334871.69,False,True,True,False,Real Estate,5,7,0.954
+F0291,Firm_291,Bangladesh,Dhaka,Small Regional,2002,23,11,1,200627.84,True,False,True,False,Banking & Finance,4,0,0.532
+F0292,Firm_292,Bangladesh,Chittagong,Large National,1994,31,108,12,6254683.1,True,True,True,True,Healthcare,3,0,0.816
+F0293,Firm_293,South Africa,Johannesburg,Small Regional,1999,26,24,2,197951.98,True,True,True,True,Retail & Consumer,4,0,0.641
+F0294,Firm_294,USA,Atlanta,Small Regional,1981,44,19,1,241219.71,True,False,True,True,Education,5,0,0.612
+F0295,Firm_295,Bangladesh,Chittagong,Boutique Specialist,2009,16,13,1,42021.54,True,False,False,True,Energy & Utilities,2,0,0.558
+F0296,Firm_296,UAE,Ajman,Mid-Tier,1958,67,66,3,211745.74,True,True,True,False,Healthcare,3,4,0.491
+F0297,Firm_297,Japan,Osaka,Mid-Tier,2004,21,59,4,298616.69,True,False,True,False,Retail & Consumer,5,7,0.414
+F0298,Firm_298,India,Delhi,Large National,1999,26,199,19,7928156.18,True,True,True,False,Retail & Consumer,3,5,0.742
+F0299,Firm_299,Australia,Melbourne,Small Regional,1997,28,24,2,53633.53,True,True,True,True,Healthcare,2,0,0.553
+F0300,Firm_300,Bangladesh,Khulna,Small Regional,1974,51,14,1,163875.42,True,True,True,False,Energy & Utilities,4,0,0.553
+F0301,Firm_301,Bangladesh,Dhaka,Big 4 Affiliate,1965,60,1587,143,13396032.47,True,True,True,False,Education,4,3,0.88
+F0302,Firm_302,UAE,Sharjah,Boutique Specialist,1967,58,13,1,102034.44,True,True,True,False,Education,2,0,0.696
+F0303,Firm_303,UAE,Ras Al Khaimah,Large National,1966,59,165,8,5843047.36,True,True,True,False,Hospitality,2,2,0.374
+F0304,Firm_304,Australia,Adelaide,Small Regional,2005,20,12,1,84092.78,True,True,True,False,Technology,3,0,0.532
+F0305,Firm_305,Germany,Hamburg,Small Regional,1955,70,8,1,147158.07,True,True,True,True,Telecommunications,5,0,0.606
+F0306,Firm_306,Saudi Arabia,Riyadh,Boutique Specialist,2001,24,14,1,53500.43,True,True,False,False,Banking & Finance,4,0,0.645
+F0307,Firm_307,UAE,Dubai,Small Regional,1961,64,17,1,78440.49,False,True,False,True,Transportation,2,0,0.432
+F0308,Firm_308,Pakistan,Peshawar,Boutique Specialist,1973,52,15,1,149768.92,True,False,False,False,Real Estate,2,0,0.533
+F0309,Firm_309,Nigeria,Abuja,Mid-Tier,2011,14,90,3,470559.12,False,True,True,False,Healthcare,5,0,0.564
+F0310,Firm_310,Pakistan,Lahore,Boutique Specialist,1976,49,15,1,112193.49,True,True,True,False,Telecommunications,4,0,0.572
+F0311,Firm_311,UK,Edinburgh,Large National,1974,51,166,6,7359062.84,True,True,True,True,Telecommunications,3,3,0.832
+F0312,Firm_312,Bangladesh,Chittagong,Boutique Specialist,1959,66,8,1,100304.5,False,True,True,False,Manufacturing,5,0,0.636
+F0313,Firm_313,Bangladesh,Sylhet,Small Regional,2012,13,14,1,248473.91,False,False,True,True,Real Estate,3,0,0.533
+F0314,Firm_314,Saudi Arabia,Mecca,Boutique Specialist,2000,25,15,1,120594.1,True,True,False,False,Agriculture,5,0,0.53
+F0315,Firm_315,Brazil,Rio de Janeiro,Small Regional,1975,50,15,1,153711.71,True,True,True,False,Real Estate,3,0,0.461
+F0316,Firm_316,Canada,Ottawa,Small Regional,1955,70,20,2,107585.71,True,True,True,True,Technology,3,0,0.457
+F0317,Firm_317,USA,Chicago,Small Regional,1965,60,25,1,221193.29,False,True,True,True,Education,5,0,0.513
+F0318,Firm_318,India,Mumbai,Small Regional,1958,67,8,1,108402.26,True,False,True,False,Transportation,5,0,0.49
+F0319,Firm_319,India,Mumbai,Large National,1953,72,266,27,4739542.87,True,False,True,True,Transportation,5,2,0.884
+F0320,Firm_320,India,Delhi,Large National,2006,19,183,17,2682186.17,True,True,True,True,Telecommunications,2,5,0.846
+F0321,Firm_321,UAE,Dubai,Mid-Tier,2011,14,69,6,803015.43,True,True,True,False,Healthcare,2,0,0.448
+F0322,Firm_322,Germany,Hamburg,Mid-Tier,1986,39,26,1,1569366.76,False,False,True,True,Healthcare,3,2,0.492
+F0323,Firm_323,Canada,Montreal,Boutique Specialist,1970,55,8,1,20585.58,True,True,False,False,Transportation,5,0,0.517
+F0324,Firm_324,Pakistan,Islamabad,Mid-Tier,1977,48,71,6,1623529.42,False,True,True,False,Education,2,3,0.562
+F0325,Firm_325,Saudi Arabia,Mecca,Boutique Specialist,2003,22,7,1,99494.33,False,True,False,False,Real Estate,2,0,0.684
+F0326,Firm_326,Germany,Hamburg,Mid-Tier,1962,63,80,5,232324.15,False,True,True,False,Healthcare,5,6,0.584
+F0327,Firm_327,UAE,Ras Al Khaimah,Mid-Tier,1971,54,95,6,1255174.7,True,True,True,True,Insurance,4,3,0.598
+F0328,Firm_328,Australia,Sydney,Boutique Specialist,2002,23,7,1,28450.1,True,False,False,False,NGO & Development,4,0,0.46
+F0329,Firm_329,USA,Los Angeles,Small Regional,1982,43,17,1,94949.45,False,False,True,True,Insurance,4,0,0.515
+F0330,Firm_330,India,Chennai,Small Regional,1953,72,20,2,163342.65,False,True,True,True,Agriculture,3,0,0.579
+F0331,Firm_331,USA,Houston,Small Regional,1961,64,22,1,130994.82,False,False,True,True,Telecommunications,5,0,0.642
+F0332,Firm_332,Japan,Fukuoka,Small Regional,1955,70,18,1,163620.68,True,True,True,True,NGO & Development,3,0,0.55
+F0333,Firm_333,Bangladesh,Sylhet,Mid-Tier,2000,25,77,8,756682.6,True,True,True,True,Banking & Finance,2,2,0.622
+F0334,Firm_334,Bangladesh,Dhaka,Boutique Specialist,1995,30,12,1,43355.71,False,True,True,False,Healthcare,3,0,0.414
+F0335,Firm_335,Bangladesh,Dhaka,Boutique Specialist,2008,17,8,1,124460.43,False,True,False,False,Government & Public Sector,4,0,0.662
+F0336,Firm_336,Bangladesh,Khulna,Small Regional,1985,40,13,1,107895.75,False,True,True,False,Insurance,2,0,0.643
+F0337,Firm_337,Brazil,Curitiba,Mid-Tier,1966,59,78,4,1616543.57,True,False,True,False,Insurance,2,2,0.725
+F0338,Firm_338,Germany,Stuttgart,Small Regional,1957,68,10,1,76948.06,True,False,True,False,Transportation,5,0,0.544
+F0339,Firm_339,UK,Edinburgh,Large National,1956,69,276,28,1893035.28,True,True,True,False,Banking & Finance,4,2,0.646
+F0340,Firm_340,Bangladesh,Rajshahi,Big 4 Affiliate,1990,35,396,21,19156169.59,True,True,False,True,Education,4,0,0.673
+F0341,Firm_341,UK,London,Mid-Tier,1983,42,82,7,448210.9,False,True,True,False,Telecommunications,4,5,0.53
+F0342,Firm_342,UK,Birmingham,Small Regional,1969,56,13,1,172009.56,True,True,True,False,Agriculture,3,0,0.407
+F0343,Firm_343,India,Kolkata,Boutique Specialist,1968,57,11,1,132103.54,True,True,False,False,Banking & Finance,3,0,0.581
+F0344,Firm_344,UK,Edinburgh,Small Regional,2007,18,25,1,99238.41,True,False,False,True,Hospitality,2,0,0.492
+F0345,Firm_345,USA,Atlanta,Boutique Specialist,1995,30,9,1,52789.01,True,True,True,False,Insurance,4,0,0.661
+F0346,Firm_346,Australia,Perth,Small Regional,1993,32,9,1,201550.56,True,False,True,False,Hospitality,5,0,0.338
+F0347,Firm_347,Australia,Sydney,Mid-Tier,2013,12,56,5,1830752.59,True,True,True,True,Government & Public Sector,3,4,0.677
+F0348,Firm_348,Bangladesh,Rajshahi,Mid-Tier,1998,27,63,3,1503960.21,True,True,True,True,Education,2,2,0.663
+F0349,Firm_349,USA,Chicago,Boutique Specialist,2013,12,15,1,87151.05,True,False,False,False,Government & Public Sector,2,0,0.486
+F0350,Firm_350,Australia,Perth,Large National,1975,50,238,7,7290472.5,True,True,True,False,Retail & Consumer,2,3,0.739
+F0351,Firm_351,UK,Manchester,Boutique Specialist,2002,23,6,1,61537.79,True,False,False,True,Government & Public Sector,2,0,0.741
+F0352,Firm_352,Brazil,Salvador,Small Regional,1969,56,11,1,298003.99,True,False,False,True,Real Estate,5,0,0.533
+F0353,Firm_353,Australia,Melbourne,Small Regional,1994,31,20,1,212574.24,True,False,True,False,Retail & Consumer,4,0,0.527
+F0354,Firm_354,India,Delhi,Small Regional,1981,44,22,1,298060.48,True,False,True,False,Real Estate,4,0,0.522
+F0355,Firm_355,Bangladesh,Rajshahi,Small Regional,2012,13,18,1,230902.36,True,True,True,False,Insurance,3,0,0.664
+F0356,Firm_356,Australia,Perth,Boutique Specialist,1983,42,10,1,44012.81,True,False,False,False,Hospitality,5,0,0.679
+F0357,Firm_357,Bangladesh,Sylhet,Boutique Specialist,1990,35,15,1,101733.78,True,True,False,False,Banking & Finance,5,0,0.683
+F0358,Firm_358,Singapore,Woodlands,Small Regional,1955,70,15,1,148429.79,True,False,True,False,Energy & Utilities,5,0,0.585
+F0359,Firm_359,Philippines,Cebu,Mid-Tier,1973,52,99,10,917418.73,False,False,True,False,NGO & Development,3,4,0.388
+F0360,Firm_360,Singapore,Tampines,Small Regional,1964,61,21,1,219604.81,True,True,True,False,Telecommunications,2,0,0.566
+F0361,Firm_361,USA,Atlanta,Boutique Specialist,1978,47,3,1,79625.53,True,True,False,False,Real Estate,5,0,0.263
+F0362,Firm_362,Australia,Sydney,Mid-Tier,1982,43,78,2,413037.38,True,True,True,False,Technology,2,2,0.644
+F0363,Firm_363,UK,Manchester,Small Regional,1987,38,6,1,191075.27,True,True,True,True,Transportation,5,0,0.493
+F0364,Firm_364,UAE,Abu Dhabi,Small Regional,1975,50,25,1,192830.0,True,False,True,False,Government & Public Sector,3,0,0.545
+F0365,Firm_365,Philippines,Cebu,Small Regional,1958,67,17,1,282591.66,False,True,True,False,Healthcare,4,0,0.671
+F0366,Firm_366,USA,Los Angeles,Large National,1973,52,175,12,1289620.68,True,True,True,True,Telecommunications,5,1,0.743
+F0367,Firm_367,Saudi Arabia,Riyadh,Small Regional,2009,16,17,1,252807.64,False,True,False,False,Hospitality,4,0,0.588
+F0368,Firm_368,Kenya,Kisumu,Boutique Specialist,1969,56,12,1,112274.61,True,True,False,True,Education,3,0,0.618
+F0369,Firm_369,India,Kolkata,Mid-Tier,2011,14,43,3,1339280.98,True,True,True,True,Energy & Utilities,2,1,0.579
+F0370,Firm_370,Bangladesh,Sylhet,Mid-Tier,2009,16,97,7,863412.44,True,True,True,False,Banking & Finance,5,7,0.637
+F0371,Firm_371,Bangladesh,Khulna,Boutique Specialist,1980,45,5,1,75811.96,True,True,False,False,Telecommunications,2,0,0.568
+F0372,Firm_372,Bangladesh,Sylhet,Mid-Tier,1964,61,65,4,1227010.53,True,False,True,False,Energy & Utilities,4,2,0.703
+F0373,Firm_373,Bangladesh,Sylhet,Boutique Specialist,2003,22,5,1,52105.22,True,True,True,False,Government & Public Sector,2,0,0.752
+F0374,Firm_374,Canada,Montreal,Small Regional,1960,65,12,1,54720.22,True,True,False,True,Telecommunications,3,0,0.51
+F0375,Firm_375,Bangladesh,Sylhet,Mid-Tier,1964,61,57,2,504303.95,True,True,True,False,Insurance,2,6,0.707
+F0376,Firm_376,Pakistan,Karachi,Boutique Specialist,1978,47,12,1,129320.1,True,False,False,False,Government & Public Sector,5,0,0.556
+F0377,Firm_377,Brazil,Brasília,Small Regional,2011,14,12,1,66021.15,True,True,False,True,NGO & Development,2,0,0.628
+F0378,Firm_378,Bangladesh,Chittagong,Small Regional,1956,69,9,1,157181.29,True,False,True,False,Energy & Utilities,4,0,0.382
+F0379,Firm_379,South Africa,Cape Town,Mid-Tier,1950,75,67,4,1997158.22,True,True,True,False,Education,4,4,0.476
+F0380,Firm_380,Pakistan,Islamabad,Small Regional,1963,62,22,1,182832.7,True,False,True,False,Agriculture,4,0,0.444
+F0381,Firm_381,Bangladesh,Dhaka,Mid-Tier,1956,69,90,6,1162770.96,False,True,True,True,Education,4,1,0.595
+F0382,Firm_382,Canada,Toronto,Small Regional,1970,55,14,1,53148.76,True,False,True,False,Hospitality,3,0,0.508
+F0383,Firm_383,Australia,Sydney,Boutique Specialist,2009,16,15,1,143380.35,True,False,True,True,NGO & Development,3,0,0.451
+F0384,Firm_384,Malaysia,Penang,Mid-Tier,1972,53,82,6,627529.02,False,True,True,False,Education,5,2,0.615
+F0385,Firm_385,Germany,Frankfurt,Small Regional,1970,55,5,1,135427.97,True,True,True,True,Telecommunications,2,0,0.526
+F0386,Firm_386,South Africa,Cape Town,Mid-Tier,1959,66,66,2,1407791.83,True,False,True,True,Insurance,4,1,0.468
+F0387,Firm_387,Pakistan,Islamabad,Boutique Specialist,1989,36,9,1,80414.22,True,False,False,False,Government & Public Sector,5,0,0.534
+F0388,Firm_388,India,Delhi,Large National,1962,63,288,26,2522133.44,True,False,True,True,Real Estate,2,2,0.536
+F0389,Firm_389,Japan,Tokyo,Boutique Specialist,1985,40,11,1,24392.59,True,True,False,False,Agriculture,3,0,0.781
+F0390,Firm_390,South Africa,Bloemfontein,Small Regional,1980,45,19,1,259674.31,True,False,True,True,Technology,3,0,0.556
+F0391,Firm_391,Indonesia,Surabaya,Mid-Tier,1955,70,77,3,1915238.56,True,True,True,False,Manufacturing,3,6,0.545
+F0392,Firm_392,USA,Chicago,Large National,1958,67,199,10,2311452.92,True,True,True,False,Telecommunications,4,1,0.417
+F0393,Firm_393,USA,New York,Mid-Tier,1975,50,81,5,722862.13,False,True,True,False,Transportation,4,6,0.611
+F0394,Firm_394,Nigeria,Abuja,Small Regional,1987,38,7,1,250202.37,True,True,True,True,Education,5,0,0.52
+F0395,Firm_395,USA,Los Angeles,Mid-Tier,1973,52,67,3,604796.2,True,False,True,False,Energy & Utilities,3,5,0.522
+F0396,Firm_396,Philippines,Makati,Boutique Specialist,1975,50,5,1,70433.78,True,True,False,False,Insurance,5,0,0.727
+F0397,Firm_397,Brazil,Brasília,Small Regional,1984,41,5,1,258892.68,True,True,True,True,Banking & Finance,2,0,0.55
+F0398,Firm_398,USA,Chicago,Mid-Tier,1967,58,43,2,1198837.7,True,False,True,False,Agriculture,3,4,0.545
+F0399,Firm_399,Japan,Fukuoka,Small Regional,1955,70,12,1,101120.87,True,True,True,True,Insurance,4,0,0.703
+F0400,Firm_400,Japan,Osaka,Small Regional,1986,39,18,1,126698.57,True,True,True,False,Banking & Finance,4,0,0.558
+F0401,Firm_401,Bangladesh,Chittagong,Mid-Tier,2004,21,94,5,586201.74,True,False,True,True,Telecommunications,5,1,0.475
+F0402,Firm_402,Kenya,Mombasa,Mid-Tier,1976,49,39,1,1385960.0,True,True,True,False,Telecommunications,5,1,0.539
+F0403,Firm_403,UK,London,Big 4 Affiliate,1956,69,395,30,24313576.19,True,False,True,False,Government & Public Sector,5,4,0.797
+F0404,Firm_404,South Africa,Durban,Small Regional,2007,18,24,2,270541.68,True,False,True,False,Banking & Finance,5,0,0.686
+F0405,Firm_405,Pakistan,Islamabad,Small Regional,2001,24,19,1,297898.56,False,False,False,True,NGO & Development,2,0,0.564
+F0406,Firm_406,Kenya,Eldoret,Small Regional,1982,43,10,1,150080.37,True,False,True,True,Education,4,0,0.455
+F0407,Firm_407,USA,New York,Boutique Specialist,1983,42,10,1,92124.88,True,False,False,False,Hospitality,4,0,0.599
+F0408,Firm_408,Bangladesh,Dhaka,Boutique Specialist,2006,19,5,1,73462.81,True,False,False,False,Transportation,5,0,0.624
+F0409,Firm_409,Kenya,Mombasa,Small Regional,1989,36,20,1,119458.22,True,False,True,False,Real Estate,5,0,0.426
+F0410,Firm_410,Bangladesh,Rajshahi,Boutique Specialist,2005,20,15,1,57615.81,True,True,False,False,Technology,3,0,0.623
+F0411,Firm_411,Pakistan,Lahore,Mid-Tier,1973,52,68,6,1585880.18,True,False,True,True,Healthcare,4,6,0.38
+F0412,Firm_412,Saudi Arabia,Mecca,Large National,1988,37,246,12,3184009.14,False,True,True,False,NGO & Development,4,7,0.856
+F0413,Firm_413,Saudi Arabia,Mecca,Mid-Tier,1976,49,56,1,1846000.43,True,False,True,False,Technology,2,4,0.517
+F0414,Firm_414,Singapore,Jurong,Large National,1957,68,298,9,1199640.17,True,True,True,False,Telecommunications,5,0,0.645
+F0415,Firm_415,Australia,Perth,Small Regional,2010,15,17,1,74932.74,False,True,True,False,Banking & Finance,4,0,0.226
+F0416,Firm_416,UK,Manchester,Boutique Specialist,1967,58,5,1,61173.23,True,False,True,False,Agriculture,4,0,0.409
+F0417,Firm_417,Pakistan,Islamabad,Big 4 Affiliate,1983,42,638,75,28540855.08,True,True,True,True,Technology,3,2,0.651
+F0418,Firm_418,Pakistan,Lahore,Large National,1998,27,270,22,6045714.22,True,True,True,True,Technology,5,6,0.836
+F0419,Firm_419,Canada,Montreal,Small Regional,1967,58,18,2,113142.14,False,False,True,False,Technology,5,0,0.483
+F0420,Firm_420,Japan,Yokohama,Boutique Specialist,1995,30,11,1,35499.72,True,False,False,False,Real Estate,3,0,0.544
+F0421,Firm_421,Nigeria,Kano,Mid-Tier,1965,60,35,2,612409.91,True,True,True,True,Education,2,0,0.24
+F0422,Firm_422,Nigeria,Port Harcourt,Small Regional,1987,38,25,1,185534.38,False,False,True,False,Transportation,5,0,0.45
+F0423,Firm_423,Bangladesh,Chittagong,Large National,1992,33,87,7,1600257.36,True,False,True,True,Real Estate,4,4,0.843
+F0424,Firm_424,UK,Manchester,Mid-Tier,1978,47,96,7,1957682.06,True,True,True,True,Government & Public Sector,3,3,0.552
+F0425,Firm_425,Bangladesh,Rajshahi,Boutique Specialist,1976,49,7,1,62978.11,True,True,False,True,Agriculture,5,0,0.501
+F0426,Firm_426,UAE,Dubai,Boutique Specialist,1973,52,4,1,110873.56,True,True,True,False,Government & Public Sector,3,0,0.58
+F0427,Firm_427,UK,Leeds,Big 4 Affiliate,1961,64,304,20,7429968.15,True,True,True,False,Real Estate,2,3,0.603
+F0428,Firm_428,Malaysia,Kota Kinabalu,Boutique Specialist,1980,45,8,1,27713.97,True,True,True,False,Agriculture,3,0,0.611
+F0429,Firm_429,USA,Chicago,Small Regional,1962,63,23,1,108921.78,True,False,True,True,Energy & Utilities,2,0,0.717
+F0430,Firm_430,Bangladesh,Rajshahi,Boutique Specialist,2014,11,9,1,27751.32,True,True,False,False,Manufacturing,3,0,0.505
+F0431,Firm_431,Bangladesh,Dhaka,Small Regional,1965,60,8,1,276269.53,True,False,True,True,Education,3,0,0.624
+F0432,Firm_432,Japan,Nagoya,Small Regional,1982,43,11,1,244361.41,True,True,True,False,Banking & Finance,3,0,0.729
+F0433,Firm_433,Australia,Melbourne,Small Regional,1966,59,23,1,244215.08,False,False,True,True,Healthcare,4,0,0.777
+F0434,Firm_434,Bangladesh,Dhaka,Small Regional,2008,17,10,1,119678.43,True,True,True,True,Retail & Consumer,5,0,0.412
+F0435,Firm_435,Bangladesh,Rajshahi,Large National,1987,38,170,8,4754088.56,True,True,True,True,Telecommunications,3,1,0.849
+F0436,Firm_436,Germany,Munich,Big 4 Affiliate,1985,40,622,61,24483539.61,True,True,False,False,Technology,5,0,0.802
+F0437,Firm_437,Bangladesh,Chittagong,Mid-Tier,2003,22,93,7,1026486.43,True,True,True,False,Transportation,2,0,0.598
+F0438,Firm_438,South Africa,Durban,Small Regional,1968,57,21,1,131685.27,True,True,True,True,Real Estate,4,0,0.467
+F0439,Firm_439,Germany,Hamburg,Mid-Tier,1994,31,35,3,447910.94,True,False,True,False,Agriculture,5,0,0.474
+F0440,Firm_440,Bangladesh,Dhaka,Small Regional,1958,67,5,1,130574.37,True,False,True,False,Telecommunications,5,0,0.321
+F0441,Firm_441,Bangladesh,Chittagong,Boutique Specialist,2009,16,6,1,59309.87,True,True,False,False,Insurance,4,0,0.488
+F0442,Firm_442,Indonesia,Medan,Large National,1988,37,226,21,5030035.14,True,True,True,False,Hospitality,2,7,0.547
+F0443,Firm_443,USA,Chicago,Small Regional,1957,68,18,1,164962.77,True,True,True,True,Retail & Consumer,5,0,0.6
+F0444,Firm_444,USA,Los Angeles,Small Regional,2007,18,23,2,198421.9,True,False,True,False,Agriculture,5,0,0.513
+F0445,Firm_445,South Africa,Durban,Boutique Specialist,2003,22,15,1,145172.1,False,False,False,True,Insurance,4,0,0.571
+F0446,Firm_446,Philippines,Quezon City,Mid-Tier,1966,59,34,1,914441.46,False,True,True,False,Agriculture,3,7,0.437
+F0447,Firm_447,Indonesia,Jakarta,Small Regional,1971,54,20,2,182134.97,False,False,True,False,Manufacturing,2,0,0.613
+F0448,Firm_448,Japan,Tokyo,Boutique Specialist,1976,49,7,1,86621.71,True,True,False,False,Transportation,2,0,0.647
+F0449,Firm_449,USA,New York,Boutique Specialist,2011,14,11,1,144064.97,True,False,True,False,Retail & Consumer,5,0,0.573
+F0450,Firm_450,Bangladesh,Chittagong,Small Regional,1996,29,7,1,215546.47,True,False,True,True,Education,2,0,0.448
+F0451,Firm_451,Nigeria,Lagos,Small Regional,1958,67,5,1,208500.19,True,False,True,True,Real Estate,3,0,0.505
+F0452,Firm_452,UAE,Ras Al Khaimah,Small Regional,1978,47,14,1,201548.38,True,False,True,True,Banking & Finance,2,0,0.596
+F0453,Firm_453,USA,Chicago,Boutique Specialist,1954,71,4,1,97655.41,True,True,True,True,Technology,3,0,0.439
+F0454,Firm_454,Kenya,Nairobi,Small Regional,1950,75,9,1,226816.98,True,True,True,False,Insurance,4,0,0.705
+F0455,Firm_455,Bangladesh,Rajshahi,Big 4 Affiliate,1974,51,1868,174,19455839.5,True,True,True,False,Real Estate,4,3,0.573
+F0456,Firm_456,UK,Leeds,Boutique Specialist,1970,55,5,1,49762.5,True,False,True,True,Telecommunications,5,0,0.487
+F0457,Firm_457,Bangladesh,Chittagong,Small Regional,1963,62,22,2,284456.8,False,True,True,False,Government & Public Sector,4,0,0.279
+F0458,Firm_458,UK,Manchester,Small Regional,1956,69,22,1,205541.73,True,False,True,False,Manufacturing,4,0,0.602
+F0459,Firm_459,Bangladesh,Dhaka,Mid-Tier,2010,15,85,8,1516894.3,True,False,True,False,Technology,5,4,0.602
+F0460,Firm_460,Bangladesh,Khulna,Small Regional,2004,21,9,1,88404.64,True,False,True,True,Manufacturing,4,0,0.429
+F0461,Firm_461,Bangladesh,Rajshahi,Small Regional,1972,53,21,2,76678.46,True,False,True,True,Education,2,0,0.636
+F0462,Firm_462,Australia,Brisbane,Small Regional,2011,14,15,1,137517.83,False,True,False,False,NGO & Development,4,0,0.519
+F0463,Firm_463,Japan,Osaka,Large National,2004,21,257,16,5038366.75,True,True,True,False,Hospitality,4,4,0.895
+F0464,Firm_464,Singapore,Woodlands,Small Regional,1957,68,9,1,250343.06,False,True,True,False,Education,5,0,0.447
+F0465,Firm_465,Saudi Arabia,Dammam,Boutique Specialist,1952,73,9,1,133999.46,False,True,False,False,Manufacturing,3,0,0.831
+F0466,Firm_466,USA,New York,Large National,1956,69,158,4,4284162.34,True,True,True,True,NGO & Development,2,4,0.532
+F0467,Firm_467,Pakistan,Karachi,Boutique Specialist,1957,68,8,1,72821.99,False,False,False,True,Retail & Consumer,2,0,0.564
+F0468,Firm_468,Malaysia,Johor Bahru,Small Regional,1993,32,21,1,116916.69,True,True,True,False,Agriculture,5,0,0.298
+F0469,Firm_469,India,Mumbai,Boutique Specialist,1963,62,15,1,116415.91,True,True,False,True,Banking & Finance,5,0,0.556
+F0470,Firm_470,Saudi Arabia,Dammam,Boutique Specialist,1961,64,12,1,131894.47,True,False,False,False,Real Estate,5,0,0.664
+F0471,Firm_471,Bangladesh,Dhaka,Small Regional,1952,73,6,1,122037.37,False,False,True,True,Transportation,2,0,0.624
+F0472,Firm_472,Saudi Arabia,Mecca,Small Regional,1968,57,15,1,141958.06,False,True,True,True,Agriculture,2,0,0.617
+F0473,Firm_473,Bangladesh,Dhaka,Boutique Specialist,1959,66,10,1,47370.09,True,False,True,False,Manufacturing,4,0,0.42
+F0474,Firm_474,Kenya,Nakuru,Small Regional,1996,29,9,1,205639.7,False,True,True,True,Government & Public Sector,4,0,0.59
+F0475,Firm_475,UAE,Ras Al Khaimah,Mid-Tier,1983,42,31,1,1478697.77,True,False,True,False,Telecommunications,2,5,0.499
+F0476,Firm_476,Indonesia,Surabaya,Small Regional,1978,47,21,1,214398.46,True,True,True,False,Education,4,0,0.351
+F0477,Firm_477,Bangladesh,Sylhet,Boutique Specialist,1988,37,8,1,97438.48,True,False,True,False,Banking & Finance,5,0,0.468
+F0478,Firm_478,UAE,Abu Dhabi,Boutique Specialist,1976,49,14,1,106366.01,True,True,False,False,Agriculture,4,0,0.495
+F0479,Firm_479,Saudi Arabia,Medina,Boutique Specialist,1992,33,7,1,81762.05,False,True,True,False,Agriculture,2,0,0.548
+F0480,Firm_480,UAE,Ras Al Khaimah,Small Regional,1976,49,20,1,64640.68,False,False,True,True,Retail & Consumer,4,0,0.587
+F0481,Firm_481,Australia,Brisbane,Boutique Specialist,1995,30,3,1,128800.16,False,True,True,False,Insurance,5,0,0.51
+F0482,Firm_482,Canada,Toronto,Large National,1979,46,106,10,7624162.29,True,True,True,True,Hospitality,3,6,0.809
+F0483,Firm_483,UK,London,Small Regional,1975,50,18,1,295344.28,True,False,True,False,Energy & Utilities,2,0,0.531
+F0484,Firm_484,Australia,Perth,Big 4 Affiliate,1980,45,1696,144,41788958.72,False,True,True,True,Transportation,3,1,0.482
+F0485,Firm_485,Singapore,CBD,Mid-Tier,1964,61,89,7,296028.19,True,True,True,False,Banking & Finance,4,3,0.773
+F0486,Firm_486,Kenya,Mombasa,Mid-Tier,2001,24,52,4,1895428.95,True,True,True,False,Hospitality,2,3,0.583
+F0487,Firm_487,Bangladesh,Khulna,Small Regional,1988,37,23,2,124836.69,True,True,True,True,Education,2,0,0.854
+F0488,Firm_488,Pakistan,Karachi,Small Regional,2013,12,24,2,189179.66,True,True,True,False,Transportation,2,0,0.4
+F0489,Firm_489,Saudi Arabia,Mecca,Mid-Tier,1964,61,32,1,1692014.8,True,True,True,True,Government & Public Sector,5,0,0.472
+F0490,Firm_490,Kenya,Nairobi,Small Regional,2013,12,22,1,117683.43,True,False,True,False,Agriculture,4,0,0.558
+F0491,Firm_491,UK,Edinburgh,Mid-Tier,1985,40,86,5,876167.72,False,False,True,False,Technology,4,4,0.677
+F0492,Firm_492,Australia,Perth,Mid-Tier,2004,21,58,5,1269388.35,False,True,True,True,Energy & Utilities,4,7,0.511
+F0493,Firm_493,Pakistan,Karachi,Mid-Tier,1970,55,34,3,600947.79,True,True,True,True,Insurance,3,2,0.562
+F0494,Firm_494,India,Bangalore,Large National,1956,69,235,17,4511408.66,True,True,True,False,Transportation,4,5,0.774
+F0495,Firm_495,UK,Leeds,Small Regional,1983,42,20,1,82311.92,False,False,True,True,Government & Public Sector,4,0,0.539
+F0496,Firm_496,USA,Los Angeles,Small Regional,1957,68,20,2,195938.55,False,False,True,False,Technology,2,0,0.743
+F0497,Firm_497,Singapore,Jurong,Small Regional,1994,31,14,1,145316.43,True,True,True,False,Energy & Utilities,3,0,0.611
+F0498,Firm_498,Bangladesh,Khulna,Small Regional,1950,75,18,1,134176.42,False,True,True,False,Healthcare,3,0,0.658
+F0499,Firm_499,Saudi Arabia,Riyadh,Mid-Tier,2011,14,63,5,1512679.53,True,True,True,False,Technology,5,1,0.437
+F0500,Firm_500,Indonesia,Surabaya,Boutique Specialist,2005,20,15,1,143434.41,True,False,True,False,Retail & Consumer,2,0,0.5
+F0501,Firm_501,Canada,Calgary,Small Regional,2001,24,7,1,64981.66,True,True,True,True,Retail & Consumer,4,0,0.541
+F0502,Firm_502,UAE,Ajman,Small Regional,1987,38,23,1,197914.52,False,False,True,False,Government & Public Sector,3,0,0.642
+F0503,Firm_503,Pakistan,Karachi,Big 4 Affiliate,1992,33,1588,138,8347893.1,True,True,True,True,Energy & Utilities,2,4,0.907
+F0504,Firm_504,South Africa,Pretoria,Mid-Tier,1982,43,76,3,370433.67,False,False,True,True,Real Estate,2,5,0.609
+F0505,Firm_505,Canada,Ottawa,Mid-Tier,1978,47,23,1,1240309.53,False,True,True,False,Hospitality,5,7,0.619
+F0506,Firm_506,India,Kolkata,Small Regional,1971,54,19,1,134928.64,True,True,True,False,Retail & Consumer,3,0,0.613
+F0507,Firm_507,Egypt,Cairo,Small Regional,1964,61,20,2,140345.65,False,True,True,True,Agriculture,4,0,0.571
+F0508,Firm_508,South Africa,Durban,Small Regional,1978,47,8,1,246404.44,True,False,True,True,Retail & Consumer,4,0,0.554
+F0509,Firm_509,Philippines,Davao,Small Regional,1982,43,13,1,77774.3,False,True,True,False,Telecommunications,4,0,0.591
+F0510,Firm_510,Germany,Stuttgart,Boutique Specialist,1968,57,14,1,72261.1,False,False,True,False,Manufacturing,2,0,0.799
+F0511,Firm_511,Australia,Adelaide,Boutique Specialist,1962,63,11,1,42984.22,False,True,False,False,Real Estate,5,0,0.449
+F0512,Firm_512,USA,Atlanta,Small Regional,1969,56,25,1,237842.94,False,True,True,True,Energy & Utilities,5,0,0.478
+F0513,Firm_513,Philippines,Makati,Boutique Specialist,1982,43,7,1,37837.93,True,True,False,False,Energy & Utilities,4,0,0.542
+F0514,Firm_514,Malaysia,Kuala Lumpur,Big 4 Affiliate,1969,56,1699,116,11382297.29,True,True,True,False,Telecommunications,4,7,0.801
+F0515,Firm_515,Bangladesh,Chittagong,Mid-Tier,1977,48,49,2,327207.74,True,True,True,True,Education,4,7,0.614
+F0516,Firm_516,Bangladesh,Sylhet,Big 4 Affiliate,1963,62,372,33,12854564.76,True,True,False,False,Energy & Utilities,2,3,0.55
+F0517,Firm_517,USA,Los Angeles,Small Regional,1956,69,7,1,238110.5,True,True,True,False,Education,4,0,0.357
+F0518,Firm_518,South Africa,Pretoria,Boutique Specialist,1971,54,12,1,22252.38,False,False,True,False,Healthcare,2,0,0.355
+F0519,Firm_519,Indonesia,Bandung,Mid-Tier,2011,14,42,4,1775592.35,True,True,True,False,Government & Public Sector,3,0,0.702
+F0520,Firm_520,India,Delhi,Boutique Specialist,2002,23,9,1,116267.46,True,True,False,False,Energy & Utilities,5,0,0.625
+F0521,Firm_521,Singapore,Woodlands,Large National,1988,37,133,6,6059334.23,True,True,True,True,Energy & Utilities,3,2,0.974
+F0522,Firm_522,USA,Los Angeles,Boutique Specialist,1957,68,11,1,55642.6,False,False,False,False,Real Estate,5,0,0.462
+F0523,Firm_523,Saudi Arabia,Jeddah,Mid-Tier,1966,59,83,5,226838.48,False,False,True,False,Manufacturing,4,3,0.605
+F0524,Firm_524,Brazil,Curitiba,Large National,1999,26,296,9,2937039.98,True,True,True,True,Education,5,2,0.849
+F0525,Firm_525,Brazil,Brasília,Small Regional,1982,43,5,1,225712.71,False,True,True,True,Agriculture,2,0,0.638
+F0526,Firm_526,UK,Manchester,Mid-Tier,2005,20,22,1,1138679.52,True,True,True,True,Healthcare,4,3,0.662
+F0527,Firm_527,USA,Atlanta,Mid-Tier,1960,65,73,8,321595.19,False,False,True,False,Insurance,2,2,0.633
+F0528,Firm_528,Pakistan,Peshawar,Mid-Tier,1997,28,49,5,1635480.16,True,False,True,False,Banking & Finance,4,0,0.634
+F0529,Firm_529,Bangladesh,Chittagong,Boutique Specialist,2012,13,12,1,128908.47,True,True,True,True,Manufacturing,5,0,0.546
+F0530,Firm_530,Malaysia,Penang,Small Regional,1964,61,25,1,272309.53,True,False,True,False,Transportation,5,0,0.524
+F0531,Firm_531,South Africa,Bloemfontein,Mid-Tier,1972,53,35,4,587977.91,True,True,True,False,Government & Public Sector,2,1,0.659
+F0532,Firm_532,Indonesia,Surabaya,Small Regional,1973,52,11,1,100004.07,True,True,True,False,Healthcare,4,0,0.612
+F0533,Firm_533,Indonesia,Medan,Small Regional,1981,44,6,1,252789.07,False,True,False,False,Education,4,0,0.561
+F0534,Firm_534,UAE,Dubai,Mid-Tier,1970,55,81,6,1755943.38,False,True,False,True,Retail & Consumer,5,1,0.622
+F0535,Firm_535,Japan,Yokohama,Small Regional,2010,15,13,1,256870.24,True,False,True,True,Real Estate,3,0,0.571
+F0536,Firm_536,Philippines,Quezon City,Large National,2000,25,115,10,3746793.72,True,True,False,False,Agriculture,3,6,0.578
+F0537,Firm_537,Brazil,Rio de Janeiro,Mid-Tier,1959,66,40,2,1795755.21,True,True,False,False,Government & Public Sector,5,1,0.724
+F0538,Firm_538,India,Chennai,Small Regional,1969,56,22,2,125131.69,True,True,True,False,Healthcare,3,0,0.527
+F0539,Firm_539,UK,London,Mid-Tier,1967,58,78,5,563488.69,True,True,True,False,Manufacturing,4,1,0.632
+F0540,Firm_540,Bangladesh,Sylhet,Small Regional,2005,20,24,2,224926.59,True,False,True,True,Government & Public Sector,2,0,0.473
+F0541,Firm_541,Saudi Arabia,Dammam,Small Regional,2002,23,9,1,89422.17,True,False,True,False,Agriculture,5,0,0.406
+F0542,Firm_542,Singapore,Woodlands,Large National,1979,46,276,24,5572900.96,True,True,True,True,Telecommunications,4,6,0.754
+F0543,Firm_543,India,Chennai,Small Regional,1970,55,12,1,154425.54,True,False,True,False,NGO & Development,3,0,0.615
+F0544,Firm_544,Canada,Toronto,Mid-Tier,1968,57,78,4,1660533.5,True,True,True,True,Government & Public Sector,2,7,0.515
+F0545,Firm_545,Australia,Brisbane,Boutique Specialist,1978,47,10,1,106708.03,False,False,True,True,Hospitality,3,0,0.624
+F0546,Firm_546,USA,New York,Small Regional,1971,54,5,1,283950.24,False,True,True,False,Hospitality,5,0,0.272
+F0547,Firm_547,Bangladesh,Rajshahi,Boutique Specialist,1971,54,12,1,32554.96,False,False,False,False,Hospitality,5,0,0.409
+F0548,Firm_548,Canada,Vancouver,Small Regional,1975,50,17,1,223348.75,True,True,False,True,NGO & Development,2,0,0.513
+F0549,Firm_549,UAE,Sharjah,Large National,1980,45,256,21,2115152.38,True,True,True,True,Insurance,2,4,0.616
+F0550,Firm_550,Nigeria,Port Harcourt,Small Regional,1993,32,18,1,103500.01,True,False,True,False,Real Estate,2,0,0.386
+F0551,Firm_551,UAE,Sharjah,Boutique Specialist,2008,17,4,1,81922.39,True,True,True,True,Transportation,4,0,0.551
+F0552,Firm_552,Brazil,Curitiba,Small Regional,1966,59,7,1,80210.11,True,True,True,False,NGO & Development,4,0,0.489
+F0553,Firm_553,UAE,Ras Al Khaimah,Boutique Specialist,1966,59,3,1,44253.3,True,True,False,False,Transportation,4,0,0.279
+F0554,Firm_554,UAE,Ajman,Boutique Specialist,2002,23,5,1,58823.98,True,True,True,False,Healthcare,5,0,0.578
+F0555,Firm_555,Malaysia,Malacca,Mid-Tier,1972,53,66,6,1330037.57,True,True,True,False,Healthcare,4,0,0.458
+F0556,Firm_556,USA,Los Angeles,Mid-Tier,1966,59,22,2,639568.05,True,True,False,True,Government & Public Sector,4,5,0.375
+F0557,Firm_557,Bangladesh,Rajshahi,Small Regional,1959,66,21,1,100080.12,True,False,True,True,Technology,5,0,0.377
+F0558,Firm_558,Bangladesh,Chittagong,Small Regional,1998,27,23,1,164606.47,True,True,True,True,Agriculture,5,0,0.584
+F0559,Firm_559,Japan,Nagoya,Boutique Specialist,1967,58,13,1,104978.75,True,False,True,False,Banking & Finance,4,0,0.862
+F0560,Firm_560,Australia,Perth,Boutique Specialist,1983,42,14,1,101196.08,True,False,False,True,NGO & Development,2,0,0.707
+F0561,Firm_561,Germany,Hamburg,Mid-Tier,1952,73,69,7,1769377.48,False,True,True,False,Real Estate,4,1,0.72
+F0562,Firm_562,India,Delhi,Mid-Tier,1987,38,79,6,876589.14,False,False,False,False,Education,2,3,0.487
+F0563,Firm_563,Bangladesh,Chittagong,Boutique Specialist,2005,20,13,1,105533.61,True,True,True,False,Telecommunications,2,0,0.537
+F0564,Firm_564,Bangladesh,Khulna,Mid-Tier,2005,20,26,2,1472049.88,False,False,True,False,Telecommunications,4,5,0.45
+F0565,Firm_565,USA,Los Angeles,Boutique Specialist,1955,70,7,1,147694.39,True,False,False,True,Technology,2,0,0.555
+F0566,Firm_566,Singapore,Tampines,Small Regional,1983,42,5,1,145877.26,True,True,False,False,Telecommunications,3,0,0.657
+F0567,Firm_567,USA,Atlanta,Small Regional,1962,63,7,1,234854.48,True,True,False,True,Manufacturing,4,0,0.413
+F0568,Firm_568,UK,London,Large National,1966,59,216,20,1296533.52,True,True,True,False,Real Estate,4,4,0.803
+F0569,Firm_569,Kenya,Mombasa,Small Regional,2003,22,12,1,299711.21,True,True,True,True,Hospitality,5,0,0.339
+F0570,Firm_570,USA,New York,Small Regional,2009,16,21,2,95265.72,True,True,True,False,Agriculture,3,0,0.556
+F0571,Firm_571,UAE,Dubai,Small Regional,2009,16,18,1,139022.42,False,True,True,True,Transportation,2,0,0.47
+F0572,Firm_572,Nigeria,Lagos,Mid-Tier,1963,62,67,3,1511679.23,True,False,True,False,Technology,4,1,0.52
+F0573,Firm_573,USA,Chicago,Small Regional,1968,57,9,1,213449.88,False,True,True,True,Education,2,0,0.564
+F0574,Firm_574,Australia,Brisbane,Boutique Specialist,2013,12,12,1,90752.68,True,True,True,False,Hospitality,5,0,0.414
+F0575,Firm_575,Malaysia,Kuala Lumpur,Mid-Tier,1954,71,59,6,536861.06,False,True,True,True,Technology,3,0,0.514
+F0576,Firm_576,Philippines,Cebu,Large National,1979,46,182,6,4793089.6,True,False,True,False,Technology,4,4,0.626
+F0577,Firm_577,Bangladesh,Chittagong,Big 4 Affiliate,1977,48,337,27,44187467.96,True,True,False,True,Telecommunications,3,4,0.873
+F0578,Firm_578,Egypt,Cairo,Small Regional,1995,30,13,1,182311.26,True,False,True,True,Transportation,4,0,0.464
+F0579,Firm_579,UK,Manchester,Small Regional,1968,57,24,1,58600.91,True,True,True,True,Energy & Utilities,3,0,0.399
+F0580,Firm_580,India,Chennai,Small Regional,1963,62,9,1,247541.45,False,True,True,True,Government & Public Sector,2,0,0.371
+F0581,Firm_581,UK,Leeds,Mid-Tier,2005,20,29,1,1130241.07,True,False,True,True,Retail & Consumer,3,0,0.671
+F0582,Firm_582,Indonesia,Jakarta,Small Regional,2007,18,14,1,134757.14,True,True,False,False,Government & Public Sector,2,0,0.544
+F0583,Firm_583,UK,London,Small Regional,1989,36,14,1,126537.16,True,False,True,False,Government & Public Sector,4,0,0.635
+F0584,Firm_584,Pakistan,Islamabad,Small Regional,1994,31,22,1,114352.81,True,True,True,True,Retail & Consumer,2,0,0.471
+F0585,Firm_585,Australia,Adelaide,Boutique Specialist,2013,12,13,1,119327.23,True,False,True,False,Retail & Consumer,4,0,0.476
+F0586,Firm_586,India,Delhi,Large National,1964,61,91,6,7916475.59,True,True,True,True,Agriculture,5,0,0.697
+F0587,Firm_587,Bangladesh,Khulna,Small Regional,2000,25,9,1,269748.08,True,True,False,True,Education,4,0,0.26
+F0588,Firm_588,Bangladesh,Dhaka,Small Regional,1971,54,17,1,133762.29,False,True,True,False,Retail & Consumer,3,0,0.605
+F0589,Firm_589,Bangladesh,Sylhet,Small Regional,1960,65,17,1,155170.56,True,False,True,True,Education,4,0,0.507
+F0590,Firm_590,India,Kolkata,Small Regional,1985,40,25,2,72984.48,True,True,True,False,Healthcare,4,0,0.303
+F0591,Firm_591,Bangladesh,Dhaka,Small Regional,1970,55,21,1,281933.07,False,False,True,False,Technology,2,0,0.558
+F0592,Firm_592,Australia,Melbourne,Boutique Specialist,1975,50,10,1,140619.49,False,True,False,True,Technology,3,0,0.478
+F0593,Firm_593,India,Delhi,Large National,1954,71,196,12,4224646.21,True,True,True,False,Healthcare,4,2,0.605
+F0594,Firm_594,USA,Los Angeles,Large National,1971,54,161,7,6098529.12,True,True,True,True,Agriculture,2,7,0.663
+F0595,Firm_595,Kenya,Nakuru,Small Regional,2007,18,10,1,262613.23,False,False,True,False,Telecommunications,5,0,0.542
+F0596,Firm_596,UK,Edinburgh,Small Regional,1972,53,6,1,276394.01,False,False,True,True,NGO & Development,4,0,0.578
+F0597,Firm_597,Canada,Toronto,Mid-Tier,1980,45,82,4,1538316.47,True,True,True,True,Hospitality,4,7,0.67
+F0598,Firm_598,India,Delhi,Large National,1996,29,167,5,1283071.82,True,True,True,False,Manufacturing,4,7,0.728
+F0599,Firm_599,India,Bangalore,Large National,1977,48,128,7,5772577.68,True,True,True,False,Transportation,5,1,0.768
+F0600,Firm_600,Bangladesh,Khulna,Boutique Specialist,1952,73,9,1,23374.93,False,False,False,True,Healthcare,3,0,0.513
+F0601,Firm_601,India,Kolkata,Mid-Tier,2006,19,91,10,1629834.19,True,True,True,True,Hospitality,3,6,0.613
+F0602,Firm_602,Pakistan,Karachi,Mid-Tier,1965,60,66,3,1633845.69,True,False,True,True,Transportation,2,4,0.512
+F0603,Firm_603,India,Kolkata,Mid-Tier,1995,30,35,2,1497353.99,True,True,True,True,Agriculture,4,1,0.457
+F0604,Firm_604,Bangladesh,Khulna,Mid-Tier,1950,75,47,5,583251.11,True,True,False,True,Government & Public Sector,5,5,0.3
+F0605,Firm_605,Bangladesh,Khulna,Large National,1962,63,283,15,2335020.77,True,True,True,True,Hospitality,2,7,0.852
+F0606,Firm_606,UK,London,Small Regional,2008,17,9,1,282372.61,True,False,True,False,Telecommunications,2,0,0.515
+F0607,Firm_607,India,Delhi,Large National,2002,23,110,6,3771587.67,True,True,True,False,Manufacturing,5,3,0.563
+F0608,Firm_608,USA,Houston,Boutique Specialist,1980,45,8,1,135900.09,True,False,True,True,Banking & Finance,2,0,0.564
+F0609,Firm_609,UK,Leeds,Mid-Tier,1997,28,77,7,425024.64,False,False,True,True,NGO & Development,4,7,0.488
+F0610,Firm_610,Canada,Ottawa,Small Regional,2008,17,9,1,53567.78,True,True,True,True,Telecommunications,4,0,0.634
+F0611,Firm_611,Bangladesh,Rajshahi,Boutique Specialist,2003,22,9,1,122180.06,True,True,True,True,Energy & Utilities,5,0,0.556
+F0612,Firm_612,Nigeria,Ibadan,Small Regional,1974,51,12,1,180569.75,True,False,False,True,Government & Public Sector,3,0,0.439
+F0613,Firm_613,Australia,Brisbane,Small Regional,1959,66,6,1,111614.97,True,False,True,True,Education,5,0,0.491
+F0614,Firm_614,Bangladesh,Khulna,Mid-Tier,1962,63,49,3,629711.86,True,True,True,False,Banking & Finance,2,2,0.518
+F0615,Firm_615,Malaysia,Kuala Lumpur,Mid-Tier,2001,24,39,4,1880303.38,False,False,True,False,Government & Public Sector,4,4,0.445
+F0616,Firm_616,Egypt,Alexandria,Small Regional,1996,29,11,1,52396.41,True,False,True,False,NGO & Development,2,0,0.432
+F0617,Firm_617,Bangladesh,Chittagong,Boutique Specialist,1967,58,3,1,139115.21,False,False,True,False,Hospitality,3,0,0.707
+F0618,Firm_618,Pakistan,Karachi,Small Regional,1952,73,7,1,201413.32,True,True,True,False,Retail & Consumer,2,0,0.398
+F0619,Firm_619,South Africa,Durban,Small Regional,1987,38,19,1,283498.84,True,False,True,False,Retail & Consumer,5,0,0.2
+F0620,Firm_620,Japan,Fukuoka,Small Regional,2004,21,22,1,291036.45,False,True,True,False,Energy & Utilities,5,0,0.743
+F0621,Firm_621,India,Bangalore,Small Regional,1978,47,14,1,112551.78,True,True,True,False,Agriculture,2,0,0.497
+F0622,Firm_622,India,Chennai,Large National,1952,73,213,12,1109864.55,True,True,True,True,Insurance,4,6,0.584
+F0623,Firm_623,USA,Houston,Small Regional,1972,53,9,1,178871.23,False,True,True,True,Retail & Consumer,4,0,0.47
+F0624,Firm_624,UK,Birmingham,Boutique Specialist,1955,70,8,1,115147.55,True,True,False,False,Education,3,0,0.494
+F0625,Firm_625,Australia,Sydney,Mid-Tier,2012,13,34,1,1292296.57,True,True,True,True,NGO & Development,3,6,0.494
+F0626,Firm_626,USA,New York,Small Regional,2006,19,25,2,69323.37,False,False,True,True,Banking & Finance,2,0,0.506
+F0627,Firm_627,UK,Birmingham,Mid-Tier,1982,43,62,4,325265.33,True,True,True,False,Government & Public Sector,5,3,0.627
+F0628,Firm_628,Japan,Nagoya,Small Regional,1969,56,10,1,70110.8,True,True,True,True,Telecommunications,5,0,0.504
+F0629,Firm_629,Bangladesh,Dhaka,Large National,2003,22,110,12,2434412.23,True,False,True,False,Technology,3,3,0.856
+F0630,Firm_630,India,Bangalore,Small Regional,1959,66,19,1,278998.0,True,True,True,False,Real Estate,4,0,0.54
+F0631,Firm_631,Germany,Hamburg,Boutique Specialist,1963,62,9,1,110838.12,True,True,False,False,Education,2,0,0.474
+F0632,Firm_632,Kenya,Nairobi,Mid-Tier,2014,11,33,3,331218.69,True,True,True,False,Energy & Utilities,4,7,0.391
+F0633,Firm_633,UAE,Sharjah,Small Regional,1973,52,24,2,283629.55,True,False,True,True,Technology,2,0,0.576
+F0634,Firm_634,UAE,Abu Dhabi,Boutique Specialist,2005,20,6,1,147737.02,False,True,False,False,Hospitality,3,0,0.554
+F0635,Firm_635,Bangladesh,Sylhet,Boutique Specialist,1985,40,3,1,105747.59,False,True,False,False,Insurance,4,0,0.386
+F0636,Firm_636,UK,Birmingham,Mid-Tier,1954,71,74,7,1192234.37,True,False,True,False,Banking & Finance,4,3,0.546
+F0637,Firm_637,UAE,Ajman,Small Regional,2011,14,16,1,125913.41,True,False,True,False,Hospitality,2,0,0.789
+F0638,Firm_638,India,Delhi,Mid-Tier,2010,15,80,3,215959.3,True,True,True,False,Healthcare,5,3,0.603
+F0639,Firm_639,India,Delhi,Boutique Specialist,2005,20,15,1,55596.68,True,False,True,True,Hospitality,2,0,0.592
+F0640,Firm_640,USA,Atlanta,Boutique Specialist,1971,54,7,1,96062.99,False,False,True,True,Hospitality,5,0,0.588
+F0641,Firm_641,Bangladesh,Sylhet,Small Regional,2006,19,9,1,151306.45,False,True,False,True,Energy & Utilities,3,0,0.488
+F0642,Firm_642,Pakistan,Karachi,Boutique Specialist,1968,57,9,1,67006.73,False,True,False,False,Technology,3,0,0.553
+F0643,Firm_643,India,Kolkata,Small Regional,2002,23,15,1,143676.09,True,True,True,False,Telecommunications,5,0,0.622
+F0644,Firm_644,Pakistan,Lahore,Small Regional,1995,30,20,1,181360.14,False,True,True,True,Retail & Consumer,5,0,0.522
+F0645,Firm_645,Bangladesh,Dhaka,Large National,1961,64,143,9,4158507.19,True,True,True,False,Education,2,4,0.625
+F0646,Firm_646,Kenya,Mombasa,Boutique Specialist,2006,19,11,1,96828.27,False,False,True,False,Energy & Utilities,5,0,0.695
+F0647,Firm_647,Singapore,Jurong,Large National,2009,16,282,8,5740330.66,True,True,True,True,Telecommunications,3,6,0.772
+F0648,Firm_648,Canada,Calgary,Boutique Specialist,1963,62,15,1,55516.46,False,True,True,False,Transportation,4,0,0.436
+F0649,Firm_649,Nigeria,Ibadan,Boutique Specialist,1992,33,7,1,23783.19,True,True,True,False,Insurance,3,0,0.486
+F0650,Firm_650,UK,Leeds,Small Regional,1985,40,19,1,241260.8,True,True,True,False,Insurance,3,0,0.607
+F0651,Firm_651,Bangladesh,Sylhet,Big 4 Affiliate,2010,15,1078,121,33115806.83,True,True,True,False,Education,5,2,0.709
+F0652,Firm_652,UAE,Ras Al Khaimah,Mid-Tier,1995,30,93,10,1160484.32,True,True,True,False,Insurance,5,1,0.473
+F0653,Firm_653,Singapore,Changi,Mid-Tier,2006,19,48,1,1231915.98,True,True,False,False,Energy & Utilities,4,7,0.565
+F0654,Firm_654,Japan,Yokohama,Mid-Tier,2010,15,78,2,991677.33,True,False,True,True,Transportation,4,4,0.381
+F0655,Firm_655,UK,London,Large National,1977,48,281,15,3869376.92,True,True,True,False,NGO & Development,4,5,0.471
+F0656,Firm_656,Bangladesh,Dhaka,Boutique Specialist,2001,24,15,1,112878.3,True,True,False,False,NGO & Development,4,0,0.594
+F0657,Firm_657,Pakistan,Peshawar,Small Regional,1963,62,17,2,135794.1,True,True,True,True,Telecommunications,2,0,0.278
+F0658,Firm_658,USA,New York,Mid-Tier,1951,74,88,5,1876692.61,True,True,True,False,Technology,5,7,0.23
+F0659,Firm_659,Australia,Adelaide,Small Regional,1996,29,7,1,198463.59,True,False,True,True,Banking & Finance,2,0,0.494
+F0660,Firm_660,Singapore,Tampines,Small Regional,1998,27,16,1,280898.41,True,True,True,True,Transportation,5,0,0.457
+F0661,Firm_661,USA,New York,Small Regional,1958,67,25,1,194805.3,False,True,False,True,Energy & Utilities,4,0,0.526
+F0662,Firm_662,Indonesia,Jakarta,Small Regional,2013,12,15,1,212943.62,False,True,True,True,Real Estate,3,0,0.482
+F0663,Firm_663,Singapore,CBD,Boutique Specialist,1986,39,15,1,107595.84,True,True,False,False,Healthcare,2,0,0.501
+F0664,Firm_664,India,Chennai,Small Regional,1964,61,8,1,171343.22,False,False,True,False,NGO & Development,5,0,0.676
+F0665,Firm_665,Bangladesh,Sylhet,Boutique Specialist,1999,26,8,1,99080.17,True,False,False,False,Insurance,5,0,0.751
+F0666,Firm_666,India,Kolkata,Boutique Specialist,2011,14,15,1,110392.82,True,True,True,False,Banking & Finance,4,0,0.815
+F0667,Firm_667,India,Bangalore,Mid-Tier,2003,22,54,5,279924.44,True,True,True,False,Banking & Finance,5,3,0.65
+F0668,Firm_668,India,Mumbai,Boutique Specialist,2005,20,9,1,137653.46,False,True,False,False,Hospitality,3,0,0.614
+F0669,Firm_669,India,Mumbai,Large National,1968,57,231,10,1388259.88,True,True,True,False,Hospitality,2,2,0.691
+F0670,Firm_670,Pakistan,Lahore,Boutique Specialist,2013,12,6,1,38205.1,True,True,False,True,Healthcare,4,0,0.668
+F0671,Firm_671,India,Chennai,Mid-Tier,1959,66,99,6,832713.58,True,True,True,True,Retail & Consumer,5,7,0.472
+F0672,Firm_672,Kenya,Mombasa,Boutique Specialist,1964,61,7,1,97070.76,False,False,False,False,Manufacturing,4,0,0.525
+F0673,Firm_673,Bangladesh,Chittagong,Boutique Specialist,1995,30,3,1,137434.33,True,False,False,False,Agriculture,2,0,0.399
+F0674,Firm_674,UAE,Abu Dhabi,Boutique Specialist,2003,22,10,1,67092.04,True,True,True,True,Energy & Utilities,4,0,0.448
+F0675,Firm_675,USA,New York,Boutique Specialist,1990,35,12,1,144069.22,True,True,True,False,Manufacturing,2,0,0.55
+F0676,Firm_676,Indonesia,Surabaya,Mid-Tier,1997,28,77,6,788160.89,False,False,True,True,Real Estate,2,3,0.563
+F0677,Firm_677,Bangladesh,Sylhet,Large National,2006,19,101,11,6762747.22,True,True,True,False,Telecommunications,5,2,0.577
+F0678,Firm_678,USA,Houston,Small Regional,1975,50,24,2,264450.23,True,True,True,False,Manufacturing,4,0,0.565
+F0679,Firm_679,Saudi Arabia,Dammam,Mid-Tier,2002,23,62,7,1315395.47,True,False,True,True,Insurance,4,0,0.647
+F0680,Firm_680,Malaysia,Kota Kinabalu,Small Regional,2002,23,20,1,131625.96,True,False,False,True,Education,3,0,0.473
+F0681,Firm_681,South Africa,Johannesburg,Mid-Tier,1992,33,49,1,332891.56,True,True,True,False,Technology,4,4,0.538
+F0682,Firm_682,India,Delhi,Boutique Specialist,1970,55,15,1,116043.65,False,False,False,False,Banking & Finance,2,0,0.647
+F0683,Firm_683,India,Chennai,Small Regional,1969,56,13,1,145464.41,True,False,True,False,Technology,5,0,0.635
+F0684,Firm_684,Canada,Toronto,Boutique Specialist,1967,58,6,1,136026.48,False,True,True,False,Healthcare,5,0,0.647
+F0685,Firm_685,Egypt,Aswan,Large National,1975,50,187,5,3367469.37,True,True,True,False,Agriculture,3,5,0.763
+F0686,Firm_686,UAE,Abu Dhabi,Boutique Specialist,1972,53,11,1,61482.39,True,True,False,False,Agriculture,5,0,0.72
+F0687,Firm_687,Singapore,CBD,Boutique Specialist,1985,40,12,1,75044.17,True,False,True,False,Banking & Finance,2,0,0.435
+F0688,Firm_688,Pakistan,Lahore,Small Regional,1971,54,13,1,182370.72,True,True,True,False,Healthcare,3,0,0.458
+F0689,Firm_689,Japan,Nagoya,Small Regional,1985,40,7,1,87870.53,True,True,True,False,Transportation,3,0,0.467
+F0690,Firm_690,India,Bangalore,Boutique Specialist,2006,19,14,1,144421.03,True,False,True,False,Energy & Utilities,3,0,0.54
+F0691,Firm_691,Pakistan,Karachi,Mid-Tier,1991,34,91,9,239252.23,False,False,True,True,Real Estate,5,5,0.567
+F0692,Firm_692,USA,Los Angeles,Small Regional,1999,26,17,1,95783.84,True,True,True,False,Education,3,0,0.536
+F0693,Firm_693,UK,Leeds,Small Regional,1994,31,12,1,98442.2,True,False,True,True,Transportation,2,0,0.511
+F0694,Firm_694,India,Mumbai,Mid-Tier,1996,29,57,1,1150460.99,True,False,True,False,Telecommunications,5,0,0.562
+F0695,Firm_695,Bangladesh,Rajshahi,Mid-Tier,2013,12,56,4,569781.65,False,True,True,True,Education,3,6,0.475
+F0696,Firm_696,Australia,Sydney,Large National,1961,64,281,27,3442067.05,True,True,True,False,NGO & Development,4,5,0.663
+F0697,Firm_697,Pakistan,Peshawar,Big 4 Affiliate,1986,39,365,42,44325825.75,True,True,False,False,Hospitality,5,1,0.592
+F0698,Firm_698,Singapore,Woodlands,Large National,1990,35,209,8,5271742.85,True,True,True,False,Energy & Utilities,2,6,0.671
+F0699,Firm_699,India,Mumbai,Boutique Specialist,1998,27,4,1,94158.47,True,True,True,False,Hospitality,3,0,0.274
+F0700,Firm_700,UK,Edinburgh,Small Regional,1963,62,9,1,171730.79,False,True,True,True,Agriculture,4,0,0.547
+F0701,Firm_701,UAE,Dubai,Boutique Specialist,2014,11,5,1,24851.43,False,True,True,False,Hospitality,4,0,0.638
+F0702,Firm_702,Bangladesh,Rajshahi,Small Regional,1958,67,13,1,99441.91,False,False,False,True,Healthcare,2,0,0.542
+F0703,Firm_703,USA,Houston,Mid-Tier,1960,65,53,2,1154833.4,True,False,True,False,Healthcare,3,2,0.594
+F0704,Firm_704,Bangladesh,Rajshahi,Small Regional,1983,42,21,1,239453.01,True,False,True,True,Transportation,4,0,0.854
+F0705,Firm_705,Bangladesh,Chittagong,Small Regional,1994,31,22,1,140782.11,False,True,True,False,Real Estate,3,0,0.478
+F0706,Firm_706,Indonesia,Jakarta,Large National,1966,59,269,12,7188599.88,True,True,False,False,Agriculture,4,1,0.945
+F0707,Firm_707,Pakistan,Faisalabad,Small Regional,1963,62,20,1,190570.39,False,True,True,False,Healthcare,3,0,0.426
+F0708,Firm_708,South Africa,Durban,Mid-Tier,1998,27,21,1,1784626.75,True,True,True,True,Education,3,5,0.635
+F0709,Firm_709,India,Delhi,Small Regional,1974,51,20,1,277857.33,False,False,True,True,Hospitality,2,0,0.585
+F0710,Firm_710,Canada,Montreal,Small Regional,1996,29,21,2,173867.89,False,False,True,True,Telecommunications,4,0,0.712
+F0711,Firm_711,Japan,Yokohama,Mid-Tier,1993,32,56,3,739897.86,True,False,True,True,Education,5,5,0.657
+F0712,Firm_712,Singapore,Woodlands,Large National,1994,31,105,7,3473788.47,True,True,True,False,Hospitality,5,5,0.689
+F0713,Firm_713,UK,Edinburgh,Boutique Specialist,1977,48,10,1,69590.98,False,True,True,False,Technology,5,0,0.436
+F0714,Firm_714,USA,Los Angeles,Small Regional,1986,39,5,1,204896.78,False,True,True,True,NGO & Development,4,0,0.534
+F0715,Firm_715,USA,New York,Large National,2006,19,161,11,3596463.98,True,True,False,True,Hospitality,5,4,0.593
+F0716,Firm_716,Egypt,Giza,Boutique Specialist,1989,36,4,1,30942.16,True,True,False,True,NGO & Development,3,0,0.471
+F0717,Firm_717,Brazil,Curitiba,Large National,1986,39,187,6,5905123.16,True,True,True,True,Retail & Consumer,3,4,0.709
+F0718,Firm_718,Saudi Arabia,Jeddah,Small Regional,1952,73,14,1,51897.85,True,False,True,False,Real Estate,5,0,0.609
+F0719,Firm_719,Bangladesh,Khulna,Boutique Specialist,1974,51,8,1,47025.16,False,False,True,False,Transportation,4,0,0.536
+F0720,Firm_720,Germany,Hamburg,Mid-Tier,1956,69,67,2,1186459.53,True,True,False,False,Manufacturing,4,0,0.464
+F0721,Firm_721,Philippines,Cebu,Mid-Tier,1950,75,20,2,292123.52,False,True,True,False,Real Estate,3,2,0.61
+F0722,Firm_722,India,Delhi,Large National,1993,32,127,11,7128896.58,True,True,True,False,Retail & Consumer,2,3,0.505
+F0723,Firm_723,Bangladesh,Chittagong,Mid-Tier,2005,20,66,6,1271575.18,True,True,True,False,Transportation,2,2,0.664
+F0724,Firm_724,Japan,Osaka,Large National,2005,20,134,8,1427795.03,True,True,False,True,NGO & Development,2,1,0.827
+F0725,Firm_725,Singapore,Tampines,Small Regional,1978,47,21,1,276893.93,True,True,True,False,Insurance,4,0,0.455
+F0726,Firm_726,Brazil,Brasília,Large National,2005,20,130,7,1393889.61,True,True,False,False,Retail & Consumer,5,5,0.756
+F0727,Firm_727,Bangladesh,Rajshahi,Small Regional,2001,24,21,2,89363.24,True,False,False,False,Real Estate,5,0,0.573
+F0728,Firm_728,Nigeria,Lagos,Boutique Specialist,1995,30,14,1,39329.55,False,False,True,False,Agriculture,4,0,0.583
+F0729,Firm_729,India,Chennai,Boutique Specialist,1953,72,12,1,103919.42,True,True,True,False,Telecommunications,2,0,0.433
+F0730,Firm_730,India,Mumbai,Small Regional,1975,50,24,2,91193.2,True,False,True,True,Banking & Finance,3,0,0.667
+F0731,Firm_731,India,Chennai,Mid-Tier,1991,34,78,7,941176.19,False,True,True,False,Hospitality,4,4,0.491
+F0732,Firm_732,South Africa,Johannesburg,Small Regional,1954,71,23,2,207247.1,True,True,True,True,Education,5,0,0.675
+F0733,Firm_733,Canada,Vancouver,Small Regional,2009,16,19,1,253262.8,True,False,True,True,Education,2,0,0.41
+F0734,Firm_734,UAE,Ajman,Small Regional,2011,14,23,1,110915.25,True,True,True,False,NGO & Development,2,0,0.333
+F0735,Firm_735,USA,Atlanta,Large National,2008,17,229,25,1160370.42,True,True,True,True,Government & Public Sector,2,3,0.914
+F0736,Firm_736,Malaysia,Malacca,Boutique Specialist,1973,52,5,1,144671.1,True,False,True,True,Healthcare,3,0,0.443
+F0737,Firm_737,USA,New York,Small Regional,2000,25,25,1,132545.26,True,True,True,False,Retail & Consumer,3,0,0.409
+F0738,Firm_738,South Africa,Durban,Mid-Tier,1980,45,25,1,652473.21,False,True,False,True,Banking & Finance,5,1,0.707
+F0739,Firm_739,UK,London,Mid-Tier,1964,61,57,5,473011.65,True,False,True,False,Telecommunications,2,2,0.557
+F0740,Firm_740,USA,New York,Small Regional,1954,71,16,1,151658.76,False,False,False,True,Manufacturing,5,0,0.463
+F0741,Firm_741,UK,Edinburgh,Boutique Specialist,2009,16,15,1,28898.01,False,False,True,False,Agriculture,3,0,0.613
+F0742,Firm_742,Pakistan,Islamabad,Small Regional,1964,61,12,1,170373.42,False,True,True,False,Transportation,5,0,0.445
+F0743,Firm_743,Japan,Yokohama,Boutique Specialist,2001,24,5,1,114187.86,True,True,True,False,Real Estate,3,0,0.452
+F0744,Firm_744,UK,Manchester,Big 4 Affiliate,1969,56,494,55,21518723.62,True,True,True,False,Telecommunications,4,5,0.658
+F0745,Firm_745,India,Mumbai,Small Regional,1992,33,17,1,94426.12,True,True,True,False,Insurance,3,0,0.264
+F0746,Firm_746,Kenya,Nakuru,Small Regional,2003,22,11,1,110545.18,False,True,True,False,Real Estate,3,0,0.475
+F0747,Firm_747,USA,New York,Big 4 Affiliate,1971,54,722,28,41701414.12,True,True,False,False,Telecommunications,3,6,0.643
+F0748,Firm_748,UAE,Ras Al Khaimah,Mid-Tier,1995,30,60,4,496903.99,True,False,True,True,Telecommunications,3,7,0.45
+F0749,Firm_749,Kenya,Kisumu,Boutique Specialist,1968,57,6,1,69717.68,False,True,False,False,Education,4,0,0.745
+F0750,Firm_750,Australia,Brisbane,Large National,1994,31,149,13,3474055.88,True,True,True,True,Government & Public Sector,2,0,0.485
+F0751,Firm_751,Bangladesh,Chittagong,Small Regional,1959,66,21,1,140315.43,True,True,False,False,Telecommunications,2,0,0.437
+F0752,Firm_752,Philippines,Manila,Mid-Tier,1989,36,74,5,1893848.75,False,False,True,False,Manufacturing,3,1,0.505
+F0753,Firm_753,Australia,Melbourne,Big 4 Affiliate,1966,59,1374,104,26072191.86,True,True,True,True,Telecommunications,5,2,0.76
+F0754,Firm_754,USA,New York,Mid-Tier,1997,28,95,4,1607716.14,True,True,True,False,Telecommunications,5,7,0.639
+F0755,Firm_755,Bangladesh,Khulna,Boutique Specialist,1985,40,13,1,84124.38,True,False,False,True,Transportation,5,0,0.844
+F0756,Firm_756,Nigeria,Ibadan,Boutique Specialist,1976,49,14,1,53190.79,True,True,False,False,NGO & Development,2,0,0.675
+F0757,Firm_757,Australia,Adelaide,Boutique Specialist,1992,33,8,1,52281.4,True,False,False,False,Energy & Utilities,2,0,0.325
+F0758,Firm_758,UAE,Sharjah,Small Regional,1990,35,8,1,227604.95,False,True,True,True,Education,3,0,0.683
+F0759,Firm_759,Kenya,Kisumu,Large National,2012,13,160,11,7688296.93,True,True,True,True,Transportation,3,0,0.692
+F0760,Firm_760,Nigeria,Lagos,Small Regional,2008,17,7,1,230822.49,True,False,True,True,Energy & Utilities,5,0,0.608
+F0761,Firm_761,India,Chennai,Small Regional,1964,61,20,1,243329.89,True,False,True,False,Insurance,3,0,0.528
+F0762,Firm_762,Pakistan,Peshawar,Boutique Specialist,1979,46,10,1,135018.4,False,True,True,False,Healthcare,5,0,0.472
+F0763,Firm_763,India,Delhi,Large National,1998,27,97,3,3651260.14,True,True,True,False,Technology,2,6,0.771
+F0764,Firm_764,Japan,Nagoya,Small Regional,2009,16,21,1,184854.55,False,False,False,True,NGO & Development,5,0,0.641
+F0765,Firm_765,Bangladesh,Sylhet,Mid-Tier,1999,26,66,4,709989.93,True,False,True,False,Manufacturing,4,1,0.485
+F0766,Firm_766,UAE,Ajman,Mid-Tier,1952,73,27,1,500560.19,True,True,True,True,Hospitality,4,5,0.746
+F0767,Firm_767,Japan,Yokohama,Small Regional,1993,32,18,1,141290.84,True,False,False,True,Real Estate,4,0,0.466
+F0768,Firm_768,Malaysia,Malacca,Small Regional,1984,41,8,1,241544.1,True,False,True,False,Energy & Utilities,5,0,0.574
+F0769,Firm_769,USA,Houston,Mid-Tier,1959,66,30,1,1381091.25,True,True,True,True,Government & Public Sector,5,0,0.369
+F0770,Firm_770,South Africa,Cape Town,Small Regional,1964,61,20,1,225871.28,True,True,True,False,Government & Public Sector,2,0,0.429
+F0771,Firm_771,Bangladesh,Rajshahi,Small Regional,1965,60,11,1,122870.17,True,False,True,False,Energy & Utilities,4,0,0.489
+F0772,Firm_772,Brazil,Salvador,Boutique Specialist,1998,27,13,1,122001.03,False,True,False,False,Banking & Finance,4,0,0.654
+F0773,Firm_773,Bangladesh,Dhaka,Boutique Specialist,1990,35,10,1,37818.15,True,False,True,False,Retail & Consumer,5,0,0.554
+F0774,Firm_774,USA,New York,Boutique Specialist,2003,22,15,1,50888.58,False,True,False,False,Telecommunications,2,0,0.528
+F0775,Firm_775,Nigeria,Ibadan,Boutique Specialist,1977,48,11,1,22243.93,False,True,True,False,Healthcare,4,0,0.596
+F0776,Firm_776,Bangladesh,Sylhet,Mid-Tier,2000,25,71,4,1307315.63,True,True,True,False,Energy & Utilities,3,4,0.671
+F0777,Firm_777,India,Chennai,Small Regional,1983,42,5,1,91957.88,False,True,True,False,Education,5,0,0.563
+F0778,Firm_778,Germany,Hamburg,Small Regional,1952,73,20,1,122975.9,True,True,True,True,Government & Public Sector,3,0,0.61
+F0779,Firm_779,Germany,Berlin,Mid-Tier,1979,46,38,3,1936996.51,False,False,True,True,NGO & Development,5,1,0.505
+F0780,Firm_780,Australia,Brisbane,Boutique Specialist,1972,53,12,1,108432.04,True,True,True,False,Education,5,0,0.274
+F0781,Firm_781,Canada,Vancouver,Big 4 Affiliate,1967,58,1147,44,9407226.44,True,True,True,True,Banking & Finance,4,1,0.681
+F0782,Firm_782,UAE,Sharjah,Boutique Specialist,1993,32,14,1,54162.7,True,False,True,True,Education,3,0,0.676
+F0783,Firm_783,India,Chennai,Small Regional,1962,63,15,1,189251.71,True,True,True,False,Agriculture,4,0,0.622
+F0784,Firm_784,USA,New York,Small Regional,1959,66,19,1,147265.18,True,False,True,False,Insurance,4,0,0.639
+F0785,Firm_785,India,Kolkata,Small Regional,1955,70,14,1,237345.79,True,True,False,False,Manufacturing,3,0,0.664
+F0786,Firm_786,Kenya,Mombasa,Boutique Specialist,1999,26,3,1,36673.16,True,True,False,False,NGO & Development,5,0,0.583
+F0787,Firm_787,Singapore,CBD,Small Regional,2003,22,22,1,202122.77,True,True,True,True,Agriculture,4,0,0.452
+F0788,Firm_788,USA,New York,Small Regional,2012,13,25,2,223356.45,True,True,True,False,Hospitality,5,0,0.473
+F0789,Firm_789,UK,Leeds,Large National,1960,65,207,10,5406989.73,True,True,True,True,Transportation,3,5,0.796
+F0790,Firm_790,Philippines,Makati,Small Regional,1999,26,20,1,72873.17,True,False,False,False,Real Estate,3,0,0.48
+F0791,Firm_791,India,Chennai,Mid-Tier,1969,56,68,6,883268.56,False,False,True,True,Real Estate,4,0,0.512
+F0792,Firm_792,Singapore,Changi,Small Regional,1967,58,18,2,211144.72,True,True,False,True,Telecommunications,2,0,0.428
+F0793,Firm_793,UK,Birmingham,Small Regional,2005,20,23,1,283519.21,True,False,True,False,Agriculture,4,0,0.554
+F0794,Firm_794,Australia,Adelaide,Small Regional,1997,28,20,1,84827.3,True,False,True,False,Energy & Utilities,3,0,0.819
+F0795,Firm_795,Bangladesh,Sylhet,Large National,1983,42,272,16,7116766.16,True,False,True,False,Hospitality,5,6,0.79
+F0796,Firm_796,Malaysia,Kuala Lumpur,Large National,2006,19,193,14,6948185.1,True,True,True,True,Retail & Consumer,5,0,0.696
+F0797,Firm_797,Philippines,Cebu,Small Regional,1983,42,18,1,190301.41,True,False,True,True,Energy & Utilities,4,0,0.578
+F0798,Firm_798,UAE,Dubai,Large National,1971,54,276,26,4630524.03,False,True,True,False,Healthcare,2,4,0.712
+F0799,Firm_799,Canada,Vancouver,Large National,2000,25,247,26,5835060.26,True,True,True,True,Real Estate,3,1,0.701
+F0800,Firm_800,Egypt,Giza,Big 4 Affiliate,2011,14,1111,49,37950811.26,True,True,True,False,Education,4,5,0.911
+F0801,Firm_801,Germany,Berlin,Boutique Specialist,2010,15,9,1,41998.07,True,True,True,False,Healthcare,2,0,0.623
+F0802,Firm_802,India,Delhi,Small Regional,1955,70,17,1,201989.3,True,True,True,False,Manufacturing,3,0,0.56
+F0803,Firm_803,Singapore,Tampines,Mid-Tier,1994,31,57,1,1235279.59,True,True,True,False,Retail & Consumer,5,3,0.518
+F0804,Firm_804,Singapore,CBD,Mid-Tier,2006,19,72,6,1111106.15,True,False,True,False,Agriculture,3,7,0.585
+F0805,Firm_805,USA,Chicago,Mid-Tier,1989,36,71,3,482184.99,False,True,True,False,NGO & Development,2,6,0.436
+F0806,Firm_806,Germany,Stuttgart,Boutique Specialist,1999,26,3,1,45194.55,True,False,True,False,Real Estate,3,0,0.498
+F0807,Firm_807,Philippines,Makati,Small Regional,1987,38,11,1,178558.87,True,True,True,False,Education,2,0,0.5
+F0808,Firm_808,Egypt,Luxor,Mid-Tier,1977,48,73,5,1976196.08,False,True,True,False,Healthcare,5,2,0.669
+F0809,Firm_809,UK,Edinburgh,Mid-Tier,1968,57,55,2,1271559.35,True,False,True,True,Insurance,3,0,0.701
+F0810,Firm_810,Bangladesh,Rajshahi,Large National,1992,33,183,20,6969637.2,True,True,True,False,Telecommunications,4,2,0.73
+F0811,Firm_811,Indonesia,Surabaya,Small Regional,1995,30,6,1,116495.63,True,False,True,False,Banking & Finance,3,0,0.48
+F0812,Firm_812,Brazil,Brasília,Boutique Specialist,1967,58,15,1,106061.24,True,False,True,False,Insurance,5,0,0.645
+F0813,Firm_813,Bangladesh,Dhaka,Mid-Tier,1978,47,35,2,1487507.84,True,False,False,True,Energy & Utilities,2,7,0.768
+F0814,Firm_814,Egypt,Luxor,Big 4 Affiliate,1968,57,1782,101,33712540.62,True,True,True,True,Manufacturing,4,2,0.756
+F0815,Firm_815,Malaysia,Malacca,Large National,2003,22,151,7,6335165.91,True,True,False,True,Hospitality,5,1,0.413
+F0816,Firm_816,UAE,Ajman,Boutique Specialist,1983,42,14,1,113120.04,True,True,False,False,Retail & Consumer,3,0,0.592
+F0817,Firm_817,Singapore,Tampines,Mid-Tier,1984,41,75,4,328233.29,True,False,True,False,Agriculture,4,7,0.614
+F0818,Firm_818,USA,Atlanta,Boutique Specialist,2010,15,5,1,103775.96,True,True,True,False,Real Estate,4,0,0.545
+F0819,Firm_819,Bangladesh,Dhaka,Small Regional,1951,74,25,1,130811.7,True,True,True,False,Technology,5,0,0.562
+F0820,Firm_820,USA,Atlanta,Mid-Tier,1958,67,99,10,557449.36,True,True,True,False,Insurance,5,2,0.527
+F0821,Firm_821,South Africa,Durban,Mid-Tier,2004,21,94,8,1181456.2,False,False,True,True,Agriculture,3,2,0.455
+F0822,Firm_822,Bangladesh,Dhaka,Large National,2003,22,214,8,7225030.15,True,True,True,False,Government & Public Sector,4,3,0.78
+F0823,Firm_823,USA,New York,Small Regional,2009,16,6,1,113271.1,True,True,True,False,Agriculture,5,0,0.464
+F0824,Firm_824,USA,Los Angeles,Boutique Specialist,1957,68,10,1,27653.96,True,True,False,False,Education,2,0,0.869
+F0825,Firm_825,UAE,Sharjah,Small Regional,1989,36,18,1,275198.68,False,False,True,False,Transportation,4,0,0.544
+F0826,Firm_826,Egypt,Luxor,Small Regional,1982,43,17,1,297104.21,True,False,True,True,Real Estate,2,0,0.576
+F0827,Firm_827,USA,Houston,Large National,2011,14,142,5,1962851.8,True,True,True,False,Education,3,6,0.699
+F0828,Firm_828,USA,Chicago,Boutique Specialist,1984,41,12,1,84362.02,True,True,True,False,Agriculture,4,0,0.571
+F0829,Firm_829,Germany,Hamburg,Boutique Specialist,1979,46,4,1,37874.14,False,False,True,False,Government & Public Sector,5,0,0.59
+F0830,Firm_830,UK,Leeds,Mid-Tier,2001,24,87,4,1261715.44,True,False,False,True,Technology,5,6,0.562
+F0831,Firm_831,India,Mumbai,Boutique Specialist,1950,75,13,1,34680.46,True,False,False,False,Agriculture,2,0,0.537
+F0832,Firm_832,UK,London,Small Regional,1999,26,16,1,98580.24,True,False,False,True,Hospitality,4,0,0.518
+F0833,Firm_833,Bangladesh,Sylhet,Small Regional,1988,37,17,1,233481.68,True,True,True,False,Government & Public Sector,5,0,0.546
+F0834,Firm_834,India,Delhi,Boutique Specialist,1967,58,3,1,126030.73,True,False,True,False,Education,3,0,0.549
+F0835,Firm_835,UK,London,Boutique Specialist,1987,38,10,1,30429.16,True,False,False,False,Transportation,3,0,0.554
+F0836,Firm_836,USA,Houston,Small Regional,1984,41,6,1,264174.56,False,False,True,False,Education,2,0,0.414
+F0837,Firm_837,Egypt,Luxor,Large National,1974,51,298,22,7092293.16,True,True,True,False,Retail & Consumer,5,2,0.643
+F0838,Firm_838,USA,Atlanta,Mid-Tier,1978,47,63,5,600403.1,True,True,True,True,Insurance,5,2,0.476
+F0839,Firm_839,Singapore,Jurong,Boutique Specialist,1980,45,8,1,117607.98,True,False,True,False,Healthcare,2,0,0.552
+F0840,Firm_840,Australia,Sydney,Mid-Tier,1989,36,96,3,1066840.55,True,True,True,True,NGO & Development,5,3,0.41
+F0841,Firm_841,Bangladesh,Chittagong,Mid-Tier,1956,69,20,2,1392268.92,True,True,True,True,Government & Public Sector,3,3,0.683
+F0842,Firm_842,Canada,Vancouver,Small Regional,1952,73,18,1,143644.9,True,True,True,True,Government & Public Sector,5,0,0.415
+F0843,Firm_843,India,Chennai,Small Regional,1966,59,10,1,102729.14,False,False,True,False,Energy & Utilities,5,0,0.518
+F0844,Firm_844,Saudi Arabia,Riyadh,Small Regional,2008,17,5,1,163187.66,True,False,True,False,Manufacturing,3,0,0.457
+F0845,Firm_845,Bangladesh,Khulna,Boutique Specialist,1968,57,14,1,143532.66,False,True,False,False,Agriculture,5,0,0.751
+F0846,Firm_846,USA,Los Angeles,Mid-Tier,1987,38,53,3,475552.67,True,False,True,True,NGO & Development,5,4,0.7
+F0847,Firm_847,Bangladesh,Khulna,Large National,1953,72,111,12,5663365.69,True,True,True,False,Education,3,5,0.679
+F0848,Firm_848,Indonesia,Bali,Mid-Tier,2011,14,72,4,1031565.49,True,False,True,False,Banking & Finance,3,4,0.453
+F0849,Firm_849,UK,Manchester,Boutique Specialist,1963,62,3,1,87469.41,True,False,True,False,Telecommunications,4,0,0.507
+F0850,Firm_850,Singapore,Changi,Small Regional,1952,73,19,1,97695.39,False,True,False,False,Real Estate,4,0,0.566
+F0851,Firm_851,Bangladesh,Khulna,Mid-Tier,1995,30,62,2,469947.91,True,False,True,False,NGO & Development,2,2,0.487
+F0852,Firm_852,Japan,Fukuoka,Boutique Specialist,1965,60,14,1,149301.81,False,True,False,False,Insurance,5,0,0.529
+F0853,Firm_853,India,Mumbai,Boutique Specialist,1978,47,14,1,94092.81,False,False,True,True,Hospitality,4,0,0.496
+F0854,Firm_854,Kenya,Mombasa,Boutique Specialist,1985,40,5,1,91606.12,True,False,True,False,Manufacturing,5,0,0.656
+F0855,Firm_855,India,Kolkata,Boutique Specialist,1984,41,15,1,115128.28,False,False,False,True,Real Estate,2,0,0.609
+F0856,Firm_856,India,Mumbai,Mid-Tier,1955,70,53,3,747334.26,True,False,True,True,Healthcare,4,6,0.595
+F0857,Firm_857,Bangladesh,Sylhet,Boutique Specialist,1971,54,5,1,109013.93,True,True,True,False,Insurance,5,0,0.545
+F0858,Firm_858,UK,London,Small Regional,2008,17,23,2,224923.68,True,False,True,True,Healthcare,5,0,0.611
+F0859,Firm_859,UAE,Ras Al Khaimah,Boutique Specialist,2011,14,11,1,51823.62,False,False,True,False,Government & Public Sector,3,0,0.537
+F0860,Firm_860,Bangladesh,Chittagong,Small Regional,1991,34,10,1,166378.68,True,False,True,False,Insurance,5,0,0.653
+F0861,Firm_861,Nigeria,Ibadan,Boutique Specialist,1966,59,11,1,111916.72,False,False,True,True,Real Estate,2,0,0.706
+F0862,Firm_862,UK,London,Small Regional,1965,60,16,1,297275.5,True,False,True,True,Manufacturing,5,0,0.523
+F0863,Firm_863,UAE,Abu Dhabi,Mid-Tier,1991,34,66,4,539671.09,True,False,True,True,Hospitality,4,3,0.551
+F0864,Firm_864,UK,Edinburgh,Small Regional,1963,62,23,2,93659.6,False,False,True,True,Energy & Utilities,2,0,0.611
+F0865,Firm_865,USA,Houston,Boutique Specialist,2010,15,11,1,21192.75,False,False,True,False,Education,5,0,0.619
+F0866,Firm_866,UAE,Abu Dhabi,Boutique Specialist,1989,36,8,1,114948.49,True,True,True,False,Telecommunications,2,0,0.355
+F0867,Firm_867,India,Delhi,Large National,1981,44,117,7,1588711.7,True,False,True,False,Manufacturing,4,0,0.877
+F0868,Firm_868,India,Delhi,Mid-Tier,2011,14,54,4,1570364.79,True,True,True,False,Real Estate,4,5,0.416
+F0869,Firm_869,Malaysia,Johor Bahru,Large National,2000,25,244,18,4801580.22,True,True,True,False,Healthcare,4,4,0.701
+F0870,Firm_870,Philippines,Quezon City,Small Regional,1955,70,22,1,104717.12,False,True,True,True,Technology,3,0,0.529
+F0871,Firm_871,USA,Atlanta,Boutique Specialist,1971,54,15,1,109861.25,True,True,False,False,Retail & Consumer,3,0,0.578
+F0872,Firm_872,Pakistan,Islamabad,Mid-Tier,1957,68,44,3,638693.56,False,True,True,True,Real Estate,5,1,0.476
+F0873,Firm_873,Australia,Adelaide,Small Regional,1986,39,6,1,252596.2,True,True,True,True,Healthcare,5,0,0.648
+F0874,Firm_874,USA,Chicago,Boutique Specialist,1954,71,6,1,30064.89,False,True,True,False,Government & Public Sector,2,0,0.664
+F0875,Firm_875,Bangladesh,Sylhet,Small Regional,1955,70,20,1,281735.17,True,True,True,True,Banking & Finance,2,0,0.347
+F0876,Firm_876,India,Kolkata,Small Regional,2001,24,22,1,295152.8,True,False,True,True,Government & Public Sector,4,0,0.448
+F0877,Firm_877,Germany,Berlin,Small Regional,2014,11,12,1,135042.74,True,True,True,False,NGO & Development,2,0,0.506
+F0878,Firm_878,Australia,Adelaide,Small Regional,1985,40,17,1,116245.19,True,False,True,False,Manufacturing,5,0,0.492
+F0879,Firm_879,Bangladesh,Khulna,Mid-Tier,1980,45,62,3,1170874.21,True,True,False,True,Insurance,4,2,0.327
+F0880,Firm_880,India,Bangalore,Small Regional,1992,33,12,1,144538.49,True,True,False,True,Retail & Consumer,3,0,0.51
+F0881,Firm_881,India,Kolkata,Small Regional,1964,61,20,2,228892.41,True,False,True,True,Transportation,4,0,0.604
+F0882,Firm_882,Canada,Calgary,Boutique Specialist,1997,28,8,1,43983.42,True,False,False,False,Retail & Consumer,3,0,0.582
+F0883,Firm_883,Bangladesh,Dhaka,Small Regional,1972,53,12,1,181022.49,False,True,True,False,NGO & Development,3,0,0.553
+F0884,Firm_884,Bangladesh,Sylhet,Boutique Specialist,1981,44,9,1,91613.44,True,True,False,False,Healthcare,4,0,0.5
+F0885,Firm_885,Nigeria,Ibadan,Mid-Tier,1953,72,53,5,1105523.23,False,False,False,False,Technology,2,5,0.532
+F0886,Firm_886,India,Mumbai,Small Regional,1964,61,18,1,299016.74,True,False,True,False,Healthcare,2,0,0.556
+F0887,Firm_887,Australia,Perth,Big 4 Affiliate,2003,22,1056,53,44692273.26,True,True,True,False,Insurance,4,2,0.902
+F0888,Firm_888,India,Chennai,Mid-Tier,1993,32,52,4,1586070.77,True,False,True,False,Real Estate,2,6,0.698
+F0889,Firm_889,Bangladesh,Chittagong,Small Regional,2004,21,11,1,206098.45,True,True,False,True,Transportation,3,0,0.538
+F0890,Firm_890,India,Kolkata,Boutique Specialist,2007,18,4,1,102941.4,False,True,False,False,Retail & Consumer,2,0,0.603
+F0891,Firm_891,Germany,Munich,Large National,1979,46,188,8,3439972.55,False,True,False,False,Real Estate,5,4,0.755
+F0892,Firm_892,Brazil,Rio de Janeiro,Small Regional,1982,43,8,1,134919.08,True,False,True,False,Technology,4,0,0.633
+F0893,Firm_893,Brazil,Salvador,Boutique Specialist,1961,64,4,1,132921.54,False,False,False,False,Technology,2,0,0.631
+F0894,Firm_894,USA,Atlanta,Mid-Tier,1966,59,84,9,1599635.05,False,True,True,False,Government & Public Sector,5,2,0.404
+F0895,Firm_895,Canada,Ottawa,Small Regional,1997,28,25,1,243189.11,True,True,True,False,Real Estate,3,0,0.494
+F0896,Firm_896,India,Chennai,Small Regional,1989,36,19,1,282036.31,False,True,True,True,Banking & Finance,3,0,0.483
+F0897,Firm_897,Pakistan,Lahore,Small Regional,1985,40,23,2,204306.15,False,False,True,True,Hospitality,4,0,0.505
+F0898,Firm_898,Kenya,Kisumu,Mid-Tier,1983,42,64,2,1362248.96,True,False,False,False,Retail & Consumer,5,2,0.654
+F0899,Firm_899,Bangladesh,Chittagong,Mid-Tier,1973,52,31,3,893725.61,True,False,True,True,Technology,4,3,0.637
+F0900,Firm_900,Bangladesh,Rajshahi,Boutique Specialist,2010,15,5,1,67002.21,True,False,False,False,Transportation,4,0,0.586
+F0901,Firm_901,India,Bangalore,Small Regional,1957,68,23,1,98259.04,True,True,True,False,Manufacturing,3,0,0.403
+F0902,Firm_902,Bangladesh,Chittagong,Big 4 Affiliate,1997,28,1774,112,11608571.69,True,True,True,True,Retail & Consumer,4,7,0.54
+F0903,Firm_903,India,Mumbai,Boutique Specialist,1973,52,14,1,131598.64,True,False,True,False,Government & Public Sector,4,0,0.411
+F0904,Firm_904,Singapore,Tampines,Big 4 Affiliate,1993,32,1682,201,40083882.01,True,True,True,True,Insurance,4,1,0.729
+F0905,Firm_905,USA,Chicago,Boutique Specialist,2009,16,14,1,74477.16,False,False,False,False,Insurance,5,0,0.323
+F0906,Firm_906,Kenya,Eldoret,Mid-Tier,1951,74,52,5,1767407.66,True,True,True,True,Government & Public Sector,4,3,0.428
+F0907,Firm_907,South Africa,Durban,Boutique Specialist,1957,68,5,1,111853.62,True,False,False,True,Agriculture,4,0,0.432
+F0908,Firm_908,USA,Atlanta,Mid-Tier,2001,24,89,4,1167054.09,False,False,True,False,Government & Public Sector,4,6,0.403
+F0909,Firm_909,India,Mumbai,Mid-Tier,2012,13,31,2,264519.47,True,True,True,True,NGO & Development,3,3,0.498
+F0910,Firm_910,USA,Atlanta,Mid-Tier,1970,55,26,2,1849247.85,True,True,True,False,Banking & Finance,2,4,0.737
+F0911,Firm_911,Singapore,CBD,Mid-Tier,1962,63,74,5,493652.26,True,True,True,False,Real Estate,5,7,0.527
+F0912,Firm_912,India,Chennai,Boutique Specialist,2011,14,14,1,67915.52,True,False,True,False,Manufacturing,2,0,0.867
+F0913,Firm_913,Australia,Adelaide,Boutique Specialist,1951,74,11,1,112302.96,True,True,True,True,Energy & Utilities,3,0,0.845
+F0914,Firm_914,USA,Houston,Mid-Tier,1976,49,88,3,565344.95,True,True,True,False,Transportation,2,4,0.626
+F0915,Firm_915,UAE,Ras Al Khaimah,Small Regional,2012,13,23,2,81474.34,False,True,True,True,Hospitality,3,0,0.604
+F0916,Firm_916,UK,Birmingham,Small Regional,1957,68,9,1,108077.19,True,True,False,True,Real Estate,5,0,0.636
+F0917,Firm_917,Pakistan,Peshawar,Boutique Specialist,2004,21,4,1,95802.06,True,True,False,False,Energy & Utilities,2,0,0.795
+F0918,Firm_918,Philippines,Cebu,Small Regional,1974,51,19,1,162840.57,True,True,True,False,Hospitality,5,0,0.623
+F0919,Firm_919,Japan,Tokyo,Small Regional,1962,63,22,2,236917.94,True,True,True,False,Education,3,0,0.538
+F0920,Firm_920,Bangladesh,Khulna,Small Regional,1973,52,16,1,267560.41,True,False,False,True,Energy & Utilities,2,0,0.603
+F0921,Firm_921,Malaysia,Kota Kinabalu,Small Regional,1986,39,8,1,115523.47,False,True,True,False,Insurance,2,0,0.52
+F0922,Firm_922,UK,Edinburgh,Big 4 Affiliate,1953,72,1600,123,17578754.84,True,True,True,False,Banking & Finance,4,6,0.852
+F0923,Firm_923,Kenya,Nakuru,Small Regional,1984,41,25,2,292729.95,False,True,True,True,Healthcare,5,0,0.564
+F0924,Firm_924,Nigeria,Abuja,Mid-Tier,1978,47,98,9,788920.83,False,True,True,True,Education,5,3,0.406
+F0925,Firm_925,USA,Los Angeles,Boutique Specialist,1994,31,8,1,116838.46,True,False,False,False,Healthcare,4,0,0.446
+F0926,Firm_926,Bangladesh,Dhaka,Large National,1980,45,178,7,7633881.72,True,True,True,False,Insurance,5,5,0.627
+F0927,Firm_927,India,Bangalore,Small Regional,1963,62,20,2,273670.29,True,True,True,False,Education,3,0,0.738
+F0928,Firm_928,UAE,Ras Al Khaimah,Small Regional,2001,24,7,1,85911.84,False,True,True,False,Energy & Utilities,5,0,0.493
+F0929,Firm_929,Australia,Brisbane,Small Regional,1978,47,9,1,223085.24,True,True,True,False,Manufacturing,2,0,0.565
+F0930,Firm_930,India,Delhi,Large National,2014,11,144,5,7624819.78,True,False,True,True,Technology,3,7,0.655
+F0931,Firm_931,Bangladesh,Rajshahi,Small Regional,1984,41,24,1,132744.02,False,False,True,True,Government & Public Sector,2,0,0.501
+F0932,Firm_932,Brazil,São Paulo,Small Regional,2004,21,8,1,94503.99,False,False,False,False,Agriculture,3,0,0.529
+F0933,Firm_933,Indonesia,Medan,Small Regional,1971,54,15,1,294950.25,True,True,True,False,Healthcare,5,0,0.565
+F0934,Firm_934,UAE,Sharjah,Small Regional,1980,45,6,1,55786.56,False,True,True,True,NGO & Development,2,0,0.475
+F0935,Firm_935,India,Kolkata,Small Regional,1999,26,11,1,251486.22,True,False,True,True,Banking & Finance,4,0,0.468
+F0936,Firm_936,Pakistan,Lahore,Boutique Specialist,2013,12,14,1,121176.97,True,False,False,False,Education,2,0,0.338
+F0937,Firm_937,Bangladesh,Khulna,Mid-Tier,2012,13,100,9,1688968.64,True,True,True,True,Telecommunications,5,0,0.503
+F0938,Firm_938,Egypt,Luxor,Boutique Specialist,1990,35,6,1,130942.35,True,False,False,False,Healthcare,2,0,0.683
+F0939,Firm_939,Bangladesh,Rajshahi,Small Regional,2011,14,11,1,255661.59,False,True,True,True,Government & Public Sector,4,0,0.608
+F0940,Firm_940,Singapore,Tampines,Large National,1973,52,199,18,3568101.95,True,True,True,False,Manufacturing,5,3,0.772
+F0941,Firm_941,Pakistan,Lahore,Large National,2009,16,225,24,2767285.08,True,True,True,True,Education,2,5,0.901
+F0942,Firm_942,UAE,Sharjah,Mid-Tier,1951,74,74,4,1521302.79,True,False,True,False,Technology,2,6,0.726
+F0943,Firm_943,Australia,Sydney,Boutique Specialist,2013,12,4,1,20535.58,True,True,False,True,Agriculture,5,0,0.533
+F0944,Firm_944,South Africa,Durban,Small Regional,2013,12,10,1,218285.2,True,True,True,True,Telecommunications,2,0,0.55
+F0945,Firm_945,India,Chennai,Boutique Specialist,1952,73,13,1,139602.05,True,True,False,False,Insurance,5,0,0.645
+F0946,Firm_946,Bangladesh,Dhaka,Small Regional,1972,53,20,1,214905.34,True,False,True,False,Manufacturing,5,0,0.533
+F0947,Firm_947,Bangladesh,Sylhet,Small Regional,1982,43,10,1,153407.1,True,True,True,False,Government & Public Sector,2,0,0.424
+F0948,Firm_948,Kenya,Mombasa,Mid-Tier,1950,75,37,4,592084.26,True,True,True,True,Technology,3,7,0.475
+F0949,Firm_949,Malaysia,Kuala Lumpur,Mid-Tier,2002,23,85,3,1033752.58,True,False,True,False,Retail & Consumer,2,6,0.48
+F0950,Firm_950,Singapore,Changi,Small Regional,1981,44,6,1,162763.5,True,True,True,True,NGO & Development,5,0,0.417
+F0951,Firm_951,Singapore,CBD,Large National,1961,64,149,17,3027872.14,True,True,True,False,NGO & Development,5,6,0.476
+F0952,Firm_952,Canada,Montreal,Mid-Tier,2012,13,97,8,438422.22,False,True,True,True,Retail & Consumer,4,1,0.547
+F0953,Firm_953,India,Kolkata,Small Regional,1968,57,15,1,122238.39,False,True,True,True,Transportation,3,0,0.446
+F0954,Firm_954,Egypt,Alexandria,Small Regional,2007,18,13,1,228662.23,True,False,True,True,Banking & Finance,5,0,0.709
+F0955,Firm_955,USA,Chicago,Boutique Specialist,1963,62,8,1,77725.03,True,True,False,False,Real Estate,5,0,0.616
+F0956,Firm_956,USA,Los Angeles,Boutique Specialist,1970,55,10,1,41010.16,False,False,True,True,Manufacturing,4,0,0.579
+F0957,Firm_957,UAE,Ras Al Khaimah,Small Regional,1979,46,8,1,294585.06,True,False,True,False,Banking & Finance,3,0,0.589
+F0958,Firm_958,Bangladesh,Sylhet,Small Regional,1961,64,17,1,147804.54,True,False,True,True,Manufacturing,2,0,0.683
+F0959,Firm_959,India,Chennai,Small Regional,1986,39,6,1,230080.05,True,True,True,False,Banking & Finance,4,0,0.468
+F0960,Firm_960,Germany,Munich,Boutique Specialist,1953,72,3,1,42254.92,True,True,True,False,Insurance,2,0,0.526
+F0961,Firm_961,Bangladesh,Dhaka,Large National,1992,33,299,24,6168676.68,True,True,True,True,Hospitality,3,2,0.504
+F0962,Firm_962,Singapore,Changi,Small Regional,1956,69,12,1,235940.67,True,True,True,False,Agriculture,5,0,0.591
+F0963,Firm_963,India,Delhi,Boutique Specialist,1955,70,14,1,81343.7,True,True,False,False,Healthcare,3,0,0.339
+F0964,Firm_964,USA,New York,Mid-Tier,1980,45,59,6,834760.86,True,False,True,True,Hospitality,2,2,0.611
+F0965,Firm_965,Pakistan,Peshawar,Small Regional,1961,64,20,2,62570.72,True,False,True,True,Telecommunications,2,0,0.736
+F0966,Firm_966,USA,Atlanta,Small Regional,2006,19,11,1,245548.77,True,True,True,False,Agriculture,3,0,0.554
+F0967,Firm_967,Germany,Frankfurt,Mid-Tier,1992,33,67,2,1620815.41,True,False,False,False,Manufacturing,5,6,0.65
+F0968,Firm_968,Pakistan,Peshawar,Mid-Tier,1966,59,92,5,1721651.88,True,False,True,False,Transportation,3,5,0.542
+F0969,Firm_969,UAE,Ras Al Khaimah,Mid-Tier,1980,45,82,9,1660029.69,True,False,True,True,Real Estate,5,0,0.468
+F0970,Firm_970,UK,Leeds,Big 4 Affiliate,1958,67,1302,105,44903993.27,True,True,False,True,Real Estate,4,6,0.737
+F0971,Firm_971,Canada,Vancouver,Big 4 Affiliate,1995,30,295,10,46498767.74,True,True,True,True,Retail & Consumer,5,3,0.74
+F0972,Firm_972,Philippines,Davao,Boutique Specialist,2009,16,7,1,115778.88,True,False,True,False,Insurance,2,0,0.475
+F0973,Firm_973,Germany,Frankfurt,Mid-Tier,1989,36,34,2,743031.55,True,False,True,False,Banking & Finance,3,5,0.486
+F0974,Firm_974,India,Mumbai,Small Regional,1990,35,15,1,293833.11,True,True,True,False,Retail & Consumer,3,0,0.479
+F0975,Firm_975,Bangladesh,Chittagong,Mid-Tier,2004,21,65,2,1488726.03,False,True,True,True,Energy & Utilities,4,6,0.695
+F0976,Firm_976,India,Delhi,Boutique Specialist,1963,62,7,1,84071.06,True,True,True,False,Retail & Consumer,2,0,0.442
+F0977,Firm_977,Singapore,Changi,Mid-Tier,1962,63,27,1,806905.29,True,False,True,False,Agriculture,3,0,0.503
+F0978,Firm_978,Bangladesh,Khulna,Small Regional,1954,71,11,1,114456.42,True,False,False,True,Insurance,4,0,0.694
+F0979,Firm_979,UK,Manchester,Boutique Specialist,2004,21,10,1,70239.33,True,True,True,False,Agriculture,3,0,0.772
+F0980,Firm_980,Singapore,Changi,Boutique Specialist,1975,50,3,1,61058.09,True,True,True,False,Healthcare,5,0,0.68
+F0981,Firm_981,USA,Chicago,Mid-Tier,1957,68,30,2,330527.89,True,False,True,True,Government & Public Sector,2,4,0.536
+F0982,Firm_982,Nigeria,Abuja,Boutique Specialist,1978,47,5,1,28585.92,True,False,True,False,Banking & Finance,3,0,0.473
+F0983,Firm_983,Bangladesh,Dhaka,Small Regional,1977,48,22,2,249366.12,False,True,True,True,Telecommunications,5,0,0.777
+F0984,Firm_984,Bangladesh,Sylhet,Small Regional,2008,17,13,1,228968.6,True,True,True,True,Government & Public Sector,5,0,0.714
+F0985,Firm_985,Germany,Stuttgart,Large National,1995,30,94,10,5087603.76,True,True,True,True,Energy & Utilities,2,1,0.73
+F0986,Firm_986,UK,Edinburgh,Large National,1996,29,178,17,7875329.32,True,False,True,True,Real Estate,2,0,0.789
+F0987,Firm_987,Canada,Montreal,Small Regional,1977,48,5,1,230442.57,False,True,True,False,Technology,5,0,0.524
+F0988,Firm_988,UK,London,Small Regional,1993,32,20,1,73620.97,False,True,False,True,Education,4,0,0.523
+F0989,Firm_989,India,Chennai,Small Regional,2011,14,20,1,90845.36,True,False,False,False,NGO & Development,2,0,0.739
+F0990,Firm_990,South Africa,Pretoria,Small Regional,2008,17,15,1,195446.46,False,True,False,False,Energy & Utilities,2,0,0.449
+F0991,Firm_991,Nigeria,Kano,Boutique Specialist,1964,61,5,1,21668.63,True,True,False,False,Manufacturing,2,0,0.557
+F0992,Firm_992,Canada,Ottawa,Mid-Tier,1954,71,87,9,424502.79,False,False,False,False,Insurance,3,7,0.541
+F0993,Firm_993,Pakistan,Faisalabad,Small Regional,2010,15,19,1,148552.04,True,True,True,True,Transportation,2,0,0.678
+F0994,Firm_994,Singapore,Woodlands,Large National,1959,66,201,19,4902491.32,True,True,True,True,Manufacturing,5,5,0.754
+F0995,Firm_995,USA,Los Angeles,Boutique Specialist,1991,34,8,1,41925.27,True,True,False,True,Energy & Utilities,4,0,0.75
+F0996,Firm_996,Bangladesh,Khulna,Small Regional,1994,31,17,1,51092.66,True,True,True,False,Transportation,3,0,0.801
+F0997,Firm_997,Egypt,Alexandria,Boutique Specialist,1978,47,3,1,143272.93,False,False,True,True,Transportation,4,0,0.632
+F0998,Firm_998,Bangladesh,Khulna,Large National,1978,47,294,13,2560626.93,True,True,True,False,Manufacturing,3,1,0.602
+F0999,Firm_999,Saudi Arabia,Riyadh,Large National,1979,46,205,10,5908953.04,True,False,True,False,Insurance,5,1,0.674
+F1000,Firm_1000,UK,Leeds,Mid-Tier,1978,47,21,1,1095716.12,True,False,False,True,Agriculture,4,7,0.603
