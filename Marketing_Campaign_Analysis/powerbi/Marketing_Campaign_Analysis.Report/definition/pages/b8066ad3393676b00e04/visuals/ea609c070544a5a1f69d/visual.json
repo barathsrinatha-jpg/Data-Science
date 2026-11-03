@@ -1,0 +1,71 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "ea609c070544a5a1f69d",
+  "position": {
+    "x": 703.49036919277228,
+    "y": 54.651317937289747,
+    "z": 2000,
+    "height": 120.93057586123687,
+    "width": 259.30306170245984,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "marketing_campaign_analysis customers"
+                    }
+                  },
+                  "Property": "Average Web Visits"
+                }
+              },
+              "queryRef": "marketing_campaign_analysis customers.Average Web Visits",
+              "nativeQueryRef": "Average Web Visits"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "marketing_campaign_analysis customers"
+                  }
+                },
+                "Property": "Average Web Visits"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

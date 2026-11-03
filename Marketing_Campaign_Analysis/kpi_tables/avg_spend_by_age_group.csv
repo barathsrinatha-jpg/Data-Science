@@ -1,0 +1,5 @@
+Age_Group,MntWines,MntFruits,MntMeatProducts,MntFishProducts,MntSweetProducts,MntGoldProds
+Adult (30-44),220.4,13.9,248.0,45.7,19.4,32.4
+Middle Age (45-59),285.5,19.4,299.6,59.0,26.7,40.0
+Senior (60+),344.5,24.7,341.0,68.7,33.4,44.5
+Young (<30),179.6,10.2,214.0,38.6,14.9,28.4

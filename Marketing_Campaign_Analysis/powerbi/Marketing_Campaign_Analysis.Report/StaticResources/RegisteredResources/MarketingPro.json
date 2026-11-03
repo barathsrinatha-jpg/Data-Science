@@ -1,0 +1,124 @@
+{
+  "name": "MarketingPro",
+  "dataColors": [
+    "#2E75B6",
+    "#1F3864",
+    "#17A398",
+    "#F2A900",
+    "#E4572E",
+    "#5B6B7C",
+    "#9DC3E6",
+    "#70AD47",
+    "#8E6BBF",
+    "#C0504D",
+    "#4BACC6",
+    "#F79646",
+    "#7F9DB9",
+    "#A5A5A5",
+    "#2F5597",
+    "#548235"
+  ],
+  "foreground": "#1F2937",
+  "foregroundNeutralSecondary": "#5B6B7C",
+  "foregroundNeutralTertiary": "#9AA5B1",
+  "background": "#FFFFFF",
+  "backgroundLight": "#F3F6FA",
+  "backgroundNeutral": "#D9DEE5",
+  "tableAccent": "#1F3864",
+  "good": "#17A398",
+  "neutral": "#F2A900",
+  "bad": "#E4572E",
+  "maximum": "#1F3864",
+  "center": "#F2A900",
+  "minimum": "#E4572E",
+  "null": "#9AA5B1",
+  "hyperlink": "#2E75B6",
+  "visitedHyperlink": "#5B6B7C",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1F3864"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1F3864"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1F3864"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#334155"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#D9DEE5"
+              }
+            },
+            "radius": 6,
+            "width": 1
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#1F3864"
+              }
+            },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI Semibold",
+            "alignment": "left",
+            "titleWrap": true
+          }
+        ],
+        "categoryAxis": [
+          {
+            "showAxisTitle": false,
+            "gridlineStyle": "dotted",
+            "labelColor": {
+              "solid": {
+                "color": "#334155"
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "showAxisTitle": false,
+            "gridlineStyle": "dotted"
+          }
+        ],
+        "wordWrap": [
+          {
+            "show": true
+          }
+        ]
+      }
+    }
+  }
+}
