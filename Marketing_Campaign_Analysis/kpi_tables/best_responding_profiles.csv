@@ -1,0 +1,6 @@
+Income_Group,Family_Customer,Age_Group,Customers,Response_Rate
+High (>75k),No,Senior (60+),1372,27.8
+High (>75k),No,Middle Age (45-59),3749,26.4
+High (>75k),No,Adult (30-44),3807,25.2
+High (>75k),No,Young (<30),1157,24.5
+High (>75k),Yes,Middle Age (45-59),3166,22.6

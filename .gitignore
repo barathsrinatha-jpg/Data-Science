@@ -3,3 +3,6 @@ Data/archive (2).zip
 Data/archive (3).zip
 Data/cifar-10-python.tar.gz
 Data/fraudTest.csv
+
+# Power BI local cache and per-machine settings (not needed in the repo)
+**/.pbi/

@@ -1,0 +1,13 @@
+relationship 5c9b35d7-b910-4959-a4f7-4a5a8064b994
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'marketing_campaign_analysis customers'.Dt_Customer
+	toColumn: LocalDateTable_33b6c5ca-bab6-44f2-8b4d-9906dcec3d4c.Date
+
+relationship ProductSpend_to_Customers
+	fromColumn: 'Product Spend'.ID
+	toColumn: 'marketing_campaign_analysis customers'.ID
+
+relationship ChannelPurchases_to_Customers
+	fromColumn: 'Channel Purchases'.ID
+	toColumn: 'marketing_campaign_analysis customers'.ID
+
