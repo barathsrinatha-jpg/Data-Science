@@ -1,7 +1,0 @@
-,Rule,Customers,Share_%
-High_Income,"Income > 75,000",19782,35.3
-Young_Customer,Age < 30,8285,14.8
-Campaign_Responder,Response = 1,8265,14.8
-High_Web_Engagement,Web visits > 5,29970,53.5
-Family_Customer,Children > 0,38222,68.3
-High_Spender,Total_Spend > 90th percentile,5599,10.0
