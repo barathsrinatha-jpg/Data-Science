@@ -1,0 +1,10 @@
+Model,Type,MAE,RMSE,R2,MAPE_all_days_%,MAPE_days_50plus_%,WAPE_%
+Ridge regression (linear),machine learning,183.691,276.924,0.039,4558.391,67.798,96.324
+Random Forest,machine learning,81.489,173.775,0.622,94.016,47.42,42.731
+XGBoost,machine learning,77.466,174.131,0.62,134.544,41.026,40.621
+LightGBM,machine learning,78.373,176.577,0.609,90.886,41.207,41.097
+"SARIMAX (2,0,1)(1,0,1,7)",time series,170.107,290.642,-0.058,1342.882,63.208,89.2
+Baseline: average of last 7 days,baseline,164.948,264.414,0.124,2925.272,64.96,86.495
+Baseline: same weekday last week,baseline,182.883,347.002,-0.509,3961.479,94.618,95.9
+LightGBM WITHOUT weather,ablation,132.285,248.109,0.229,1206.929,66.451,69.367
+LightGBM with TYPICAL monthly weather,ablation,194.964,251.138,0.21,4536.342,65.759,102.235

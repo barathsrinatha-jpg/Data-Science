@@ -1,0 +1,7 @@
+Recommendation,Why (from the data)
+Risk-based patient engagement,"Call or message the 49% of appointments flagged high risk (82% of all no-shows) instead of contacting everyone, and offer to reschedule on the call."
+Check the registration data for patients outside the 13 cities,"Appointments with a non-listed place name miss 50% of the time against 9% in the real cities. Verify how these records are created; if they are real patients, give them dedicated outreach (transport help, tele-appointments)."
+"Change the reminder, not just send it","SMS reminders show no effect today (31.9% with vs 31.8% without). Test phone calls, reminders 24 hours before, or a one-tap confirm / reschedule link and measure the difference."
+Staff from the short-horizon forecast,Use the demand model for the next 1 to 7 days (R² 0.62 to 0.07) and refresh it daily; expect the busiest weekday to be Thu (259) and the quietest Sun (156).
+Plan specialists by specialty and city,"Psychotherapy, speech therapy and physiotherapy carry 66% of appointments; Itajaí generates 46% of the real-city volume. Keep the most specialists there."
+Plan around weather and quiet spells,"Weather is the biggest single input for forecasting daily volume; add a weather forecast feed to the app and expect large swings, including long quiet spells, when planning shifts."

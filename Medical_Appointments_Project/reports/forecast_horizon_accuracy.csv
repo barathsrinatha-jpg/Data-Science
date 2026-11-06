@@ -1,0 +1,4 @@
+Scenario,MAE,RMSE,R2,MAPE_all_days_%,MAPE_days_50plus_%,WAPE_%
+"1 day ahead, observed weather (table above)",81.489,173.775,0.622,94.016,47.42,42.731
+"7 days ahead, observed weather",93.604,194.681,0.534,88.167,52.593,47.557
+"7 days ahead, typical monthly weather",225.233,274.926,0.07,4163.426,97.836,114.434

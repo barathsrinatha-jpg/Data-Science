@@ -1,844 +1,347 @@
+"""Clinic Appointment Assistant - Streamlit app
+
+Module 1: No-show risk predictor (takes patient and appointment details, returns a risk score)
+Module 2: Demand forecaster (choose a period and a specialty, get expected daily appointments)
+Module 3: Insights and model performance
+
+Run from this folder:  streamlit run app.py   (run the notebook first so the models exist)
 """
-=========================================
-Medical Appointment No Show Prediction
-Streamlit Dashboard
-=========================================
-"""
+import math
+import os
+import time
+from datetime import date, timedelta
 
 import joblib
+import numpy as np
 import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 
-# --------------------------------------------------
-# PAGE CONFIG
-# --------------------------------------------------
+import medical_utils as mu
 
-st.set_page_config(
+MODEL_DIR, REPORT_DIR, CHART_DIR = "models", "reports", "charts"
 
-    page_title="Medical Appointment No Show Prediction",
+st.set_page_config(page_title="Clinic Appointment Assistant", page_icon="🏥", layout="wide")
 
-    page_icon="\U0001F3E5",
 
-    layout="wide"
+# --------------------------------------------------------------------------------------
+# Loading
+# --------------------------------------------------------------------------------------
+@st.cache_resource(show_spinner=False)
+def load_models():
+    """Load the three saved models once per session."""
+    return {
+        "risk": joblib.load(f"{MODEL_DIR}/no_show_model.joblib"),
+        "overall": joblib.load(f"{MODEL_DIR}/demand_overall.joblib"),
+        "specialty": joblib.load(f"{MODEL_DIR}/demand_specialty.joblib"),
+    }
 
-)
 
-# --------------------------------------------------
-# LOAD DATA
-# --------------------------------------------------
+@st.cache_data(show_spinner=False)
+def read_report(name):
+    path = f"{REPORT_DIR}/{name}"
+    return pd.read_csv(path) if os.path.exists(path) else None
 
-@st.cache_data
-def load_dataset():
 
-    filepath = "medical_appointments_featured.csv"
+def show_chart(name, caption=None):
+    path = f"{CHART_DIR}/{name}.png"
+    if os.path.exists(path):
+        st.image(path, caption=caption, width="stretch")
+    else:
+        st.info(f"Chart '{name}' not found. Run the notebook to create it.")
 
-    return pd.read_csv(filepath)
 
-# --------------------------------------------------
-# LOAD MODELS
-# --------------------------------------------------
+try:
+    models = load_models()
+except FileNotFoundError as err:
+    st.error("The trained models were not found in the `models/` folder. Run the notebook first, then restart the app.")
+    st.caption(str(err))
+    st.stop()
 
-@st.cache_resource
-def load_classifier():
+risk_bundle, overall, specialty = models["risk"], models["overall"], models["specialty"]
+last_date = pd.Timestamp(overall["last_date"])
+threshold = risk_bundle["threshold"]
+choices = risk_bundle["choices"]
 
-    return joblib.load(
 
-        "best_classifier.pkl"
+def pretty(value):
+    return str(value).replace("_", " ").title()
 
-    )
 
-@st.cache_resource
-def load_forecaster():
+PLACE_LABEL = {c: pretty(c) if c.isupper() is False else c.title() for c in mu.REAL_CITIES}
+PLACE_LABEL[mu.OTHER_PLACE] = "Other place (not one of the 13 cities)"
+PLACE_LABEL[mu.MISSING_PLACE] = "Not recorded"
+GENDER_LABEL = {"F": "Female", "M": "Male", "I": "Not specified"}
+DISABILITY_LABEL = {"intellectual": "Intellectual", "motor": "Motor", "blank": "Not recorded", "missing": "Not recorded"}
+ACTIONS = {
+    "High": "📞 Call the patient 48 hours before and send a reminder 24 hours before. Offer to reschedule or switch to a "
+            "tele-appointment, and consider overbooking this slot.",
+    "Medium": "💬 Send a reminder and ask the patient to confirm. Keep the slot, but watch for a late cancellation.",
+    "Low": "✅ A standard reminder is enough.",
+}
+BAND_COLOR = {"High": "#C44E52", "Medium": "#F2A900", "Low": "#2E9E6B"}
 
-    return joblib.load(
+# --------------------------------------------------------------------------------------
+# Header and sidebar
+# --------------------------------------------------------------------------------------
+st.title("🏥 Clinic Appointment Assistant")
+st.caption("Predict which appointments are likely to be missed, and forecast how many appointments to plan for.")
 
-        "best_forecasting_model.pkl"
-
-    )
-
-df = load_dataset()
-
-classifier = load_classifier()
-
-forecast_model = load_forecaster()
-
-# --------------------------------------------------
-# SIDEBAR
-# --------------------------------------------------
-
-st.sidebar.title("Medical Appointment Dashboard")
-
-page = st.sidebar.radio(
-
-    "Navigation",
-
-    [
-
-        "Project Overview",
-
-        "No Show Prediction",
-
-        "Demand Forecasting",
-
-        "Analytics"
-
-    ]
-
-)
-
-st.sidebar.markdown("---")
-
-st.sidebar.success("Machine Learning Project")
-
-# --------------------------------------------------
-# KPIs
-# --------------------------------------------------
-
-TOTAL_APPOINTMENTS = len(df)
-
-NO_SHOW_RATE = (
-
-    (df["no_show_target"] == 1).mean()
-
-) * 100
-
-ATTENDANCE_RATE = (
-
-    (df["no_show_target"] == 0).mean()
-
-) * 100
-
-AVERAGE_AGE = df["age"].mean()
-
-TOTAL_SPECIALTIES = df["specialty"].nunique()
-
-# --------------------------------------------------
-# PROJECT OVERVIEW
-# --------------------------------------------------
-
-if page == "Project Overview":
-
-    st.title("Medical Appointment No-Show Prediction Dashboard")
-
+with st.sidebar:
+    st.header("About")
+    st.write("Built for the CER rehabilitation clinic, where about **31.8%** of appointments end in a no-show.")
     st.markdown(
-        """
-        This dashboard demonstrates an end-to-end Machine Learning solution
-        for predicting patient no-shows and forecasting appointment demand.
-        """
+        f"**No-show model:** {risk_bundle['model_name']}  \n"
+        f"**Demand model:** {overall['model_name']}  \n"
+        f"**Data until:** {last_date.date()}"
     )
-
-    st.markdown("---")
-
-    # ===============================================
-    # KPI CARDS
-    # ===============================================
-
-    col1, col2, col3, col4, col5 = st.columns(5)
-
-    col1.metric(
-        "Total Appointments",
-        f"{TOTAL_APPOINTMENTS:,}"
-    )
-
-    col2.metric(
-        "Attendance Rate",
-        f"{ATTENDANCE_RATE:.2f}%"
-    )
-
-    col3.metric(
-        "No Show Rate",
-        f"{NO_SHOW_RATE:.2f}%"
-    )
-
-    col4.metric(
-        "Average Age",
-        f"{AVERAGE_AGE:.1f}"
-    )
-
-    col5.metric(
-        "Specialties",
-        TOTAL_SPECIALTIES
-    )
-
-    st.markdown("---")
-
-    # ===============================================
-    # DATA PREVIEW
-    # ===============================================
-
-    st.subheader("Dataset Preview")
-
-    st.dataframe(
-        df.head(10),
-        use_container_width=True
-    )
-
-    st.markdown("---")
-
-    # ===============================================
-    # AGE DISTRIBUTION
-    # ===============================================
-
-    st.subheader("Age Distribution")
-
-    age_counts = df["age_group"].value_counts().sort_index()
-
-    st.bar_chart(age_counts)
-
-    # ===============================================
-    # GENDER DISTRIBUTION
-    # ===============================================
-
-    st.subheader("Gender Distribution")
-
-    gender_counts = df["gender"].value_counts()
-
-    st.bar_chart(gender_counts)
-
-    st.markdown("---")
-
-    # ===============================================
-    # APPOINTMENT SHIFT
-    # ===============================================
-
-    st.subheader("Appointment Shift")
-
-    shift_counts = df["appointment_shift"].value_counts()
-
-    st.bar_chart(shift_counts)
-
-    st.markdown("---")
-
-    # ===============================================
-    # NO SHOW DISTRIBUTION
-    # ===============================================
-
-    st.subheader("No Show Distribution")
-
-    no_show_counts = df["no_show"].value_counts()
-
-    st.bar_chart(no_show_counts)
-
-    st.markdown("---")
-
-    # ===============================================
-    # PROJECT INFORMATION
-    # ===============================================
-
-    st.subheader("Project Summary")
-
-    summary = pd.DataFrame({
-
-        "Item": [
-
-            "Dataset Size",
-
-            "Features",
-
-            "Classification Model",
-
-            "Forecasting Model",
-
-            "Target Variable"
-
-        ],
-
-        "Value": [
-
-            f"{TOTAL_APPOINTMENTS:,} Records",
-
-            df.shape[1],
-
-            "XGBoost",
-
-            "Random Forest",
-
-            "No Show"
-
-        ]
-
-    })
-
-    st.table(summary)
-
-    st.markdown("---")
-
-    st.success("Data Pipeline Completed")
-
-    st.success("Machine Learning Models Trained")
-
-    st.success("Forecasting Model Developed")
-
-    st.success("Evaluation Completed")
-
-# --------------------------------------------------
-# NO SHOW PREDICTION
-# --------------------------------------------------
-
-elif page == "No Show Prediction":
-
-    st.title("No Show Prediction")
-
-    st.write(
-        "Enter the patient details below and click **Predict**."
-    )
-
-    st.markdown("---")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-
-        age = st.slider(
-            "Age",
-            0,
-            100,
-            35
-        )
-
-        gender = st.selectbox(
-            "Gender",
-            sorted(df["gender"].unique())
-        )
-
-        specialty = st.selectbox(
-            "Specialty",
-            sorted(df["specialty"].unique())
-        )
-
-        appointment_time = st.slider(
-            "Appointment Hour",
-            0,
-            23,
-            10
-        )
-
-        appointment_shift = st.selectbox(
-            "Appointment Shift",
-            sorted(df["appointment_shift"].unique())
-        )
-
-        sms_received = st.selectbox(
-            "SMS Received",
-            [0, 1]
-        )
-
-    with col2:
-
-        hipertension = st.selectbox(
-            "Hypertension",
-            [0, 1]
-        )
-
-        diabetes = st.selectbox(
-            "Diabetes",
-            [0, 1]
-        )
-
-        alcoholism = st.selectbox(
-            "Alcoholism",
-            [0, 1]
-        )
-
-        handcap = st.selectbox(
-            "Handicap",
-            [0, 1]
-        )
-
-        scholarship = st.selectbox(
-            "Scholarship",
-            [0, 1]
-        )
-
-        rainy_day_before = st.selectbox(
-            "Rainy Day Before",
-            [0, 1]
-        )
-
-        storm_day_before = st.selectbox(
-            "Storm Day Before",
-            [0, 1]
-        )
-
-    st.markdown("---")
-
-    if st.button("Predict No Show", use_container_width=True):
-
-        weather_risk_score = (
-            rainy_day_before +
-            storm_day_before
-        )
-
-        health_score = (
-            hipertension +
-            diabetes +
-            alcoholism +
-            handcap
-        )
-
-        if age <= 12:
-            age_group = "Child"
-        elif age <= 18:
-            age_group = "Teen"
-        elif age <= 35:
-            age_group = "Young Adult"
-        elif age <= 50:
-            age_group = "Adult"
-        elif age <= 65:
-            age_group = "Senior Adult"
+    st.divider()
+    st.caption("Risk scores are probabilities calibrated to the clinic's average no-show rate. Forecasts start after the last day "
+               "in the training data.")
+
+tab_risk, tab_forecast, tab_insights = st.tabs(["🩺 No-Show Risk", "📈 Demand Forecast", "📊 Insights & Model Performance"])
+
+# --------------------------------------------------------------------------------------
+# Tab 1: no-show risk
+# --------------------------------------------------------------------------------------
+with tab_risk:
+    st.subheader("How likely is this patient to miss the appointment?")
+    st.write("Fill in the details below and press **Calculate**. The result is a risk score, a risk band and a suggested action.")
+
+    with st.form("risk_form"):
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.markdown("**Patient**")
+            age = st.number_input("Age (years)", min_value=0, max_value=110, value=10, step=1)
+            gender = st.selectbox("Gender", choices["gender"], format_func=lambda g: GENDER_LABEL.get(g, g))
+            disability = st.selectbox("Disability", choices["disability"], format_func=lambda d: DISABILITY_LABEL.get(d, d))
+            place = st.selectbox("City", choices["place"], format_func=lambda p: PLACE_LABEL.get(p, p),
+                                 help="Choose 'Other place' for a city that is not one of the clinic's 13 cities. "
+                                      "In the training data such appointments are missed about half of the time.")
+            needs_companion = st.checkbox("Needs a companion", value=True)
+        with c2:
+            st.markdown("**Appointment**")
+            appt_date = st.date_input("Appointment date", value=(last_date + timedelta(days=5)).date(),
+                                      min_value=date(2020, 1, 1), max_value=date(2035, 12, 31))
+            hmin, hmax = risk_bundle["hour_range"]
+            hour = st.slider("Hour of the day", min_value=hmin, max_value=hmax, value=9)
+            shift = st.selectbox("Shift", choices["appointment_shift"], format_func=pretty)
+            spec = st.selectbox("Specialty", choices["specialty"], format_func=pretty)
+            sms = st.checkbox("SMS reminder already sent")
+        with c3:
+            st.markdown("**Health and background**")
+            hypertension = st.checkbox("Hypertension")
+            diabetes = st.checkbox("Diabetes")
+            alcoholism = st.checkbox("Alcoholism")
+            handicap = st.checkbox("Handicap recorded")
+            scholarship = st.checkbox("Receives a social benefit (scholarship)")
+            st.markdown("**Weather on the day**")
+            rain = st.selectbox("Rain", choices["rain_intensity"], index=choices["rain_intensity"].index("no_rain"), format_func=pretty)
+            heat = st.selectbox("Temperature", choices["heat_intensity"], index=choices["heat_intensity"].index("mild"), format_func=pretty)
+            storm = st.checkbox("Rain/storm flag for the day before", value=True,
+                                help="In the training data this flag is 'yes' for 94% of appointments.")
+        submitted = st.form_submit_button("Calculate no-show risk", type="primary", width="stretch")
+
+    if submitted:
+        problems = []
+        if not 0 <= age <= 110:
+            problems.append("Age must be between 0 and 110.")
+        if appt_date.weekday() >= 5:
+            st.warning("This date is a weekend. The clinic's data has fewer appointments on weekends, so treat the score with care.")
+        if problems:
+            st.error(" ".join(problems))
         else:
-            age_group = "Elderly"
-
-        if appointment_time < 10:
-            appointment_period = "Morning"
-        elif appointment_time < 14:
-            appointment_period = "Afternoon"
-        else:
-            appointment_period = "Evening"
-
-        input_data = pd.DataFrame({
-
-            "specialty": [specialty],
-            "appointment_time": [appointment_time],
-            "gender": [gender],
-            "disability": ["No"],
-            "place": [df["place"].mode()[0]],
-            "appointment_shift": [appointment_shift],
-            "age": [age],
-            "under_12_years_old": [1 if age < 12 else 0],
-            "over_60_years_old": [1 if age >= 60 else 0],
-            "patient_needs_companion": [0],
-            "average_temp_day": [df["average_temp_day"].median()],
-            "average_rain_day": [df["average_rain_day"].median()],
-            "max_temp_day": [df["max_temp_day"].median()],
-            "max_rain_day": [df["max_rain_day"].median()],
-            "rainy_day_before": [rainy_day_before],
-            "storm_day_before": [storm_day_before],
-            "rain_intensity": [df["rain_intensity"].mode()[0]],
-            "heat_intensity": [df["heat_intensity"].mode()[0]],
-            "hipertension": [hipertension],
-            "diabetes": [diabetes],
-            "alcoholism": [alcoholism],
-            "handcap": [handcap],
-            "scholarship": [scholarship],
-            "sms_received": [sms_received],
-
-            # Engineered Features
-
-            "age_group": [age_group],
-            "appointment_period": [appointment_period],
-            "weather_risk_score": [weather_risk_score],
-            "health_score": [health_score],
-            "companion_required": [0],
-            "year": [2026],
-            "month": [1],
-            "day": [1],
-            "day_of_week": ["Monday"],
-            "week_number": [1]
-
-        })
-
-        prediction = classifier.predict(input_data)[0]
-
-        probability = classifier.predict_proba(
-            input_data
-        )[0]
-
-        confidence = probability.max() * 100
-
-        st.markdown("---")
-
-        if prediction == 1:
-
-            st.error("High Risk of No Show")
-
-        else:
-
-            st.success("Patient Likely To Attend")
-
-        st.metric(
-
-            "Prediction Confidence",
-
-            f"{confidence:.2f}%"
-
-        )
-
-        st.subheader("Input Summary")
-
-        st.dataframe(
-            input_data,
-            use_container_width=True
-        )
-
-# --------------------------------------------------
-# DEMAND FORECASTING
-# --------------------------------------------------
-
-elif page == "Demand Forecasting":
-
-    st.title("Appointment Demand Forecasting")
-
-    st.write(
-        "Forecast daily appointment demand using the trained Random Forest model."
-    )
-
-    st.markdown("---")
-
-    daily = (
-
-        df.groupby("appointment_date_continuous")
-
-        .size()
-
-        .reset_index(name="appointments")
-
-    )
-
-    daily["appointment_date_continuous"] = pd.to_datetime(
-
-        daily["appointment_date_continuous"]
-
-    )
-
-    daily = daily.sort_values(
-
-        "appointment_date_continuous"
-
-    )
-
-    st.subheader("Historical Daily Appointments")
-
-    chart = daily.set_index(
-
-        "appointment_date_continuous"
-
-    )
-
-    st.line_chart(
-
-        chart["appointments"]
-
-    )
-
-    st.markdown("---")
-
-    st.subheader("Forecast Next Day")
-
-    latest = daily.copy()
-
-    latest["day_of_week"] = latest["appointment_date_continuous"].dt.dayofweek
-
-    latest["month"] = latest["appointment_date_continuous"].dt.month
-
-    latest["day"] = latest["appointment_date_continuous"].dt.day
-
-    latest["lag_1"] = latest["appointments"].shift(1)
-
-    latest["lag_7"] = latest["appointments"].shift(7)
-
-    latest["rolling_mean_7"] = (
-
-        latest["appointments"]
-
-        .rolling(7)
-
-        .mean()
-
-    )
-
-    latest = latest.dropna()
-
-    latest_row = latest.iloc[-1]
-
-    prediction_input = pd.DataFrame({
-
-        "day_of_week": [
-
-            (latest_row["day_of_week"] + 1) % 7
-
-        ],
-
-        "month": [
-
-            latest_row["month"]
-
-        ],
-
-        "day": [
-
-            latest_row["day"]
-
-        ],
-
-        "lag_1": [
-
-            latest_row["appointments"]
-
-        ],
-
-        "lag_7": [
-
-            latest_row["lag_7"]
-
-        ],
-
-        "rolling_mean_7": [
-
-            latest_row["rolling_mean_7"]
-
-        ]
-
-    })
-
-    prediction = forecast_model.predict(
-
-        prediction_input
-
-    )[0]
-
-    col1, col2 = st.columns(2)
-
-    col1.metric(
-
-        "Predicted Appointments",
-
-        f"{prediction:.0f}"
-
-    )
-
-    col2.metric(
-
-        "Last Recorded Day",
-
-        int(latest_row["appointments"])
-
-    )
-
-    st.markdown("---")
-
-    st.subheader("Forecast Input")
-
-    st.dataframe(
-
-        prediction_input,
-
-        use_container_width=True
-
-    )
-
-    st.markdown("---")
-
-    st.subheader("Forecast Summary")
-
-    forecast_summary = pd.DataFrame({
-
-        "Metric": [
-
-            "Forecast Model",
-
-            "Prediction Horizon",
-
-            "Target"
-
-        ],
-
-        "Value": [
-
-            "Random Forest",
-
-            "Next Day",
-
-            "Daily Appointment Count"
-
-        ]
-
-    })
-
-    st.table(
-
-        forecast_summary
-
-    )
-
-    st.success("Forecast generated successfully.")
-
-# --------------------------------------------------
-# ANALYTICS
-# --------------------------------------------------
-
-elif page == "Analytics":
-
-    st.title("Analytics & Model Performance")
-
-    st.write(
-        "Visualizations generated during EDA and model evaluation."
-    )
-
-    st.markdown("---")
-
-    # ======================================================
-    # CLASSIFICATION METRICS
-    # ======================================================
-
-    st.header("Classification Performance")
-
-    metrics_file = "classification_metrics.csv"
-
-    try:
-
-        metrics = pd.read_csv(metrics_file)
-
-        st.dataframe(
-            metrics,
-            use_container_width=True
-        )
-
-    except FileNotFoundError:
-
-        st.warning("classification_metrics.csv not found.")
-
-    st.markdown("---")
-
-    # ======================================================
-    # FORECAST METRICS
-    # ======================================================
-
-    st.header("Forecasting Performance")
-
-    forecast_metrics_file = "forecast_metrics.csv"
-
-    try:
-
-        metrics = pd.read_csv(forecast_metrics_file)
-
-        st.dataframe(
-            metrics,
-            use_container_width=True
-        )
-
-    except FileNotFoundError:
-
-        st.warning("forecast_metrics.csv not found.")
-
-    st.markdown("---")
-
-    # ======================================================
-    # CONFUSION MATRIX
-    # ======================================================
-
-    st.header("Confusion Matrix")
-
-    try:
-
-        st.image(
-            "confusion_matrix.png",
-            use_container_width=True
-        )
-
-    except Exception:
-
-        st.warning("confusion_matrix.png not found.")
-
-    # ======================================================
-    # ROC CURVE
-    # ======================================================
-
-    st.header("ROC Curve")
-
-    try:
-
-        st.image(
-            "roc_curve.png",
-            use_container_width=True
-        )
-
-    except Exception:
-
-        st.warning("roc_curve.png not found.")
-
-    st.markdown("---")
-
-    # ======================================================
-    # FORECAST VS ACTUAL
-    # ======================================================
-
-    st.header("Forecast vs Actual")
-
-    try:
-
-        st.image(
-            "forecast_vs_actual.png",
-            use_container_width=True
-        )
-
-    except Exception:
-
-        st.warning("forecast_vs_actual.png not found.")
-
-    # ======================================================
-    # FORECAST RESIDUALS
-    # ======================================================
-
-    st.header("Forecast Residual Plot")
-
-    try:
-
-        st.image(
-            "forecast_residuals.png",
-            use_container_width=True
-        )
-
-    except Exception:
-
-        st.warning("forecast_residuals.png not found.")
-
-    st.markdown("---")
-
-    # ======================================================
-    # EDA CHARTS
-    # ======================================================
-
-    st.header("EDA Visualizations")
-
-    eda_images = [
-
-        "age_distribution.png",
-
-        "gender_distribution.png",
-
-        "appointment_shift.png",
-
-        "target_distribution.png",
-
-        "specialty_distribution.png",
-
-        "weather_analysis.png"
-
-    ]
-
-    for chart in eda_images:
-
+            try:
+                with st.spinner("Calculating risk..."):
+                    t0 = time.perf_counter()
+                    row = mu.build_appointment_row({
+                        "date": pd.Timestamp(appt_date), "appointment_time": int(hour), "age": float(age), "gender": gender,
+                        "specialty": spec, "place": place, "disability": disability, "appointment_shift": shift,
+                        "hipertension": int(hypertension), "diabetes": int(diabetes), "alcoholism": int(alcoholism),
+                        "handcap": int(handicap), "scholarship": int(scholarship), "sms_received": int(sms),
+                        "patient_needs_companion": int(needs_companion), "storm_day_before": int(storm),
+                        "rain_intensity": rain, "heat_intensity": heat}, risk_bundle["weather_defaults"])
+                    prob = float(risk_bundle["model"].predict_proba(row[risk_bundle["cat_features"] + risk_bundle["num_features"]])[0, 1])
+                    elapsed_ms = (time.perf_counter() - t0) * 1000
+                band = mu.risk_band(prob, threshold)
+
+                left, right = st.columns([1, 1])
+                with left:
+                    fig = go.Figure(go.Indicator(
+                        mode="gauge+number", value=prob * 100, number={"suffix": "%"},
+                        title={"text": f"No-show risk: {band}"},
+                        gauge={"axis": {"range": [0, 100]}, "bar": {"color": BAND_COLOR[band]},
+                               "steps": [{"range": [0, 0.6 * threshold * 100], "color": "#DDF0E6"},
+                                         {"range": [0.6 * threshold * 100, threshold * 100], "color": "#FCEFC7"},
+                                         {"range": [threshold * 100, 100], "color": "#F6D5D6"}],
+                               "threshold": {"line": {"color": "black", "width": 3}, "value": threshold * 100}}))
+                    fig.update_layout(height=300, margin=dict(l=20, r=20, t=60, b=10))
+                    st.plotly_chart(fig, width="stretch")
+                with right:
+                    st.metric("Risk score (probability of a no-show)", f"{prob:.1%}")
+                    st.metric("Clinic average", f"{risk_bundle['base_rate']:.1%}", delta=f"{(prob - risk_bundle['base_rate']) * 100:+.1f} points",
+                              delta_color="inverse")
+                    if band == "High":
+                        st.error(f"High risk. {ACTIONS[band]}")
+                    elif band == "Medium":
+                        st.warning(f"Medium risk. {ACTIONS[band]}")
+                    else:
+                        st.success(f"Low risk. {ACTIONS[band]}")
+                    st.caption(f"The black line marks the decision threshold ({threshold:.0%}): at or above it the model flags the appointment. "
+                               f"Computed in {elapsed_ms:.0f} ms.")
+                if place == mu.OTHER_PLACE:
+                    st.info("The city is not one of the clinic's 13 cities. These records carry a much higher no-show rate in the data; "
+                            "check the registration details with the patient.")
+                with st.expander("Show the values the model received"):
+                    st.dataframe(row.T.rename(columns={0: "value"}).astype(str), width="stretch")
+            except Exception as err:   # never show a raw traceback to clinic staff
+                st.error("The risk could not be calculated. Please check the inputs and try again.")
+                st.caption(f"Technical detail: {err}")
+
+# --------------------------------------------------------------------------------------
+# Tab 2: demand forecast
+# --------------------------------------------------------------------------------------
+with tab_forecast:
+    st.subheader("How many appointments should we plan for?")
+    st.write(f"The forecast starts after the last recorded day (**{last_date.date()}**) and works day by day, "
+             "so accuracy is highest for the first few days.")
+    f1, f2, f3, f4 = st.columns([1.3, 1, 1, 1])
+    scope = f1.selectbox("Specialty", ["All specialties"] + specialty["specialties"], format_func=pretty)
+    start = f2.date_input("Forecast from", value=(last_date + timedelta(days=1)).date(),
+                          min_value=(last_date + timedelta(days=1)).date(), max_value=(last_date + timedelta(days=60)).date())
+    days = f3.slider("Days to forecast", 1, 28, 14)
+    capacity = f4.number_input("Appointments per specialist per day", min_value=1, max_value=60, value=10,
+                               help="An assumption used to turn appointments into specialists. Replace it with the clinic's real figure.")
+
+    w1, w2 = st.columns([1, 2])
+    weather_mode = w1.radio("Weather assumption", ["Typical for the month", "Custom"], horizontal=False)
+    custom = {}
+    if weather_mode == "Custom":
+        wc = w2.columns(4)
+        custom = {"average_temp_day": wc[0].slider("Average temperature (°C)", 8.0, 32.0, 21.0),
+                  "average_rain_day": wc[1].slider("Average rain (mm)", 0.0, 3.0, 0.2),
+                  "max_rain_day": wc[2].slider("Heaviest rain (mm)", 0.0, 40.0, 2.0),
+                  "storm_day_before": 1.0 if wc[3].checkbox("Rain/storm flag", value=True) else 0.0}
+    else:
+        w2.info("Typical monthly weather is used because no weather forecast is available. "
+                "Accuracy is lower than with real weather (see the Insights tab).")
+
+    if st.button("Generate forecast", type="primary"):
         try:
+            with st.spinner("Forecasting..."):
+                t0 = time.perf_counter()
+                end = pd.Timestamp(start) + timedelta(days=days - 1)
+                dates = pd.date_range(last_date + timedelta(days=1), end)
+                typical = overall["monthly_weather"]
+                weather = pd.DataFrame({c: typical.loc[dates.month, c].values for c in mu.WEATHER_COLS}, index=dates)
+                for c, v in custom.items():
+                    weather[c] = v
+                if scope == "All specialties":
+                    fc = mu.recursive_forecast(overall["model"], overall["history"], weather, overall["features"], log_target=overall["log_target"])
+                    history = overall["history"]["y"]
+                else:
+                    fc = mu.recursive_forecast(specialty["model"], specialty["histories"][scope], weather, specialty["features"],
+                                               log_target=True, specialty=scope, specialty_columns=specialty["specialty_columns"])
+                    history = specialty["histories"][scope]["y"]
+                fc = fc.loc[pd.Timestamp(start):end]
+                elapsed = time.perf_counter() - t0
 
-            st.subheader(
+            table = pd.DataFrame({"Date": fc.index.date, "Weekday": fc.index.day_name(), "Expected appointments": fc.round(0).astype(int).values})
+            table["Specialists needed"] = [math.ceil(v / capacity) for v in table["Expected appointments"]]
+            m1, m2, m3, m4 = st.columns(4)
+            m1.metric("Total expected", f"{int(table['Expected appointments'].sum()):,}")
+            m2.metric("Daily average", f"{table['Expected appointments'].mean():.0f}")
+            peak = table.loc[table["Expected appointments"].idxmax()]
+            m3.metric("Busiest day", f"{peak['Weekday'][:3]} {peak['Date']}", f"{int(peak['Expected appointments'])} appointments", delta_color="off")
+            m4.metric("Specialists on the busiest day", int(peak["Specialists needed"]))
 
-                chart.replace("_", " ").replace(".png", "").title()
+            hist = history.loc[last_date - timedelta(days=60):last_date]
+            fig = go.Figure()
+            fig.add_trace(go.Scatter(x=hist.index, y=hist.values, name="Actual (last 60 days)", line=dict(color="#4C72B0")))
+            fig.add_trace(go.Scatter(x=fc.index, y=fc.values, name="Forecast", line=dict(color="#C44E52", width=3), mode="lines+markers"))
+            fig.add_vline(x=last_date, line_dash="dash", line_color="grey")
+            fig.update_layout(title=f"Daily appointments: {pretty(scope) if scope != 'All specialties' else 'all specialties'}",
+                              height=420, margin=dict(l=10, r=10, t=50, b=10), yaxis_title="appointments per day",
+                              legend=dict(orientation="h", y=1.1))
+            st.plotly_chart(fig, width="stretch")
+            st.dataframe(table, width="stretch", hide_index=True)
+            st.download_button("Download forecast as CSV", table.to_csv(index=False).encode("utf-8"), "appointment_forecast.csv", "text/csv")
+            st.caption(f"Computed in {elapsed * 1000:.0f} ms. Daily volume at this clinic swings widely, so use the forecast as a planning guide, "
+                       "not an exact count.")
+        except Exception as err:
+            st.error("The forecast could not be generated. Please change the inputs and try again.")
+            st.caption(f"Technical detail: {err}")
 
-            )
+# --------------------------------------------------------------------------------------
+# Tab 3: insights
+# --------------------------------------------------------------------------------------
+with tab_insights:
+    sub_results, sub_drivers, sub_patterns, sub_reco = st.tabs(["Model results", "No-show drivers", "Demand patterns", "Recommendations"])
 
-            st.image(
+    with sub_results:
+        st.subheader("Results against the project targets")
+        targets = read_report("targets_vs_results.csv")
+        if targets is not None:
+            st.dataframe(targets.style.map(lambda v: "color: #2E9E6B; font-weight: bold" if v == "met" else ("color: #C44E52; font-weight: bold" if v == "NOT met" else ""),
+                                           subset=["Status"]), width="stretch", hide_index=True)
+        metrics = read_report("classification_metrics.csv")
+        if metrics is not None:
+            m = metrics.set_index(metrics.columns[0])["Test set"]
+            k1, k2, k3, k4 = st.columns(4)
+            k1.metric("ROC-AUC", f"{m['ROC-AUC']:.3f}")
+            k2.metric("F1 (no-show class)", f"{m['F1 (no-show class)']:.2f}")
+            k3.metric("Recall", f"{m['Recall']:.0%}")
+            k4.metric("Precision", f"{m['Precision']:.0%}")
+        st.markdown("**No-show classifier**")
+        show_chart("classification_evaluation", "Confusion matrix, ROC, precision-recall, threshold and calibration (test set)")
+        comp = read_report("classification_model_comparison.csv")
+        if comp is not None:
+            st.dataframe(comp, width="stretch", hide_index=True)
+        st.markdown("**Demand forecaster**")
+        show_chart("forecast_evaluation", "Forecast vs actual on the last 20% of days")
+        for name in ("forecast_model_comparison.csv", "forecast_horizon_accuracy.csv", "specialty_forecast_accuracy.csv"):
+            df = read_report(name)
+            if df is not None:
+                st.caption(name.replace(".csv", "").replace("_", " ").capitalize())
+                st.dataframe(df, width="stretch", hide_index=True)
 
-                chart,
+    with sub_drivers:
+        st.subheader("What drives no-shows?")
+        imp = read_report("feature_importance.csv")
+        if imp is not None:
+            top = imp.head(12).iloc[::-1]
+            fig = go.Figure(go.Bar(x=top["importance"], y=top["feature"], orientation="h", marker_color="#C44E52"))
+            fig.update_layout(title="Top factors (drop in ROC-AUC when shuffled)", height=420, margin=dict(l=10, r=10, t=50, b=10))
+            st.plotly_chart(fig, width="stretch")
+        c1, c2 = st.columns(2)
+        for col, name, title in ((c1, "no_show_by_city.csv", "No-show rate by city group"), (c2, "no_show_by_specialty.csv", "No-show rate by specialty")):
+            df = read_report(name)
+            if df is not None:
+                df = df.sort_values("no_show_rate")
+                fig = go.Figure(go.Bar(x=df["no_show_rate"], y=df.iloc[:, 0], orientation="h", marker_color="#4C72B0"))
+                fig.update_layout(title=title, height=420, margin=dict(l=10, r=10, t=50, b=10), xaxis_tickformat=".0%")
+                col.plotly_chart(fig, width="stretch")
+        scen = read_report("impact_scenarios.csv")
+        if scen is not None:
+            st.markdown("**Estimated no-show reduction from targeting high-risk patients**")
+            st.dataframe(scen, width="stretch", hide_index=True)
+            st.caption("Assumption: the outreach success rate is the share of flagged patients who would have missed the visit but attend after a call.")
+        deciles = read_report("risk_deciles.csv")
+        if deciles is not None:
+            st.markdown("**No-show rate by risk decile**")
+            st.dataframe(deciles.iloc[::-1], width="stretch", hide_index=True)
 
-                use_container_width=True
+    with sub_patterns:
+        st.subheader("Demand patterns")
+        show_chart("eda_daily_demand", "Daily appointments and monthly averages")
+        show_chart("eda_demand_patterns", "By weekday, specialty and city")
+        show_chart("forecast_by_specialty", "Specialty forecasts on the test period")
 
-            )
-
-        except Exception:
-
-            pass
-
-    st.markdown("---")
-
-    st.success("Dashboard analytics loaded successfully.")
+    with sub_reco:
+        st.subheader("Recommended interventions")
+        rec = read_report("recommendations.csv")
+        if rec is not None:
+            for i, r in rec.iterrows():
+                st.markdown(f"**{i + 1}. {r['Recommendation']}**  \n{r['Why (from the data)']}")
+        else:
+            st.info("Run the notebook to create the recommendations.")

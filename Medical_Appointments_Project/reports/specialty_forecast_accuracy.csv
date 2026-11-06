@@ -1,0 +1,10 @@
+specialty,Avg daily appointments,MAE,R2,WAPE_%
+psychotherapy,49.9,20.35,0.65,40.77
+speech therapy,38.62,15.43,0.66,39.95
+physiotherapy,36.88,15.35,0.63,41.63
+unknown,34.53,14.21,0.66,41.16
+occupational therapy,19.87,8.33,0.66,41.94
+pedagogy,6.15,3.33,0.54,54.15
+nursing,2.87,1.6,0.63,55.67
+social work,1.19,0.96,0.29,80.24
+no specialty,0.68,0.59,0.28,86.45

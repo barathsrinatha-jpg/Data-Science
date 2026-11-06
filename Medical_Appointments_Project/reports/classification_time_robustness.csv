@@ -1,0 +1,8 @@
+,Time-based test (last 20% of days)
+ROC-AUC,0.7898
+Precision,0.5093
+Recall,0.8438
+F1 (no-show class),0.6352
+F1 (weighted),0.7091
+F1 (macro),0.6889
+No-show rate in the last 20% of days,0.3115

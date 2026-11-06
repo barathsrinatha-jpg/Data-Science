@@ -1,0 +1,8 @@
+Model,Metric,Target,Result,Status
+Classifier,ROC-AUC,> 0.75,0.784,met
+Classifier,F1 - no-show class,> 0.7,0.638,NOT met
+Classifier,F1 - weighted across both classes,> 0.7,0.716,met
+Forecaster,R² (1 day ahead),> 0.65,0.622,NOT met
+Forecaster,MAPE - all days (%),< 20,94.0,NOT met
+Forecaster,MAPE - days with 50+ appointments (%),< 20,47.4,NOT met
+Forecaster,WAPE - total error / total volume (%),(for reference),42.7,-
