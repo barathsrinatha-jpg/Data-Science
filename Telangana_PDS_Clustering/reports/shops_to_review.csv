@@ -1,0 +1,342 @@
+distCode,shopNo,distName,officeName,district_type,latitude,longitude,gps_ok,cluster,persona,is_noise,util_z,review_priority,PC1,PC2,avg_cards,avg_transactions,utilization_ratio,portability_share,rice_per_card,wheat_share,volatility_monthly,volatility_yearly
+934,3722021,Sangareddy,Ramachandrapuram,Rural,17.499,78.315,True,0,Typical Steady Shops,True,6.158,High,1.549,-4.14,238.0,445.345,1.871,0.906,39.405,0.0,0.017,0.002
+934,3719035,Sangareddy,Patancheru,Rural,17.537,78.263,True,0,Typical Steady Shops,False,5.631,Medium,2.707,-3.643,780.621,1396.655,1.789,0.783,38.84,0.0,0.086,0.028
+934,3727032,Sangareddy,Zahirabad,Rural,17.682,77.611,True,0,Typical Steady Shops,False,5.601,Medium,1.666,-2.988,231.483,413.103,1.785,0.862,39.914,0.0,0.118,0.03
+934,3702005,Sangareddy,Ameenpur,Rural,17.549,78.296,True,0,Typical Steady Shops,False,5.598,Medium,2.481,-3.496,710.31,1267.276,1.784,0.569,37.33,0.0,0.101,0.059
+534,2084140,Karimnagar,KARIMNAGAR URBAN,Rural,18.447,79.132,True,0,Typical Steady Shops,False,5.29,Medium,2.266,-3.653,595.69,1034.172,1.736,0.812,33.927,0.0,0.048,0.019
+930,3313004,Medchal,Ghatkesar,Urban,17.452,78.686,True,0,Typical Steady Shops,False,5.273,Medium,2.448,-3.652,809.828,1403.828,1.733,0.612,37.481,0.0,0.061,0.075
+941,4407043,Yadadri Bhuvanagiri,Choutuppal,Rural,17.258,78.899,True,0,Typical Steady Shops,False,5.158,Medium,2.249,-3.367,566.276,971.517,1.716,0.8,34.031,0.0,0.072,0.047
+539,2357014,Nalgonda,Devarakonda,Rural,16.693,78.922,True,0,Typical Steady Shops,True,5.121,High,1.54,-2.204,180.586,308.759,1.71,0.995,34.047,0.0,0.17,0.118
+934,3724035,Sangareddy,Sangareddy.,Rural,17.609,78.081,True,0,Typical Steady Shops,False,5.111,Medium,2.574,-3.658,863.034,1474.31,1.708,0.796,35.305,0.0,0.048,0.02
+539,2389012,Nalgonda,Konda Mallepally,Rural,16.677,78.985,True,2,Small Low-Volume Shops,False,-4.693,Medium,-1.652,2.678,340.552,104.621,0.307,0.049,6.194,0.0,0.155,0.116
+934,3727042,Sangareddy,Zahirabad,Rural,17.681,77.604,True,0,Typical Steady Shops,False,4.661,Medium,1.68,-2.828,322.0,527.517,1.638,0.929,40.536,0.0,0.08,0.045
+934,3727049,Sangareddy,Zahirabad,Rural,17.681,77.604,True,0,Typical Steady Shops,False,4.63,Medium,1.964,-2.948,458.552,749.0,1.633,0.858,39.129,0.0,0.076,0.048
+934,3724025,Sangareddy,Sangareddy.,Rural,17.613,78.076,True,0,Typical Steady Shops,False,4.619,Medium,2.094,-2.832,525.034,856.69,1.632,0.769,35.093,0.0,0.096,0.042
+932,3501032,Nirmal,Bhainsa,Rural,19.11,77.963,True,0,Typical Steady Shops,False,4.596,Medium,2.08,-2.636,488.448,795.241,1.628,0.772,35.614,0.0,0.116,0.075
+537,1596009,Ranga Reddy,Abdullapurmet,Urban,17.378,78.641,True,3,Volatile Shops,True,4.59,High,1.884,2.331,150.103,202.759,1.351,0.847,28.428,0.0,0.559,0.557
+537,1599013,Ranga Reddy,Balapur,Urban,17.307,78.536,True,0,Typical Steady Shops,False,4.58,Medium,2.559,-3.651,1096.966,1783.207,1.626,0.754,32.972,0.0,0.019,0.015
+934,3722006,Sangareddy,Ramachandrapuram,Rural,17.467,78.286,True,0,Typical Steady Shops,False,4.534,Medium,2.076,-2.938,588.034,951.724,1.618,0.682,34.83,0.0,0.082,0.062
+934,3722031,Sangareddy,Ramachandrapuram,Rural,17.512,78.299,True,0,Typical Steady Shops,False,4.533,Medium,2.04,-3.312,610.0,987.172,1.618,0.776,33.633,0.0,0.035,0.024
+539,2389016,Nalgonda,Konda Mallepally,Rural,16.68,78.958,True,2,Small Low-Volume Shops,False,-4.53,Medium,-1.063,2.394,627.897,203.414,0.324,0.046,6.983,0.0,0.151,0.087
+939,4205018,Wanaparthy,Gopalpeta,Rural,16.451,78.189,True,2,Small Low-Volume Shops,False,-4.511,Medium,-2.74,2.464,187.571,61.143,0.326,0.016,7.402,0.0,0.122,0.041
+934,3727033,Sangareddy,Zahirabad,Rural,17.677,77.61,True,0,Typical Steady Shops,False,4.508,Medium,1.821,-3.071,480.069,775.034,1.614,0.722,37.362,0.0,0.055,0.047
+539,2383058,Nalgonda,Nalgonda,Rural,17.039,79.257,True,0,Typical Steady Shops,False,4.505,Medium,2.43,-3.205,884.379,1427.276,1.614,0.715,32.477,0.0,0.061,0.023
+534,2084157,Karimnagar,KARIMNAGAR URBAN,Rural,18.452,79.107,True,0,Typical Steady Shops,False,4.486,Medium,2.623,-2.861,897.069,1445.172,1.611,0.798,31.794,0.0,0.103,0.059
+537,1596017,Ranga Reddy,Abdullapurmet,Urban,17.261,78.59,True,0,Typical Steady Shops,False,4.475,Medium,2.13,-3.152,672.448,1082.103,1.609,0.706,33.681,0.0,0.055,0.051
+930,3313029,Medchal,Ghatkesar,Urban,17.462,78.643,True,0,Typical Steady Shops,False,4.409,Medium,1.436,-2.363,299.621,479.069,1.599,0.602,32.623,0.0,0.12,0.129
+537,1596019,Ranga Reddy,Abdullapurmet,Urban,17.288,78.588,True,0,Typical Steady Shops,False,4.408,Medium,2.516,-2.906,906.69,1449.69,1.599,0.703,33.53,0.0,0.093,0.01
+930,3314004,Medchal,Medipally,Urban,17.406,78.587,True,0,Typical Steady Shops,False,4.4,Medium,3.413,-3.444,2370.276,3786.724,1.598,0.784,31.886,0.0,0.06,0.053
+926,2909032,Kamareddy,Kamareddy,Rural,18.323,78.332,True,0,Typical Steady Shops,False,4.396,Medium,2.05,-3.111,617.069,985.414,1.597,0.755,34.347,0.0,0.051,0.031
+541,2230029,Khammam,Vemsoor,Rural,17.086,80.806,True,2,Small Low-Volume Shops,False,-4.373,Medium,-1.155,1.871,416.207,141.552,0.34,0.14,5.39,0.0,0.069,0.056
+934,3719046,Sangareddy,Patancheru,Rural,17.535,78.266,True,0,Typical Steady Shops,False,4.341,Medium,1.843,-2.992,517.724,822.31,1.588,0.706,32.508,0.0,0.056,0.047
+930,3310010,Medchal,Keesara,Urban,17.507,78.662,True,2,Small Low-Volume Shops,False,-4.327,Medium,-1.401,1.953,350.966,121.034,0.345,0.112,7.307,0.0,0.077,0.057
+539,2388013,Nalgonda,Neredugommu,Rural,16.607,78.966,True,2,Small Low-Volume Shops,False,-4.324,Medium,-2.046,2.688,237.345,81.931,0.345,0.037,6.781,0.0,0.163,0.129
+537,1532039,Ranga Reddy,Shamshabad,Urban,17.261,78.384,True,0,Typical Steady Shops,False,4.28,Medium,2.134,-3.05,696.379,1099.483,1.579,0.733,33.36,0.0,0.055,0.055
+537,1517021,Ranga Reddy,Moinabad,Urban,17.329,78.274,True,0,Typical Steady Shops,False,4.271,Medium,2.057,-3.33,792.724,1250.448,1.577,0.593,36.575,0.0,0.026,0.021
+935,3803023,Siddipet,siddipet urban,Rural,18.088,78.852,True,0,Typical Steady Shops,False,4.246,Medium,2.281,-2.807,438.241,689.621,1.574,0.99,31.268,0.026,0.061,0.063
+941,4408002,Yadadri Bhuvanagiri,Mothkur,Rural,17.442,79.253,True,2,Small Low-Volume Shops,False,-4.243,Medium,-1.664,2.372,293.31,103.69,0.354,0.065,6.754,0.0,0.131,0.074
+537,1539013,Ranga Reddy,Farooqnagar,Urban,17.065,78.201,True,0,Typical Steady Shops,False,4.239,Medium,2.239,-2.651,633.69,996.517,1.573,0.85,32.325,0.0,0.097,0.097
+539,2388021,Nalgonda,Neredugommu,Rural,16.622,78.997,True,2,Small Low-Volume Shops,False,-4.225,Medium,-2.054,1.651,432.448,153.655,0.355,0.016,7.624,0.0,0.066,0.033
+539,2337024,Nalgonda,Marriguda,Rural,16.989,78.861,True,2,Small Low-Volume Shops,False,-4.185,Medium,-3.01,2.43,137.276,49.345,0.359,0.015,7.58,0.0,0.123,0.118
+537,1599010,Ranga Reddy,Balapur,Urban,17.311,78.532,True,0,Typical Steady Shops,False,4.158,Medium,2.722,-3.106,1234.448,1925.69,1.56,0.795,31.727,0.0,0.059,0.043
+534,2084116,Karimnagar,KARIMNAGAR URBAN,Rural,18.43,79.134,True,0,Typical Steady Shops,False,4.157,Medium,2.049,-2.309,489.241,763.069,1.56,0.851,31.579,0.0,0.123,0.117
+939,4208037,Wanaparthy,Pangal,Rural,16.198,78.156,True,2,Small Low-Volume Shops,False,-4.154,Medium,-0.931,1.956,419.0,151.966,0.363,0.177,7.869,0.0,0.088,0.054
+926,2909041,Kamareddy,Kamareddy,Rural,18.32,78.323,True,0,Typical Steady Shops,False,4.128,Medium,1.879,-2.573,498.172,774.759,1.555,0.735,36.16,0.0,0.09,0.068
+930,3310001,Medchal,Keesara,Urban,17.468,78.644,True,0,Typical Steady Shops,False,4.124,Medium,2.437,-3.041,981.828,1526.31,1.555,0.731,32.776,0.0,0.057,0.053
+938,4111001,Vikarabad,Vikarabad.,Rural,17.39,77.942,True,2,Small Low-Volume Shops,False,-4.123,Medium,-1.745,1.282,499.138,182.621,0.366,0.033,6.707,0.0,0.026,0.011
+934,3722015,Sangareddy,Ramachandrapuram,Rural,17.51,78.288,True,0,Typical Steady Shops,False,4.11,Medium,1.995,-2.774,591.103,917.655,1.552,0.756,35.093,0.0,0.07,0.067
+933,3610015,Peddapalli,PEDDAPALLI,Rural,18.615,79.377,True,0,Typical Steady Shops,False,4.058,Medium,1.592,-1.89,294.759,455.207,1.544,0.824,30.784,0.0,0.15,0.12
+940,4309033,Warangal,Nekkonda,Rural,17.839,79.763,True,2,Small Low-Volume Shops,False,-3.973,Medium,-1.801,1.775,274.0,104.483,0.381,0.077,6.779,0.0,0.066,0.009
+934,3719041,Sangareddy,Patancheru,Rural,17.538,78.262,True,0,Typical Steady Shops,False,3.949,Medium,1.776,-2.524,494.069,754.621,1.527,0.695,31.916,0.0,0.083,0.082
+537,1599002,Ranga Reddy,Balapur,Urban,17.294,78.497,True,0,Typical Steady Shops,False,3.946,Medium,2.708,-3.1,1512.931,2310.0,1.527,0.607,33.001,0.0,0.054,0.058
+932,3501033,Nirmal,Bhainsa,Rural,19.109,77.959,True,0,Typical Steady Shops,False,3.938,Medium,1.328,-2.485,318.966,486.621,1.526,0.721,30.828,0.0,0.07,0.051
+538,1481003,Mahbubnagar,Mahabubnagar,Rural,16.742,77.988,True,2,Small Low-Volume Shops,False,-3.936,Medium,-0.091,1.451,704.931,271.483,0.385,0.371,8.969,0.002,0.049,0.032
+930,3314007,Medchal,Medipally,Urban,17.435,78.608,True,0,Typical Steady Shops,False,3.923,Medium,2.708,-2.935,1341.31,2043.207,1.523,0.711,31.619,0.0,0.067,0.061
+934,3702010,Sangareddy,Ameenpur,Rural,17.517,78.3,True,0,Typical Steady Shops,False,3.897,Medium,2.772,-2.304,1106.655,1681.345,1.519,0.777,31.868,0.0,0.136,0.077
+931,3403004,Nagarkarnool,Balmoor,Rural,16.312,78.531,True,2,Small Low-Volume Shops,False,-3.865,Medium,-2.016,1.496,341.379,133.966,0.392,0.032,8.316,0.0,0.051,0.031
+934,3719001,Sangareddy,Patancheru,Rural,17.514,78.233,True,0,Typical Steady Shops,False,3.852,Medium,1.109,-2.052,297.0,449.138,1.512,0.429,30.401,0.0,0.12,0.147
+934,3727039,Sangareddy,Zahirabad,Rural,17.68,77.607,True,0,Typical Steady Shops,False,3.85,Medium,2.208,-1.666,550.207,831.862,1.512,0.747,35.589,0.0,0.187,0.159
+933,3611015,Peddapalli,RAMAGIRI,Rural,18.642,79.552,True,0,Typical Steady Shops,True,3.825,High,0.865,-1.455,134.034,202.138,1.508,0.953,27.726,0.0,0.155,0.149
+934,3722032,Sangareddy,Ramachandrapuram,Rural,17.508,78.287,True,0,Typical Steady Shops,False,3.818,Medium,1.372,-2.043,262.0,394.828,1.507,0.962,31.847,0.0,0.106,0.038
+537,1599015,Ranga Reddy,Balapur,Urban,0.0,0.0,False,0,Typical Steady Shops,False,3.785,Medium,2.77,-2.256,1054.368,1583.421,1.502,0.92,32.741,0.0,0.131,0.132
+538,1425035,Mahbubnagar,Mahabubnagar,Rural,16.744,78.022,True,0,Typical Steady Shops,False,-3.771,Medium,0.138,1.602,720.69,234.621,0.326,0.66,7.969,0.004,0.034,0.023
+928,3113020,Mahabubabad,Narsimhulapet,Rural,17.487,79.805,True,2,Small Low-Volume Shops,False,-3.77,Medium,-1.736,2.45,299.069,120.276,0.402,0.034,8.094,0.0,0.17,0.093
+928,3110002,Mahabubabad,Chinnagudur,Rural,17.525,79.869,True,2,Small Low-Volume Shops,False,-3.761,Medium,-0.92,1.868,460.034,185.414,0.403,0.122,7.684,0.0,0.104,0.096
+537,1596020,Ranga Reddy,Abdullapurmet,Urban,17.253,78.582,True,0,Typical Steady Shops,False,3.759,Medium,1.653,-2.984,618.172,925.862,1.498,0.568,32.053,0.0,0.022,0.009
+930,3301034,Medchal,Medchal,Urban,17.632,78.488,True,0,Typical Steady Shops,False,3.757,Medium,2.527,-2.451,947.276,1418.448,1.497,0.852,31.385,0.0,0.101,0.052
+931,3409015,Nagarkarnool,Lingal,Rural,16.305,78.462,True,2,Small Low-Volume Shops,False,-3.728,Medium,-1.297,2.258,436.793,177.552,0.406,0.043,9.471,0.0,0.161,0.14
+541,2281105,Khammam,Khammam (Rural)-1 (Urban),Rural,17.255,80.144,True,0,Typical Steady Shops,True,3.726,High,1.114,-1.129,157.414,234.966,1.493,0.949,27.504,0.0,0.195,0.058
+928,3105035,Mahabubabad,Mahabubabad,Rural,17.589,79.963,True,2,Small Low-Volume Shops,False,-3.72,Medium,-0.487,1.948,611.966,249.276,0.407,0.144,8.89,0.0,0.125,0.053
+936,3911019,Rajanna Siricilla,VEMULAWADA,Rural,18.475,78.862,True,0,Typical Steady Shops,False,3.71,Medium,1.892,-2.633,632.0,941.759,1.49,0.698,28.947,0.0,0.061,0.042
+537,1539003,Ranga Reddy,Farooqnagar,Urban,17.068,78.211,True,0,Typical Steady Shops,False,3.705,Medium,1.972,-2.579,638.0,950.172,1.489,0.773,31.935,0.0,0.067,0.061
+532,1981012,Adilabad,Adilabad,Rural,19.676,78.537,True,0,Typical Steady Shops,False,3.698,Medium,1.735,-2.501,495.138,736.897,1.488,0.791,30.555,0.0,0.066,0.014
+934,3702012,Sangareddy,Ameenpur,Rural,17.515,78.307,True,0,Typical Steady Shops,False,3.698,Medium,2.395,-2.615,982.034,1461.517,1.488,0.728,31.427,0.0,0.078,0.057
+534,2084148,Karimnagar,KARIMNAGAR URBAN,Rural,18.449,79.127,True,0,Typical Steady Shops,False,3.692,Medium,2.104,-2.043,559.552,832.241,1.487,0.9,28.928,0.0,0.126,0.104
+934,3727043,Sangareddy,Zahirabad,Rural,17.681,77.604,True,0,Typical Steady Shops,False,3.686,Medium,1.8,-2.385,492.034,731.345,1.486,0.846,36.426,0.0,0.079,0.059
+936,3908011,Rajanna Siricilla,SIRCILLA,Rural,18.394,78.816,True,0,Typical Steady Shops,False,3.652,Medium,2.041,-2.216,631.828,935.828,1.481,0.723,32.297,0.0,0.108,0.122
+534,2084165,Karimnagar,KARIMNAGAR URBAN,Rural,18.44,79.142,True,0,Typical Steady Shops,False,3.638,Medium,2.103,-1.276,431.759,638.552,1.479,0.929,31.951,0.0,0.208,0.142
+932,3501039,Nirmal,Bhainsa,Rural,19.105,77.97,True,0,Typical Steady Shops,False,3.63,Medium,2.001,-2.563,729.897,1078.586,1.478,0.65,33.034,0.0,0.07,0.049
+534,2084147,Karimnagar,KARIMNAGAR URBAN,Rural,18.456,79.126,True,0,Typical Steady Shops,False,3.628,Medium,2.553,-2.206,995.207,1470.345,1.477,0.758,29.033,0.0,0.125,0.111
+931,3409024,Nagarkarnool,Lingal,Rural,16.264,78.421,True,2,Small Low-Volume Shops,False,-3.621,Medium,-0.699,1.775,377.483,157.586,0.417,0.292,9.236,0.0,0.084,0.051
+539,2358029,Nalgonda,Gundlapalli,Rural,16.67,78.753,True,2,Small Low-Volume Shops,False,-3.602,Medium,-1.247,1.964,510.448,214.103,0.419,0.038,8.082,0.0,0.137,0.126
+931,3415034,Nagarkarnool,Telkapally,Rural,16.359,78.449,True,2,Small Low-Volume Shops,False,-3.593,Medium,-0.685,1.851,406.483,170.862,0.42,0.237,9.05,0.0,0.099,0.042
+934,3724041,Sangareddy,Sangareddy.,Rural,17.609,78.087,True,0,Typical Steady Shops,False,3.592,Medium,1.769,-2.532,522.724,769.345,1.472,0.851,31.071,0.0,0.055,0.023
+925,2804030,Janagaon,Ghanpur(Stn),Rural,17.759,79.396,True,2,Small Low-Volume Shops,False,-3.582,Medium,-0.963,1.246,567.069,239.034,0.422,0.101,7.954,0.0,0.044,0.008
+537,1596022,Ranga Reddy,Abdullapurmet,Urban,17.297,78.617,True,0,Typical Steady Shops,False,3.571,Medium,2.174,-2.113,720.276,1057.759,1.469,0.709,31.034,0.0,0.12,0.122
+938,4103003,Vikarabad,Kulkacharla,Rural,17.024,77.82,True,2,Small Low-Volume Shops,False,-3.57,Medium,-1.581,2.098,307.0,129.793,0.423,0.055,11.01,0.0,0.133,0.129
+930,3314009,Medchal,Medipally,Urban,17.392,78.601,True,0,Typical Steady Shops,False,3.568,Medium,2.653,-2.321,1172.241,1720.931,1.468,0.749,29.919,0.0,0.112,0.092
+934,3722022,Sangareddy,Ramachandrapuram,Rural,17.505,78.309,True,0,Typical Steady Shops,False,3.567,Medium,1.974,-2.027,556.483,816.862,1.468,0.783,30.156,0.0,0.12,0.11
+535,1706028,Medak,Shankarampet (A),Rural,18.02,77.912,True,2,Small Low-Volume Shops,False,-3.533,Medium,-1.218,1.677,347.069,148.034,0.427,0.125,7.955,0.0,0.08,0.01
+934,3724046,Sangareddy,Sangareddy.,Rural,17.603,78.083,True,0,Typical Steady Shops,False,3.52,Medium,1.863,-2.454,606.103,885.241,1.461,0.752,32.266,0.0,0.067,0.05
+926,2909013,Kamareddy,Kamareddy,Rural,18.323,78.332,True,0,Typical Steady Shops,False,3.509,Medium,2.088,-2.05,615.034,897.241,1.459,0.848,32.039,0.0,0.116,0.129
+534,2084139,Karimnagar,KARIMNAGAR URBAN,Rural,18.442,79.115,True,0,Typical Steady Shops,False,3.5,Medium,2.538,-1.973,883.172,1287.207,1.457,0.9,28.577,0.0,0.138,0.046
+532,1981025,Adilabad,Adilabad,Rural,19.672,78.536,True,0,Typical Steady Shops,False,3.49,Medium,1.759,-2.275,579.655,843.897,1.456,0.608,29.37,0.0,0.087,0.085
+534,2084161,Karimnagar,KARIMNAGAR URBAN,Rural,18.451,79.113,True,0,Typical Steady Shops,False,3.486,Medium,2.521,-1.872,886.034,1289.379,1.455,0.813,28.203,0.0,0.151,0.102
+934,3719047,Sangareddy,Patancheru,Rural,17.532,78.261,True,0,Typical Steady Shops,False,3.477,Medium,1.994,-2.377,708.207,1029.655,1.454,0.685,30.649,0.0,0.08,0.063
+539,2359002,Nalgonda,Chandam Pet,Rural,16.553,78.872,True,2,Small Low-Volume Shops,False,-3.475,Medium,-2.616,1.731,220.069,95.172,0.432,0.012,9.755,0.0,0.09,0.024
+537,1533036,Ranga Reddy,Maheswaram,Urban,17.155,78.467,True,3,Volatile Shops,True,3.468,High,0.877,1.654,187.483,216.069,1.152,0.394,28.453,0.0,0.394,0.294
+931,3404042,Nagarkarnool,Bijinapalle,Rural,16.511,78.206,True,2,Small Low-Volume Shops,False,-3.465,Medium,-2.512,2.28,153.414,66.517,0.434,0.028,8.098,0.0,0.14,0.091
+533,1807017,Nizamabad,Kammarpally,Rural,18.836,78.509,True,0,Typical Steady Shops,False,3.451,Medium,1.704,-2.092,541.931,785.724,1.45,0.57,27.577,0.0,0.105,0.026
+927,3014008,Bhadrdri Kothagudem,Manuguru,Rural,18.003,80.791,True,2,Small Low-Volume Shops,False,-3.442,Medium,-0.655,1.855,678.552,295.759,0.436,0.071,9.273,0.0,0.137,0.089
+537,1539024,Ranga Reddy,Farooqnagar,Urban,17.041,78.12,True,2,Small Low-Volume Shops,False,-3.439,Medium,-1.061,1.42,478.448,208.724,0.436,0.096,9.861,0.0,0.067,0.072
+934,3719043,Sangareddy,Patancheru,Rural,17.527,78.272,True,0,Typical Steady Shops,False,3.429,Medium,1.794,-2.42,656.138,949.069,1.446,0.589,32.095,0.0,0.069,0.08
+928,3104003,Mahabubabad,Garla,Rural,17.49,80.145,True,2,Small Low-Volume Shops,False,-3.426,Medium,-0.764,1.408,683.241,298.931,0.438,0.079,8.662,0.0,0.081,0.068
+930,3314006,Medchal,Medipally,Urban,17.422,78.582,True,0,Typical Steady Shops,True,3.403,High,3.605,-2.721,3584.69,5170.241,1.442,0.695,29.879,0.0,0.093,0.092
+539,2359015,Nalgonda,Chandam Pet,Rural,16.523,78.946,True,2,Small Low-Volume Shops,False,-3.4,Medium,-1.604,1.471,312.379,137.517,0.44,0.076,9.709,0.0,0.061,0.019
+934,3719034,Sangareddy,Patancheru,Rural,17.533,78.263,True,0,Typical Steady Shops,False,3.395,Medium,1.865,-2.115,575.0,828.621,1.441,0.738,29.72,0.0,0.098,0.097
+932,3513002,Nirmal,Nirmal  Urban,Rural,19.091,78.349,True,0,Typical Steady Shops,False,3.393,Medium,1.757,-2.456,566.207,815.828,1.441,0.71,27.814,0.004,0.055,0.037
+537,1500004,Ranga Reddy,Gandipet,Urban,17.367,78.392,True,0,Typical Steady Shops,False,3.386,Medium,2.419,-2.272,805.966,1160.414,1.44,0.717,30.225,0.016,0.09,0.093
+930,3314008,Medchal,Medipally,Urban,17.408,78.603,True,0,Typical Steady Shops,False,3.367,Medium,2.331,-2.481,963.621,1384.552,1.437,0.821,29.246,0.0,0.069,0.045
+535,1723035,Medak,Chegunta,Rural,17.972,78.461,True,0,Typical Steady Shops,False,3.365,Medium,1.557,-2.284,538.621,773.724,1.436,0.54,28.882,0.0,0.075,0.064
+534,2084158,Karimnagar,KARIMNAGAR URBAN,Rural,18.441,79.107,True,0,Typical Steady Shops,False,3.365,Medium,2.219,-2.415,868.586,1247.621,1.436,0.786,28.387,0.0,0.073,0.015
+537,1500019,Ranga Reddy,Gandipet,Urban,17.336,78.394,True,0,Typical Steady Shops,False,3.364,Medium,1.475,-2.393,463.31,665.483,1.436,0.689,32.426,0.0,0.053,0.053
+941,4410021,Yadadri Bhuvanagiri,Narayanapur,Rural,17.089,78.854,True,2,Small Low-Volume Shops,False,-3.354,Medium,-1.25,1.22,513.241,228.379,0.445,0.06,8.918,0.0,0.053,0.009
+921,2407016,Kumarambheem Asifabad,Kerameri,Rural,19.538,79.047,True,3,Volatile Shops,True,3.352,High,-1.022,3.026,125.0,141.5,1.132,0.0,31.166,0.0,0.576,0.142
+930,3314003,Medchal,Medipally,Urban,17.396,78.592,True,0,Typical Steady Shops,False,3.351,Medium,2.641,-2.579,1441.828,2067.931,1.434,0.695,29.955,0.0,0.072,0.053
+934,3722018,Sangareddy,Ramachandrapuram,Rural,17.495,78.305,True,0,Typical Steady Shops,False,3.344,Medium,1.236,-1.048,207.0,296.655,1.433,0.904,29.906,0.0,0.187,0.163
+534,2084176,Karimnagar,KARIMNAGAR URBAN,Rural,18.451,79.112,True,0,Typical Steady Shops,False,3.315,Medium,1.968,-1.237,438.724,626.759,1.429,0.903,27.213,0.0,0.19,0.016
+939,4210009,Wanaparthy,Peddamandadi,Rural,16.479,78.048,True,2,Small Low-Volume Shops,False,-3.314,Medium,-1.322,1.879,449.379,201.793,0.449,0.038,9.292,0.0,0.136,0.121
+934,3716005,Sangareddy,Nagalgidda,Rural,18.119,77.607,True,2,Small Low-Volume Shops,False,-3.314,Medium,-1.535,2.088,295.0,132.483,0.449,0.057,10.607,0.0,0.143,0.065
+936,3911009,Rajanna Siricilla,VEMULAWADA,Rural,18.47,78.861,True,0,Typical Steady Shops,False,3.306,Medium,1.829,-2.501,697.034,994.862,1.427,0.66,27.812,0.0,0.051,0.034
+539,2383037,Nalgonda,Nalgonda,Rural,17.055,79.283,True,0,Typical Steady Shops,False,3.299,Medium,1.751,-2.552,732.69,1044.966,1.426,0.532,28.544,0.0,0.048,0.029
+538,1485017,Mahbubnagar,Rajapur,Rural,16.867,78.223,True,2,Small Low-Volume Shops,False,-3.293,Medium,-1.401,1.649,400.207,180.586,0.451,0.052,10.276,0.0,0.101,0.06
+939,4205021,Wanaparthy,Gopalpeta,Rural,16.431,78.157,True,2,Small Low-Volume Shops,False,-3.277,Medium,-2.01,2.602,279.379,126.517,0.453,0.01,10.619,0.0,0.218,0.236
+539,2359032,Nalgonda,Chandam Pet,Rural,16.478,79.119,True,2,Small Low-Volume Shops,False,-3.277,Medium,-2.019,1.829,206.172,93.379,0.453,0.056,9.914,0.0,0.099,0.041
+934,3727031,Sangareddy,Zahirabad,Rural,17.681,77.61,True,0,Typical Steady Shops,False,3.276,Medium,1.741,-1.869,485.31,690.379,1.423,0.774,31.423,0.0,0.113,0.041
+928,3116019,Mahabubabad,Thorrur,Rural,17.55,79.673,True,2,Small Low-Volume Shops,False,-3.267,Medium,-1.847,1.631,277.0,125.724,0.454,0.047,8.251,0.0,0.087,0.044
+539,2359017,Nalgonda,Chandam Pet,Rural,16.483,79.006,True,2,Small Low-Volume Shops,True,-3.257,High,-2.764,2.839,161.207,73.345,0.455,0.002,10.018,0.0,0.233,0.079
+937,4002008,Suryapet,Chilkur,Rural,16.962,79.912,True,2,Small Low-Volume Shops,False,-3.249,Medium,-0.663,1.216,720.172,328.241,0.456,0.09,8.295,0.0,0.067,0.04
+934,3723038,Sangareddy,Sadasivpet,Rural,17.621,77.953,True,0,Typical Steady Shops,False,3.222,Medium,1.684,-2.08,471.103,666.207,1.414,0.906,30.933,0.0,0.08,0.021
+937,4004031,Suryapet,Garidepalli,Rural,16.811,79.766,True,2,Small Low-Volume Shops,False,-3.213,Medium,-2.032,1.852,273.103,125.483,0.459,0.024,8.521,0.0,0.122,0.033
+934,3723050,Sangareddy,Sadasivpet,Rural,17.619,77.952,True,0,Typical Steady Shops,False,3.204,Medium,2.294,-1.76,792.207,1118.069,1.411,0.791,30.423,0.0,0.139,0.063
+537,1500024,Ranga Reddy,Gandipet,Urban,17.354,78.383,True,0,Typical Steady Shops,False,3.198,Medium,2.412,-2.205,1063.586,1500.207,1.411,0.743,29.792,0.0,0.095,0.088
+928,3106052,Mahabubabad,Kuravi,Rural,17.487,80.002,True,2,Small Low-Volume Shops,False,-3.196,Medium,-2.074,1.156,286.0,131.897,0.461,0.036,9.544,0.0,0.034,0.014
+935,3810040,Siddipet,Gajwel,Rural,17.845,78.679,True,0,Typical Steady Shops,False,3.186,Medium,1.636,-2.212,493.31,694.897,1.409,0.853,29.388,0.0,0.063,0.054
+938,4103023,Vikarabad,Kulkacharla,Rural,16.961,77.961,True,2,Small Low-Volume Shops,False,-3.184,Medium,-1.49,1.517,422.0,195.172,0.462,0.038,12.59,0.0,0.095,0.012
+933,3610047,Peddapalli,PEDDAPALLI,Rural,18.633,79.391,True,0,Typical Steady Shops,False,3.181,Medium,1.1,-2.323,427.655,602.069,1.408,0.44,25.162,0.0,0.049,0.047
+930,3307005,Medchal,Bachupally,Urban,17.514,78.383,True,0,Typical Steady Shops,False,3.166,Medium,2.149,-1.779,667.517,938.172,1.405,0.901,29.169,0.0,0.127,0.068
+537,1500006,Ranga Reddy,Gandipet,Urban,17.335,78.393,True,0,Typical Steady Shops,False,3.157,Medium,1.511,-2.184,489.0,686.621,1.404,0.683,30.638,0.0,0.066,0.046
+534,2084153,Karimnagar,KARIMNAGAR URBAN,Rural,18.427,79.134,True,0,Typical Steady Shops,False,3.153,Medium,2.416,-1.582,868.552,1218.931,1.403,0.758,27.429,0.0,0.162,0.064
+538,1425022,Mahbubnagar,Mahabubnagar,Rural,16.73,78.008,True,0,Typical Steady Shops,False,-3.151,Medium,1.227,1.484,1668.276,704.276,0.422,0.604,9.199,0.002,0.099,0.069
+537,1596035,Ranga Reddy,Abdullapurmet,Urban,17.321,78.638,True,0,Typical Steady Shops,False,3.146,Medium,2.325,-2.328,1173.31,1645.379,1.402,0.585,30.765,0.0,0.082,0.066
+982,4609021,Narayanpet,Makthal,Rural,16.36,77.61,True,2,Small Low-Volume Shops,False,-3.143,Medium,-1.198,0.96,901.966,420.931,0.467,0.015,10.659,0.0,0.062,0.023
+930,3314002,Medchal,Medipally,Urban,17.392,78.61,True,0,Typical Steady Shops,False,3.127,Medium,2.331,-2.429,1235.724,1729.345,1.399,0.581,28.904,0.0,0.07,0.066
+930,3307011,Medchal,Bachupally,Urban,17.514,78.384,True,0,Typical Steady Shops,False,3.125,Medium,2.738,-2.176,1498.138,2095.966,1.399,0.709,29.416,0.0,0.107,0.079
+930,3301030,Medchal,Medchal,Urban,17.608,78.479,True,0,Typical Steady Shops,False,3.124,Medium,0.862,-1.511,224.448,314.0,1.399,0.632,29.321,0.0,0.119,0.108
+933,3610002,Peddapalli,PEDDAPALLI,Rural,18.615,79.375,True,0,Typical Steady Shops,False,3.124,Medium,1.615,-1.78,432.931,605.621,1.399,0.832,29.755,0.0,0.108,0.104
+937,4001006,Suryapet,Atmakur  (S),Rural,17.293,79.719,True,2,Small Low-Volume Shops,False,-3.123,Medium,-0.515,1.607,392.966,184.207,0.469,0.321,9.147,0.0,0.088,0.036
+937,4022021,Suryapet,Chinthalapalem,Rural,16.773,80.039,True,2,Small Low-Volume Shops,False,-3.119,Medium,-0.729,1.629,504.931,236.897,0.469,0.117,8.919,0.0,0.11,0.056
+539,2382024,Nalgonda,Miryalaguda,Rural,16.87,79.564,True,0,Typical Steady Shops,False,3.116,Medium,1.594,-1.902,473.793,662.207,1.398,0.726,28.591,0.0,0.096,0.023
+535,1708022,Medak,Tekmal,Rural,17.973,78.035,True,0,Typical Steady Shops,False,3.115,Medium,1.42,-2.007,458.828,641.241,1.398,0.598,30.952,0.0,0.084,0.054
+537,1532038,Ranga Reddy,Shamshabad,Urban,17.268,78.388,True,0,Typical Steady Shops,False,3.108,Medium,1.842,-2.215,664.517,927.931,1.396,0.728,30.035,0.0,0.069,0.07
+926,2909003,Kamareddy,Kamareddy,Rural,18.326,78.338,True,0,Typical Steady Shops,False,3.106,Medium,1.122,-2.065,306.31,427.655,1.396,0.831,31.561,0.0,0.057,0.013
+539,2389014,Nalgonda,Konda Mallepally,Rural,16.737,78.927,True,2,Small Low-Volume Shops,False,-3.106,Medium,-1.069,1.538,383.517,180.448,0.471,0.115,10.585,0.0,0.088,0.031
+930,3302089,Medchal,Uppal-2,Urban,17.49,78.576,True,0,Typical Steady Shops,False,-3.066,Medium,1.052,1.663,1271.414,553.414,0.435,0.648,8.801,0.001,0.117,0.097
+537,1585704,Ranga Reddy,Saroornagar-3,Urban,17.333,78.599,True,1,Portability Hubs,False,3.059,Medium,3.9,-3.901,820.862,1505.828,1.834,0.917,37.238,0.062,0.072,0.056
+537,1593005,Ranga Reddy,Talakondapally,Urban,16.925,78.381,True,2,Small Low-Volume Shops,False,-3.054,Medium,-1.702,1.515,447.276,212.828,0.476,0.016,9.609,0.0,0.109,0.085
+537,1599020,Ranga Reddy,Balapur,Urban,0.0,0.0,False,0,Typical Steady Shops,False,3.041,Medium,2.695,-1.633,1123.588,1557.235,1.386,0.871,34.26,0.0,0.156,0.15
+930,3384067,Medchal,Balanagar-1,Urban,17.476,78.478,True,0,Typical Steady Shops,False,-3.039,Medium,0.769,1.295,945.69,415.621,0.439,0.384,9.903,0.027,0.065,0.071
+937,4016013,Suryapet,Nuthankal,Rural,17.345,79.792,True,2,Small Low-Volume Shops,False,-3.036,Medium,-1.481,1.256,431.0,205.862,0.478,0.042,8.454,0.0,0.069,0.031
+934,3727028,Sangareddy,Zahirabad,Rural,17.684,77.609,True,0,Typical Steady Shops,False,3.024,Medium,1.699,-1.92,589.0,814.828,1.383,0.618,31.402,0.0,0.097,0.1
+933,3601008,Peddapalli,Anthergaon,Rural,18.789,79.347,True,2,Small Low-Volume Shops,False,-3.017,Medium,-0.674,1.667,695.138,333.379,0.48,0.056,9.71,0.0,0.138,0.053
+539,2358009,Nalgonda,Gundlapalli,Rural,16.538,78.792,True,2,Small Low-Volume Shops,False,-3.016,Medium,-1.589,1.363,287.107,137.75,0.48,0.08,8.92,0.0,0.063,0.028
+539,2356019,Nalgonda,Chintha Palle,Rural,16.867,78.843,True,2,Small Low-Volume Shops,False,-3.008,Medium,-2.084,1.515,212.241,102.0,0.481,0.048,9.004,0.0,0.075,0.049
+938,4111039,Vikarabad,Vikarabad.,Rural,17.313,77.917,True,2,Small Low-Volume Shops,False,-3.007,Medium,-1.235,1.649,311.0,149.483,0.481,0.112,9.882,0.0,0.099,0.048
+932,3501029,Nirmal,Bhainsa,Rural,19.109,77.963,True,0,Typical Steady Shops,False,3.004,Medium,1.979,-2.333,816.379,1126.759,1.38,0.738,28.787,0.0,0.054,0.011
+539,2355022,Nalgonda,Nampalli,Rural,16.799,78.939,True,2,Small Low-Volume Shops,False,-3.0,Medium,-1.725,1.324,253.103,121.828,0.481,0.082,9.121,0.0,0.054,0.027
+537,1585678,Ranga Reddy,Saroornagar-3,Urban,17.333,78.549,True,3,Volatile Shops,True,2.997,Medium,3.595,6.389,139.207,148.828,1.069,0.976,20.315,0.064,0.924,0.334
+930,3310013,Medchal,Keesara,Urban,17.488,78.603,True,3,Volatile Shops,True,2.975,Medium,3.119,2.018,1239.759,1320.793,1.065,0.726,22.832,0.0,0.464,0.449
+538,1481059,Mahbubnagar,Mahabubnagar,Rural,16.744,77.982,True,3,Volatile Shops,True,-2.891,Medium,2.372,10.927,497.655,13.931,0.028,0.76,0.734,0.0,1.044,0.281
+539,2358012,Nalgonda,Gundlapalli,Rural,16.63,79.374,True,3,Volatile Shops,True,-2.74,Medium,2.769,15.331,271.25,14.821,0.055,0.193,1.256,0.0,1.598,0.837
+536,1676602,Hyderabad,Amberpet-6,Urban,17.401,78.492,True,1,Portability Hubs,True,-2.734,Medium,3.44,1.624,3604.69,805.207,0.223,0.529,4.631,0.124,0.044,0.008
+928,3114039,Mahabubabad,Nellikudur,Rural,17.612,79.809,True,3,Volatile Shops,True,-2.73,Medium,1.058,11.144,142.0,8.0,0.056,0.603,1.237,0.0,1.039,1.101
+930,3302171,Medchal,Uppal-2,Urban,17.454,78.539,True,3,Volatile Shops,True,-2.702,Medium,1.429,7.213,452.0,27.714,0.061,0.957,1.084,0.021,0.587,0.53
+538,1481055,Mahbubnagar,Mahabubnagar,Rural,16.742,77.982,True,3,Volatile Shops,True,-2.688,Medium,5.771,18.632,563.538,35.923,0.064,0.575,1.338,0.023,2.032,0.824
+930,3302191,Medchal,Uppal-2,Urban,17.477,78.53,True,3,Volatile Shops,True,-2.687,Medium,2.999,6.514,714.966,45.759,0.064,0.876,1.24,0.105,0.515,0.149
+930,3384049,Medchal,Balanagar-1,Urban,17.456,78.45,True,1,Portability Hubs,True,-2.65,Medium,7.605,6.306,465.05,114.7,0.247,0.986,1.715,0.383,0.543,0.782
+534,2048602,Karimnagar,Kesavapatnam,Rural,18.278,79.295,True,3,Volatile Shops,True,-2.634,Medium,4.326,16.51,424.0,31.103,0.073,0.596,1.529,0.0,1.761,0.869
+928,3105017,Mahabubabad,Mahabubabad,Rural,17.594,79.996,True,3,Volatile Shops,True,-2.632,Medium,2.125,9.763,486.0,35.815,0.074,0.89,1.944,0.0,0.918,0.497
+930,3384048,Medchal,Balanagar-1,Urban,17.458,78.447,True,1,Portability Hubs,True,-2.63,Medium,9.762,5.225,628.409,158.455,0.252,0.964,1.057,0.52,0.414,0.239
+536,1674443,Hyderabad,Nampally-4,Urban,17.383,78.478,True,1,Portability Hubs,True,-2.605,Medium,4.249,4.743,1092.069,283.103,0.259,0.769,5.526,0.162,0.401,0.334
+928,3107016,Mahabubabad,Kesamudram,Rural,17.686,79.898,True,3,Volatile Shops,True,-2.601,Medium,3.971,14.531,892.31,70.69,0.079,0.252,1.826,0.0,1.552,0.719
+538,1481001,Mahbubnagar,Mahabubnagar,Rural,16.744,77.986,True,3,Volatile Shops,True,-2.6,Medium,1.252,7.042,517.407,41.037,0.079,0.965,1.898,0.002,0.581,0.274
+940,4309014,Warangal,Nekkonda,Rural,17.753,79.885,True,3,Volatile Shops,True,-2.591,Medium,4.731,17.419,426.815,34.556,0.081,0.632,1.535,0.0,1.878,0.935
+537,1599011,Ranga Reddy,Balapur,Urban,17.307,78.525,True,3,Volatile Shops,True,2.529,Medium,3.147,1.525,1920.931,1894.69,0.986,0.694,19.47,0.0,0.381,0.446
+930,3302157,Medchal,Uppal-2,Urban,17.477,78.53,True,1,Portability Hubs,True,-2.48,Medium,1.76,2.287,779.069,229.0,0.294,0.321,6.767,0.11,0.108,0.049
+536,1674447,Hyderabad,Nampally-4,Urban,17.38,78.467,True,1,Portability Hubs,True,-2.47,Medium,3.148,4.243,400.069,118.724,0.297,0.692,6.186,0.17,0.319,0.165
+536,1674405,Hyderabad,Nampally-4,Urban,17.384,78.495,True,1,Portability Hubs,True,-2.453,Medium,4.019,4.504,1008.0,303.828,0.301,0.674,6.491,0.155,0.39,0.345
+930,3302213,Medchal,Uppal-2,Urban,17.46,78.542,True,3,Volatile Shops,True,-2.445,Medium,1.087,8.499,270.0,28.828,0.107,0.858,2.164,0.0,0.753,0.195
+538,1481030,Mahbubnagar,Mahabubnagar,Rural,16.755,77.992,True,3,Volatile Shops,True,-2.443,Medium,1.526,5.036,1015.379,108.759,0.107,0.449,2.39,0.039,0.374,0.21
+933,3612011,Peddapalli,RAMAGUNDAM URBAN,Rural,18.748,79.513,True,3,Volatile Shops,True,-2.44,Medium,3.838,14.932,344.0,37.034,0.108,0.941,1.887,0.0,1.568,1.067
+933,3610004,Peddapalli,PEDDAPALLI,Rural,18.613,79.373,True,3,Volatile Shops,True,-2.407,Medium,3.971,14.48,448.579,50.895,0.113,0.937,2.151,0.0,1.524,0.992
+536,1674446,Hyderabad,Nampally-4,Urban,17.38,78.467,True,1,Portability Hubs,True,-2.37,Medium,2.841,3.812,346.0,112.241,0.324,0.886,6.959,0.158,0.271,0.229
+538,1481040,Mahbubnagar,Mahabubnagar,Rural,16.755,77.989,True,3,Volatile Shops,True,-2.349,Medium,2.604,7.325,1024.103,126.759,0.124,0.536,2.559,0.043,0.667,0.477
+937,4008002,Suryapet,Kodad,Rural,16.999,79.966,True,3,Volatile Shops,True,-2.342,Medium,2.111,9.289,506.222,63.259,0.125,0.834,2.368,0.0,0.885,0.269
+930,3302177,Medchal,Uppal-2,Urban,17.447,78.528,True,3,Volatile Shops,True,-2.34,Medium,2.346,4.04,653.0,81.897,0.125,0.763,2.622,0.122,0.231,0.223
+930,3302221,Medchal,Uppal-2,Urban,17.46,78.542,True,3,Volatile Shops,True,-2.333,Medium,1.765,9.492,353.069,44.724,0.127,0.777,2.569,0.0,0.898,0.131
+929,3213028,Manchiryala,Mandamarri,Rural,18.996,79.471,True,3,Volatile Shops,True,-2.308,Medium,0.537,6.782,285.286,37.393,0.131,0.803,2.658,0.0,0.553,0.275
+933,3611002,Peddapalli,RAMAGIRI,Rural,18.799,79.432,True,3,Volatile Shops,True,-2.306,Medium,-1.042,3.789,717.897,94.379,0.131,0.039,2.45,0.0,0.239,0.266
+928,3116035,Mahabubabad,Thorrur,Rural,17.596,79.704,True,3,Volatile Shops,True,-2.294,Medium,3.891,14.781,446.207,59.552,0.133,0.575,3.103,0.0,1.576,0.614
+930,3302199,Medchal,Uppal-2,Urban,17.455,78.526,True,3,Volatile Shops,True,-2.291,Medium,1.527,4.532,532.0,71.345,0.134,0.554,2.74,0.082,0.294,0.241
+929,3213057,Manchiryala,Mandamarri,Rural,18.977,79.488,True,3,Volatile Shops,True,-2.266,Medium,3.05,14.273,229.0,31.724,0.139,0.65,2.759,0.0,1.488,0.788
+539,2382006,Nalgonda,Miryalaguda,Rural,16.879,79.565,True,3,Volatile Shops,True,-2.233,Medium,2.287,8.906,870.207,125.552,0.144,0.438,2.897,0.0,0.873,0.432
+925,2804013,Janagaon,Ghanpur(Stn),Rural,17.835,79.352,True,3,Volatile Shops,True,-2.233,Medium,1.322,8.208,388.069,56.0,0.144,0.623,2.319,0.0,0.752,0.568
+537,1585676,Ranga Reddy,Saroornagar-3,Urban,17.328,78.588,True,1,Portability Hubs,True,2.223,Medium,3.862,-0.624,268.448,430.0,1.602,0.989,29.344,0.099,0.325,0.124
+933,3610016,Peddapalli,PEDDAPALLI,Rural,18.615,79.377,True,3,Volatile Shops,True,-2.204,Medium,4.163,15.225,401.0,59.897,0.149,0.806,3.683,0.0,1.632,0.98
+928,3102006,Mahabubabad,Kothagudem,Rural,17.966,80.06,True,3,Volatile Shops,True,-2.184,Medium,1.61,10.49,334.958,51.25,0.153,0.259,2.712,0.0,1.044,0.429
+536,1672207,Hyderabad,Yakutpura-2,Urban,17.375,78.488,True,3,Volatile Shops,True,-2.177,Medium,0.389,2.615,700.0,107.897,0.154,0.461,3.344,0.041,0.079,0.04
+537,1599003,Ranga Reddy,Balapur,Urban,17.293,78.443,True,3,Volatile Shops,True,2.159,Medium,3.789,3.764,2119.069,1951.586,0.921,0.553,20.836,0.0,0.636,0.689
+538,1481026,Mahbubnagar,Mahabubnagar,Rural,16.749,78.007,True,3,Volatile Shops,True,-2.137,Medium,2.487,11.169,237.931,38.379,0.161,0.989,4.144,0.018,1.107,0.785
+536,1674480,Hyderabad,Nampally-4,Urban,17.375,78.462,True,1,Portability Hubs,True,-2.107,Medium,2.669,2.211,445.345,177.103,0.398,0.587,9.196,0.167,0.119,0.039
+537,1585761,Ranga Reddy,Saroornagar-3,Urban,17.325,78.555,True,1,Portability Hubs,True,2.105,Medium,3.594,-0.696,405.793,636.759,1.569,0.956,32.908,0.064,0.318,0.35
+934,3703023,Sangareddy,Andole,Rural,17.832,78.076,True,3,Volatile Shops,True,-2.092,Medium,1.888,7.917,622.448,105.379,0.169,0.736,3.564,0.0,0.744,0.319
+538,1490007,Mahbubnagar,Gandeed,Rural,16.897,77.77,True,3,Volatile Shops,True,-2.089,Medium,-1.475,5.447,203.759,34.586,0.17,0.062,3.926,0.0,0.414,0.216
+937,4008019,Suryapet,Kodad,Rural,16.998,79.96,True,3,Volatile Shops,True,-2.073,Medium,1.199,7.387,529.31,91.345,0.173,0.391,3.668,0.0,0.679,0.205
+537,1583199,Ranga Reddy,Saroornagar-3,Urban,17.343,78.429,True,3,Volatile Shops,True,-2.055,Medium,3.073,6.109,1140.0,200.276,0.176,0.683,4.178,0.075,0.54,0.14
+921,2401028,Kumarambheem Asifabad,Asifabad.,Rural,19.358,79.213,True,3,Volatile Shops,True,2.047,Medium,-0.394,2.545,169.793,153.0,0.901,0.087,21.957,0.0,0.394,0.224
+936,3908035,Rajanna Siricilla,SIRCILLA,Rural,18.385,78.804,True,3,Volatile Shops,True,-2.038,Medium,1.244,7.541,512.68,91.68,0.179,0.393,3.962,0.0,0.7,0.488
+536,1674474,Hyderabad,Nampally-4,Urban,17.375,78.462,True,1,Portability Hubs,True,-2.009,Medium,2.925,2.128,387.207,164.517,0.425,0.956,9.451,0.174,0.111,0.013
+933,3612040,Peddapalli,RAMAGUNDAM URBAN,Rural,18.74,79.521,True,3,Volatile Shops,True,-2.007,Medium,1.824,8.409,574.211,105.789,0.184,0.489,3.45,0.0,0.813,0.438
+934,3719037,Sangareddy,Patancheru,Rural,17.534,78.265,True,3,Volatile Shops,True,-1.998,Medium,5.317,18.503,319.667,59.389,0.186,0.886,3.876,0.0,2.051,1.543
+537,1585379,Ranga Reddy,Saroornagar-3,Urban,17.325,78.555,True,1,Portability Hubs,True,1.989,Medium,4.304,-0.717,832.207,1278.931,1.537,0.946,31.811,0.067,0.327,0.339
+937,4011017,Suryapet,Mellachervu,Rural,16.84,79.942,True,0,Typical Steady Shops,True,1.979,Medium,0.878,0.881,159.034,194.138,1.221,0.664,23.865,0.0,0.319,0.39
+539,2354019,Nalgonda,Gurrampode,Rural,16.818,79.14,True,3,Volatile Shops,True,-1.91,Medium,1.789,9.451,343.034,69.103,0.201,0.572,3.867,0.0,0.931,0.41
+940,4315030,Warangal,Wardhannapet,Rural,17.74,79.589,True,3,Volatile Shops,True,-1.906,Medium,2.259,10.159,551.0,111.393,0.202,0.306,4.052,0.0,1.044,0.775
+539,2359035,Nalgonda,Chandam Pet,Rural,16.641,78.891,True,2,Small Low-Volume Shops,True,1.896,Medium,-3.758,-0.579,53.069,52.276,0.985,0.0,22.669,0.0,0.021,0.008
+537,1585770,Ranga Reddy,Saroornagar-3,Urban,17.324,78.606,True,1,Portability Hubs,True,1.875,Medium,3.095,0.413,144.621,217.655,1.505,0.973,28.309,0.088,0.386,0.116
+930,3302153,Medchal,Uppal-2,Urban,17.443,78.528,True,3,Volatile Shops,True,-1.872,Medium,3.056,4.95,411.036,85.536,0.208,0.658,4.082,0.164,0.367,0.212
+934,3717012,Sangareddy,Narayankhed,Rural,18.006,77.773,True,3,Volatile Shops,True,-1.871,Medium,0.346,8.897,297.0,61.893,0.208,0.06,4.929,0.0,0.88,0.422
+927,3031025,Bhadrdri Kothagudem,Kothagudem.,Rural,17.554,80.612,True,3,Volatile Shops,True,-1.854,Medium,1.214,7.577,308.333,65.148,0.211,0.882,4.083,0.0,0.693,0.544
+928,3109012,Mahabubabad,Gangaram,Rural,18.137,80.578,True,2,Small Low-Volume Shops,True,1.846,Medium,-3.989,0.363,31.0,30.379,0.98,0.0,18.661,0.0,0.117,0.075
+925,2813001,Janagaon,Tharigoppula,Rural,,,False,3,Volatile Shops,True,-1.789,Medium,1.257,8.495,394.517,87.897,0.223,0.266,4.289,0.0,0.834,0.217
+931,3408033,Nagarkarnool,Kollapur,Rural,16.134,78.363,True,3,Volatile Shops,True,-1.785,Medium,-0.63,5.102,371.69,83.069,0.223,0.088,4.379,0.0,0.417,0.351
+931,3410004,Nagarkarnool,Nagar Kurnool,Rural,16.486,78.32,True,3,Volatile Shops,True,-1.781,Medium,1.478,7.332,418.64,93.88,0.224,0.855,4.512,0.0,0.68,0.138
+981,4506013,Mulugu,Tadvai,Rural,18.179,80.264,True,3,Volatile Shops,True,1.756,Medium,-0.825,2.26,61.0,51.828,0.85,0.587,24.447,0.0,0.278,0.088
+537,1583404,Ranga Reddy,Saroornagar-3,Urban,17.3,78.418,True,1,Portability Hubs,True,-1.752,Medium,2.323,0.75,1060.414,526.379,0.496,0.117,10.486,0.152,0.032,0.009
+940,4311017,Warangal,Parvathagiri,Rural,17.692,79.748,True,3,Volatile Shops,True,-1.733,Medium,0.265,6.735,345.0,80.296,0.233,0.174,4.127,0.0,0.617,0.433
+930,3302116,Medchal,Uppal-2,Urban,17.484,78.589,True,1,Portability Hubs,True,1.722,Medium,3.223,-0.428,250.448,366.31,1.463,0.964,26.011,0.087,0.281,0.039
+536,1673362,Hyderabad,Charminar-3,Urban,17.36,78.462,True,1,Portability Hubs,True,1.67,Medium,4.897,-0.767,508.0,735.655,1.448,0.864,33.281,0.156,0.255,0.254
+539,2382001,Nalgonda,Miryalaguda,Rural,16.843,79.534,True,3,Volatile Shops,True,-1.653,Medium,2.397,8.65,629.321,155.321,0.247,0.713,4.867,0.0,0.874,0.516
+928,3109013,Mahabubabad,Gangaram,Rural,17.943,80.12,True,2,Small Low-Volume Shops,True,1.65,Medium,-4.452,0.806,18.0,17.276,0.96,0.0,23.881,0.0,0.143,0.058
+921,2413007,Kumarambheem Asifabad,Tiryani,Rural,19.139,79.144,True,2,Small Low-Volume Shops,True,1.641,Medium,-1.218,0.388,424.52,407.04,0.959,0.0,22.922,0.0,0.208,0.075
+933,3612001,Peddapalli,RAMAGUNDAM URBAN,Rural,18.8,79.452,True,3,Volatile Shops,True,-1.641,Medium,0.408,4.965,976.172,243.103,0.249,0.08,4.288,0.0,0.449,0.359
+931,3405005,Nagarkarnool,Charakonda,Rural,16.736,78.713,True,3,Volatile Shops,True,-1.634,Medium,0.427,5.982,624.31,156.241,0.25,0.103,5.578,0.0,0.558,0.227
+930,3384038,Medchal,Balanagar-1,Urban,17.469,78.419,True,3,Volatile Shops,True,-1.609,Medium,3.857,9.05,763.19,194.333,0.255,0.638,5.454,0.069,0.932,0.812
+930,3302220,Medchal,Uppal-2,Urban,17.447,78.528,True,1,Portability Hubs,True,-1.606,Medium,2.105,2.257,262.241,140.793,0.537,0.801,10.672,0.131,0.171,0.088
+932,3501017,Nirmal,Bhainsa,Rural,19.081,77.934,True,3,Volatile Shops,True,-1.606,Medium,-1.501,4.49,225.0,57.414,0.255,0.058,5.416,0.0,0.34,0.236
+539,2335004,Nalgonda,Munugode,Rural,17.081,79.076,True,3,Volatile Shops,True,-1.591,Medium,1.558,7.482,436.138,112.448,0.258,0.672,5.622,0.0,0.719,0.298
+937,4015021,Suryapet,Nereducherla,Rural,16.904,79.656,True,3,Volatile Shops,True,1.59,Medium,-1.352,2.575,38.0,31.172,0.82,0.531,13.508,0.0,0.286,0.061
+930,3314005,Medchal,Medipally,Urban,17.421,78.582,True,0,Typical Steady Shops,True,1.566,Medium,3.441,-1.758,4969.655,5746.586,1.156,0.672,23.999,0.0,0.088,0.108
+936,3911010,Rajanna Siricilla,VEMULAWADA,Rural,18.471,78.863,True,3,Volatile Shops,True,-1.515,Medium,1.698,7.124,596.241,161.724,0.271,0.546,5.131,0.0,0.695,0.376
+930,3384059,Medchal,Balanagar-1,Urban,17.46,78.452,True,3,Volatile Shops,True,-1.497,Medium,3.756,5.99,606.0,166.345,0.274,0.948,5.716,0.133,0.542,0.223
+533,1882561,Nizamabad,Bodhan,Rural,18.649,77.897,True,3,Volatile Shops,True,-1.487,Medium,2.482,9.007,681.045,188.136,0.276,0.458,6.541,0.0,0.94,0.773
+536,1672252,Hyderabad,Yakutpura-2,Urban,17.345,78.476,True,3,Volatile Shops,True,-1.484,Medium,3.97,5.518,887.276,245.586,0.277,0.794,5.812,0.137,0.5,0.432
+539,2382017,Nalgonda,Miryalaguda,Rural,16.876,79.552,True,3,Volatile Shops,True,-1.477,Medium,2.333,9.373,398.207,110.724,0.278,0.811,5.896,0.0,0.961,0.853
+938,4103033,Vikarabad,Kulkacharla,Rural,16.945,77.912,True,3,Volatile Shops,True,-1.469,Medium,-1.114,6.173,319.69,89.31,0.279,0.007,7.104,0.0,0.589,0.424
+935,3821028,Siddipet,Raipole,Rural,17.935,78.649,True,3,Volatile Shops,True,1.413,Medium,-1.715,2.186,43.0,33.931,0.789,0.322,13.731,0.0,0.232,0.143
+537,1517004,Ranga Reddy,Moinabad,Urban,17.351,78.287,True,3,Volatile Shops,True,-1.399,Medium,2.848,10.791,407.448,118.897,0.292,0.682,7.129,0.0,1.148,0.616
+930,3302190,Medchal,Uppal-2,Urban,17.476,78.537,True,3,Volatile Shops,True,-1.393,Medium,4.064,6.504,448.207,131.276,0.293,0.972,5.339,0.156,0.602,0.314
+930,3384192,Medchal,Balanagar-1,Urban,17.541,78.434,True,3,Volatile Shops,True,-1.39,Medium,2.086,4.684,1262.069,370.276,0.293,0.77,5.89,0.015,0.424,0.313
+930,3302126,Medchal,Uppal-2,Urban,17.486,78.502,True,1,Portability Hubs,True,1.356,Medium,3.21,-1.434,267.0,363.31,1.361,0.937,27.281,0.125,0.106,0.051
+540,2155029,Hanumakonda,Kazipet,Rural,17.961,79.509,True,3,Volatile Shops,True,-1.353,Medium,1.551,6.889,484.034,145.207,0.3,0.642,5.954,0.0,0.67,0.386
+930,3384080,Medchal,Balanagar-1,Urban,17.467,78.463,True,3,Volatile Shops,True,1.341,Medium,2.551,2.757,242.036,187.893,0.776,0.897,15.498,0.104,0.347,0.279
+926,2909008,Kamareddy,Kamareddy,Rural,18.338,78.35,True,3,Volatile Shops,True,-1.33,Medium,3.051,10.384,466.379,141.759,0.304,0.956,6.935,0.0,1.104,0.894
+930,3301011,Medchal,Medchal,Urban,17.589,78.521,True,3,Volatile Shops,True,-1.323,Medium,-1.19,6.46,117.0,35.704,0.305,0.076,5.445,0.0,0.584,0.215
+928,3114032,Mahabubabad,Nellikudur,Rural,17.628,79.73,True,3,Volatile Shops,True,-1.214,Medium,-1.083,4.709,341.931,110.931,0.324,0.026,6.54,0.0,0.423,0.536
+930,3384177,Medchal,Balanagar-1,Urban,17.493,78.452,True,3,Volatile Shops,True,-1.171,Medium,3.558,6.121,711.571,236.25,0.332,1.0,7.237,0.095,0.594,0.161
+536,1672259,Hyderabad,Yakutpura-2,Urban,17.346,78.478,True,3,Volatile Shops,True,-1.135,Medium,3.001,4.725,625.069,211.552,0.338,0.568,7.428,0.118,0.421,0.166
+929,3213032,Manchiryala,Mandamarri,Rural,18.987,79.479,True,3,Volatile Shops,True,1.124,Medium,1.225,4.784,182.179,134.429,0.738,0.957,14.015,0.0,0.577,0.034
+536,1674499,Hyderabad,Nampally-4,Urban,17.374,78.468,True,1,Portability Hubs,True,1.099,Medium,3.289,-1.669,262.0,337.759,1.289,0.646,29.686,0.162,0.043,0.023
+929,3217015,Manchiryala,Naspur,Rural,18.856,79.481,True,3,Volatile Shops,True,-1.074,Medium,1.718,5.641,1107.0,386.69,0.349,0.284,6.671,0.0,0.576,0.58
+537,1599017,Ranga Reddy,Balapur,Urban,0.0,0.0,False,3,Volatile Shops,True,-1.072,Medium,2.174,4.864,1258.059,439.765,0.35,0.944,8.736,0.0,0.473,0.41
+931,3415039,Nagarkarnool,Telkapally,Rural,16.443,78.457,True,3,Volatile Shops,True,-1.065,Medium,2.025,8.536,358.241,125.655,0.351,0.672,6.897,0.0,0.889,0.847
+930,3302057,Medchal,Uppal-2,Urban,17.388,78.55,True,1,Portability Hubs,True,1.036,Medium,3.708,1.236,366.862,466.552,1.272,0.998,25.757,0.087,0.411,0.388
+537,1585658,Ranga Reddy,Saroornagar-3,Urban,17.322,78.534,True,3,Volatile Shops,True,1.033,Medium,4.464,5.052,918.276,662.828,0.722,0.836,14.2,0.091,0.66,0.678
+940,4318022,Warangal,Khila Warangal,Rural,17.956,79.593,True,3,Volatile Shops,True,-0.988,Medium,1.823,7.424,416.345,151.724,0.364,0.69,7.004,0.0,0.761,0.719
+536,1677747,Hyderabad,Khairatabad-7,Urban,17.455,78.442,True,1,Portability Hubs,True,0.962,Medium,4.774,0.368,564.0,705.724,1.251,0.846,27.774,0.153,0.307,0.238
+532,1911011,Adilabad,Boath,Rural,19.36,78.263,True,3,Volatile Shops,True,-0.962,Medium,0.902,7.118,218.31,80.552,0.369,0.55,8.284,0.0,0.703,0.382
+536,1677775,Hyderabad,Khairatabad-7,Urban,17.45,78.422,True,1,Portability Hubs,True,-0.944,Medium,5.137,4.663,811.207,584.966,0.721,0.981,16.243,0.145,0.602,0.819
+536,1673339,Hyderabad,Charminar-3,Urban,17.362,78.465,True,1,Portability Hubs,True,-0.931,Medium,3.337,1.545,321.0,232.655,0.725,0.976,16.371,0.168,0.176,0.112
+934,3721013,Sangareddy,Raikode,Rural,17.825,77.767,True,3,Volatile Shops,True,-0.918,Medium,-0.204,5.346,379.276,142.931,0.377,0.062,6.999,0.0,0.525,0.398
+941,4406029,Yadadri Bhuvanagiri,Bommalaramaram,Rural,17.561,78.772,True,3,Volatile Shops,True,0.884,Medium,-0.199,3.766,77.0,53.552,0.695,1.0,12.661,0.0,0.396,0.228
+537,1585046,Ranga Reddy,Saroornagar-3,Urban,17.364,78.536,True,1,Portability Hubs,True,0.877,Medium,2.073,-0.487,150.0,184.138,1.228,0.999,23.239,0.095,0.14,0.051
+536,1675575,Hyderabad,Mehdipatnam-5,Urban,17.381,78.458,True,3,Volatile Shops,True,-0.855,Medium,5.196,7.089,736.207,285.586,0.388,0.898,8.984,0.164,0.741,0.523
+981,4503008,Mulugu,Kannaigudem,Rural,18.479,80.354,True,3,Volatile Shops,True,0.827,Medium,-0.75,2.745,81.0,55.517,0.685,0.693,17.171,0.0,0.268,0.103
+935,3821025,Siddipet,Raipole,Rural,17.913,78.645,True,2,Small Low-Volume Shops,True,-0.808,Medium,-4.002,0.839,44.0,31.103,0.707,0.007,14.469,0.0,0.053,0.029
+937,4020002,Suryapet,Palakeedu,Rural,16.708,79.71,True,2,Small Low-Volume Shops,True,0.805,Medium,-1.97,0.805,32.0,27.931,0.873,0.616,18.556,0.0,0.082,0.085
+539,2382041,Nalgonda,Miryalaguda,Rural,16.862,79.559,True,3,Volatile Shops,True,-0.794,Medium,2.56,7.65,605.148,241.333,0.399,0.907,7.634,0.0,0.818,0.708
+927,3024008,Bhadrdri Kothagudem,Chunchupalli,Rural,17.461,80.671,True,3,Volatile Shops,True,-0.788,Medium,-0.034,7.075,80.12,32.04,0.4,0.634,7.595,0.0,0.673,0.47
+537,1581065,Ranga Reddy,Saroornagar-3,Urban,17.497,78.318,True,3,Volatile Shops,True,-0.785,Medium,3.448,4.581,813.828,325.862,0.4,0.899,9.117,0.106,0.44,0.41
+536,1676706,Hyderabad,Amberpet-6,Urban,17.389,78.511,True,1,Portability Hubs,True,-0.766,Medium,4.602,3.106,756.138,582.621,0.771,0.982,16.513,0.144,0.428,0.377
+535,1706017,Medak,Shankarampet (A),Rural,18.065,77.955,True,3,Volatile Shops,True,0.764,Medium,-1.027,2.809,63.0,42.483,0.674,0.697,14.427,0.0,0.261,0.078
+536,1677772,Hyderabad,Khairatabad-7,Urban,17.435,78.441,True,3,Volatile Shops,True,-0.759,Medium,4.263,5.097,877.552,355.379,0.405,0.826,8.84,0.14,0.508,0.417
+541,2281041,Khammam,Khammam (Rural)-1 (Urban),Rural,17.25,80.15,True,3,Volatile Shops,True,-0.739,Medium,2.395,8.884,359.708,146.917,0.408,0.753,7.738,0.0,0.959,0.898
+537,1583397,Ranga Reddy,Saroornagar-3,Urban,17.322,78.402,True,0,Typical Steady Shops,True,0.738,Medium,2.224,0.971,438.897,450.931,1.027,0.59,17.469,0.052,0.274,0.239
+537,1585682,Ranga Reddy,Saroornagar-3,Urban,17.357,78.548,True,3,Volatile Shops,True,0.676,Medium,3.716,3.991,586.379,386.31,0.659,0.941,14.142,0.108,0.477,0.473
+539,2359016,Nalgonda,Chandam Pet,Rural,16.512,78.951,True,3,Volatile Shops,True,-0.663,Medium,-1.484,4.04,222.207,93.759,0.422,0.028,8.488,0.0,0.369,0.153
+930,3302134,Medchal,Uppal-2,Urban,17.489,78.498,True,1,Portability Hubs,True,0.648,Medium,2.867,0.196,286.0,332.897,1.164,0.876,23.933,0.1,0.22,0.174
+981,4504040,Mulugu,Mangapet,Rural,18.149,80.596,True,3,Volatile Shops,True,-0.638,Medium,-0.621,5.521,71.0,30.276,0.426,0.7,7.669,0.0,0.486,0.369
+937,4005039,Suryapet,Huzurnagar,Rural,16.898,79.87,True,3,Volatile Shops,True,0.576,Medium,1.589,5.324,295.0,189.103,0.641,0.834,11.302,0.0,0.617,0.614
+928,3109017,Mahabubabad,Gangaram,Rural,17.858,80.164,True,2,Small Low-Volume Shops,True,-0.569,Medium,-2.395,2.513,87.0,63.643,0.732,0.013,15.051,0.0,0.297,0.16
+941,4411028,Yadadri Bhuvanagiri,Pochampalle,Rural,17.302,78.848,True,3,Volatile Shops,True,-0.566,Medium,-1.165,4.734,172.0,75.517,0.439,0.055,8.546,0.0,0.45,0.242
+930,3302106,Medchal,Uppal-2,Urban,17.465,78.61,True,3,Volatile Shops,True,-0.534,Medium,2.473,3.905,576.0,256.207,0.445,0.892,9.322,0.077,0.365,0.325
+930,3384061,Medchal,Balanagar-1,Urban,17.457,78.451,True,1,Portability Hubs,True,0.526,Medium,2.6,0.467,301.0,340.091,1.13,0.988,24.451,0.077,0.239,0.245
+537,1585181,Ranga Reddy,Saroornagar-3,Urban,17.344,78.514,True,1,Portability Hubs,True,-0.518,Medium,4.066,2.753,840.897,705.897,0.839,0.938,18.058,0.101,0.424,0.45
+536,1679988,Hyderabad,Secunderabad-9,Urban,17.414,78.515,True,1,Portability Hubs,True,0.516,Medium,4.914,1.211,1202.0,1354.724,1.127,0.797,25.575,0.116,0.384,0.194
+930,3384211,Medchal,Balanagar-1,Urban,17.492,78.453,True,1,Portability Hubs,True,0.505,Medium,3.542,1.36,383.538,431.154,1.124,0.904,22.829,0.102,0.357,0.293
+930,3384056,Medchal,Balanagar-1,Urban,17.46,78.452,True,3,Volatile Shops,True,-0.499,Medium,3.339,4.807,481.269,217.0,0.451,0.971,9.647,0.117,0.471,0.275
+537,1585698,Ranga Reddy,Saroornagar-3,Urban,17.344,78.514,True,1,Portability Hubs,True,0.484,Medium,4.275,1.925,794.724,888.621,1.118,0.964,23.707,0.084,0.453,0.379
+537,1581313,Ranga Reddy,Saroornagar-3,Urban,17.482,78.306,True,3,Volatile Shops,True,-0.479,Medium,1.761,3.725,555.414,252.448,0.455,0.812,8.518,0.041,0.349,0.147
+937,4005040,Suryapet,Huzurnagar,Rural,16.898,79.87,True,3,Volatile Shops,True,-0.478,Medium,1.086,6.385,204.0,92.731,0.455,0.942,8.021,0.0,0.645,0.6
+921,2404014,Kumarambheem Asifabad,Jainoor,Rural,19.453,79.002,True,3,Volatile Shops,True,-0.462,Medium,-0.466,4.867,339.31,155.207,0.457,0.039,10.249,0.0,0.503,0.164
+536,1674434,Hyderabad,Nampally-4,Urban,17.388,78.485,True,1,Portability Hubs,True,0.451,Medium,4.362,0.428,464.0,514.655,1.109,0.729,22.344,0.17,0.238,0.162
+537,1583058,Ranga Reddy,Saroornagar-3,Urban,17.333,78.428,True,1,Portability Hubs,True,0.446,Medium,2.604,0.427,176.0,194.966,1.108,0.958,24.514,0.119,0.201,0.029
+537,1583003,Ranga Reddy,Saroornagar-3,Urban,17.334,78.407,True,1,Portability Hubs,True,0.416,Medium,2.342,0.868,220.0,241.862,1.099,0.958,23.608,0.079,0.263,0.212
+537,1581381,Ranga Reddy,Saroornagar-3,Urban,17.48,78.322,True,3,Volatile Shops,True,-0.415,Medium,3.057,4.63,772.069,359.586,0.466,0.949,10.156,0.07,0.477,0.502
+933,3612042,Peddapalli,RAMAGUNDAM URBAN,Rural,18.687,79.537,True,3,Volatile Shops,True,-0.408,Medium,0.239,5.778,112.0,52.31,0.467,0.935,8.671,0.0,0.552,0.167
+937,4018050,Suryapet,Suryapet.,Rural,0.0,0.0,False,3,Volatile Shops,True,-0.4,Medium,2.487,7.267,515.0,241.217,0.468,0.974,9.409,0.0,0.797,0.832
+537,1599005,Ranga Reddy,Balapur,Urban,17.312,78.5,True,0,Typical Steady Shops,True,0.357,Medium,3.104,1.001,2433.379,2355.793,0.968,0.632,22.376,0.0,0.316,0.375
+930,3302031,Medchal,Uppal-2,Urban,17.391,78.537,True,0,Typical Steady Shops,True,0.336,Medium,1.473,0.213,220.0,212.276,0.965,0.986,19.685,0.066,0.117,0.086
+934,3717057,Sangareddy,Narayankhed,Rural,18.09,77.707,True,3,Volatile Shops,True,0.321,Medium,1.024,6.126,155.0,92.379,0.596,0.783,14.369,0.0,0.672,0.346
+537,1581346,Ranga Reddy,Saroornagar-3,Urban,17.49,78.321,True,3,Volatile Shops,True,-0.321,Medium,3.275,4.561,678.069,327.103,0.482,0.881,10.099,0.093,0.471,0.339
+981,4502028,Mulugu,Govindaraopet,Rural,18.191,80.123,True,2,Small Low-Volume Shops,True,0.321,Medium,-3.555,0.571,30.0,24.69,0.823,0.043,23.962,0.0,0.05,0.025
+925,2806004,Janagaon,Jangaon,Rural,17.715,79.095,True,3,Volatile Shops,True,-0.302,Medium,-1.102,5.798,34.0,16.517,0.486,0.731,10.978,0.0,0.521,0.501
+539,2358026,Nalgonda,Gundlapalli,Rural,16.629,78.723,True,2,Small Low-Volume Shops,True,-0.273,Medium,-0.396,1.651,787.172,599.793,0.762,0.007,14.726,0.0,0.29,0.305
+938,4101007,Vikarabad,Bantwaram,Rural,17.456,77.742,True,3,Volatile Shops,True,-0.27,Medium,-1.586,3.334,84.069,41.31,0.491,0.253,9.987,0.0,0.259,0.073
+930,3384085,Medchal,Balanagar-1,Urban,17.484,78.461,True,3,Volatile Shops,True,0.246,Medium,3.03,3.528,844.857,492.286,0.583,0.57,13.49,0.082,0.403,0.38
+930,3302160,Medchal,Uppal-2,Urban,17.455,78.526,True,3,Volatile Shops,True,-0.239,Medium,4.006,6.787,482.69,239.828,0.497,0.968,10.416,0.103,0.742,0.707
+924,2720014,Jagityal,Endapalli,Rural,18.789,79.237,True,3,Volatile Shops,True,-0.229,Medium,-0.869,3.28,89.259,44.519,0.499,0.912,9.239,0.0,0.246,0.128
+535,1724028,Medak,Yeldurthy,Rural,17.913,78.357,True,3,Volatile Shops,True,-0.216,Medium,-0.761,4.374,257.069,128.793,0.501,0.045,9.418,0.0,0.451,0.385
+934,3720025,Sangareddy,Pulkal,Rural,17.617,78.075,True,2,Small Low-Volume Shops,True,0.212,Medium,-1.219,1.648,46.0,37.345,0.812,0.967,16.046,0.0,0.168,0.044
+532,1926028,Adilabad,Utnur,Rural,19.336,78.858,True,3,Volatile Shops,True,0.211,Medium,0.572,6.836,100.037,57.667,0.576,0.542,13.485,0.0,0.738,0.444
+930,3384167,Medchal,Balanagar-1,Urban,17.515,78.446,True,3,Volatile Shops,True,-0.183,Medium,1.854,3.33,632.345,320.448,0.507,0.839,10.111,0.036,0.329,0.313
+536,1679941,Hyderabad,Secunderabad-9,Urban,17.418,78.519,True,3,Volatile Shops,True,0.15,Medium,4.849,5.79,1203.897,681.069,0.566,0.823,12.025,0.109,0.686,0.844
+930,3302244,Medchal,Uppal-2,Urban,17.372,78.53,True,1,Portability Hubs,True,0.143,Medium,4.149,2.304,743.828,761.138,1.023,0.856,21.561,0.093,0.453,0.46
+930,3302208,Medchal,Uppal-2,Urban,17.486,78.53,True,1,Portability Hubs,True,-0.133,Medium,1.941,-0.62,388.069,367.31,0.947,0.834,18.923,0.084,0.025,0.011
+937,4009024,Suryapet,Mattampalle,Rural,16.738,79.833,True,3,Volatile Shops,True,-0.121,Medium,-1.077,4.135,171.0,88.552,0.518,0.066,10.192,0.0,0.411,0.256
+926,2909011,Kamareddy,Kamareddy,Rural,18.318,78.338,True,3,Volatile Shops,True,-0.102,Medium,2.028,6.731,409.724,213.517,0.521,0.704,12.55,0.0,0.749,0.705
+535,1724031,Medak,Yeldurthy,Rural,17.864,78.398,True,3,Volatile Shops,True,-0.092,Medium,-2.173,2.994,156.0,81.586,0.523,0.015,10.635,0.0,0.277,0.098
+941,4411030,Yadadri Bhuvanagiri,Pochampalle,Rural,17.333,78.732,True,3,Volatile Shops,True,-0.078,Medium,-1.167,3.744,51.0,26.793,0.525,1.0,10.435,0.0,0.295,0.077
+536,1677770,Hyderabad,Khairatabad-7,Urban,17.432,78.442,True,1,Portability Hubs,True,-0.063,Medium,4.935,2.473,877.069,847.31,0.966,0.772,19.954,0.14,0.451,0.426
+930,3384046,Medchal,Balanagar-1,Urban,17.463,78.45,True,1,Portability Hubs,True,-0.061,Medium,3.565,2.447,440.172,425.483,0.967,0.976,20.634,0.095,0.422,0.363
+536,1675569,Hyderabad,Mehdipatnam-5,Urban,17.387,78.44,True,1,Portability Hubs,True,-0.042,Medium,4.743,2.192,788.0,766.0,0.972,0.848,24.91,0.138,0.414,0.383

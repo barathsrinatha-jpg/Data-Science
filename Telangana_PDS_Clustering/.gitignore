@@ -1,0 +1,4 @@
+data/raw/
+data/processed/master_monthly.csv.gz
+__pycache__/
+.ipynb_checkpoints/

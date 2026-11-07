@@ -1,0 +1,5 @@
+cluster,persona,avg_cards,avg_transactions,utilization_ratio,portability_share,rice_per_card,wheat_share,volatility_monthly,volatility_yearly,n_shops,urban_shops_%,noise_shops_%
+0,Typical Steady Shops,575.3591,527.7906,0.9126,0.4477,18.4439,0.0006,0.0753,0.0453,6479,7.6092,0.1543
+1,Portability Hubs,942.2299,920.1594,0.9836,0.7741,21.5286,0.1207,0.1278,0.0946,1188,100.0,3.367
+2,Small Low-Volume Shops,431.5379,338.7836,0.79,0.0753,16.0796,0.0,0.0459,0.0245,8829,5.0289,0.1246
+3,Volatile Shops,472.4562,249.8641,0.5392,0.5103,10.9174,0.0049,0.3361,0.2141,839,9.6544,14.7795
