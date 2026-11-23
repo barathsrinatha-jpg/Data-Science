@@ -1,98 +1,90 @@
-# Medical Appointment No-Show Prediction & Demand Forecasting
+# Medical Appointment No-Show Prediction and Demand Forecasting
 
-A rehabilitation clinic (CER, Brazil) loses about **31.8% of its appointments** to no-shows and struggles to plan
-staff for uneven daily demand. This project builds:
+A rehabilitation clinic in southern Brazil (CER, University of Vale do Itajai) has about 31.8% no-shows and an unpredictable
+number of appointments per day. In this project I built two models and a Streamlit app:
 
-1. a **no-show classifier** that gives every appointment a risk score,
-2. a **demand forecaster** that predicts daily appointments (overall and per specialty), and
-3. a **Streamlit app** that puts both in front of clinic staff.
+1. **No-show model (classification):** gives every appointment a risk score.
+2. **Demand model (forecasting):** predicts the number of appointments per day, for all specialties and for each specialty.
+3. **Streamlit app:** a form for the no-show risk, a forecast page and an insights page.
 
-## Project structure
+## Files
 
-| File / folder | What it is |
+| File | What it is |
 |---|---|
-| `Medical_Appointments_Project_Fixed.ipynb` | Full analysis: cleaning, EDA, classifier, forecaster, business impact |
-| `medical_utils.py` | Shared feature-engineering and forecasting code used by the notebook **and** the app |
-| `app.py` | Streamlit app (3 tabs) |
-| `Medical_appointment_data.csv` | Raw data (109,593 appointments, 26 columns) |
-| `models/` | Saved models: `no_show_model.joblib`, `demand_overall.joblib`, `demand_specialty.joblib` |
-| `reports/` | Result tables (metrics, feature importance, impact scenarios, recommendations) |
-| `charts/` | Charts produced by the notebook |
+| `Medical_Appointments_Project_Fixed.ipynb` | Final notebook: cleaning, EDA, features, models, results, business impact |
+| `Medical_Appointments_Project.ipynb` | My first version of the notebook |
+| `app.py` | Streamlit app |
+| `Medical_appointment_data.csv` | The data (109,593 rows, 26 columns) |
+| `models/` | Saved models: `no_show_model.joblib` and `demand_models.joblib` |
+| `reports/` | Result tables (CSV) |
+| `charts/` | Charts of the notebook |
 | `requirements.txt` | Python packages |
 
 ## How to run
 
 ```bash
 pip install -r requirements.txt
-jupyter nbconvert --to notebook --execute --inplace Medical_Appointments_Project_Fixed.ipynb   # about 3 minutes; recreates models/, reports/, charts/
+jupyter notebook Medical_Appointments_Project_Fixed.ipynb      # Kernel > Restart and Run All (about 1 to 2 minutes)
 streamlit run app.py
 ```
+The saved models are already in the repository, so the app also runs without running the notebook.
 
-The trained models are already included, so you can run `streamlit run app.py` straight away.
+## What I did
 
-## Data cleaning decisions
+**Cleaning**
+* `no_show` yes/no changed to 1/0.
+* Missing `specialty`, `disability` and `place` became a group called `unknown` (I did not delete the rows).
+* Only 13 cities are real (written in capital letters); the other 26,000 place names look fake (for example "Lake Michael"), so they became `other place`.
+* Missing `age` (21%) was filled with the median and a column `age_missing` was added. Missing weather (2%) was filled with the median.
 
-* **Missing values are kept as information, not hidden.** Blank specialty, disability and city become their own categories
-  (`unknown`, `blank`, `MISSING`), because "missing" itself predicts no-shows. Age and weather get a median fill **plus** an
-  `age_missing` / `weather_missing` flag. (Filling with the most common value, as in the first version, erased this signal.)
-* **City (`place`)**: only 13 values are real cities. About 26,000 other values are made-up names; they are grouped as `OTHER_NAME`.
-* Specialty spelling was normalised (`enf` -> nursing, `assist` -> social work, ...).
-* Engineered features: age group, appointment period, weather risk score, health score, month, weekday, weekend flag.
+**Features:** month, day of the week, weekend, health score (number of conditions), and 0/1 columns for the text columns (`pd.get_dummies`).
 
-## Method
+**No-show model:** 80/20 split (stratified), class weights for the imbalance, 3 models (Logistic Regression, Random Forest, XGBoost). XGBoost is the best.
 
-**Classifier.** Stratified 60/20/20 train/validation/test split. Class imbalance is handled with class weights
-(`balanced` / `scale_pos_weight`); the decision threshold is tuned on validation data (not left at 0.5); probabilities are
-calibrated (isotonic) so a score of 40% really means about 40%. Four models are compared (logistic regression, random forest,
-XGBoost, LightGBM). Importance is measured with permutation importance. A time-based split is used as a robustness check.
-
-**Forecaster.** Daily appointment counts with lag, rolling-average, calendar and weather features, split chronologically
-(first 80% train, last 20% test). Compared against Ridge, random forest, XGBoost, LightGBM, SARIMAX and simple baselines,
-with ablations (no weather / typical weather) and a 1-day vs 7-day horizon test. Per-specialty forecasts use one panel model.
+**Demand model:** appointments per day + weather; features: calendar, appointments yesterday (`lag_1`), 7 days ago (`lag_7`) and the average of the last 7 days; chronological split (first 80% of the days for training, last 20% for testing); 3 models (Linear Regression, Random Forest, XGBoost) compared with the simple rule "average of the last 7 days". Random Forest is the best. The same steps are used for every specialty.
 
 ## Results against the project targets
 
-| Model | Metric | Target | Result | Status |
-|---|---|---|---|---|
-| Classifier | ROC-AUC | > 0.75 | **0.784** | met |
-| Classifier | F1, no-show class | > 0.70 | 0.638 | **not met** |
-| Classifier | F1, weighted over both classes | > 0.70 | **0.716** | met |
-| Forecaster | R² (1 day ahead) | > 0.65 | 0.622 | **not met** |
-| Forecaster | MAPE, days with 50+ appointments | < 20% | 47.4% | **not met** |
-| Forecaster | MAPE, all days | < 20% | 94% | **not met** |
+| Model | Metric | Target | Result |
+|---|---|---|---|
+| No-show (XGBoost) | ROC-AUC | > 0.75 | **0.788 (reached)** |
+| No-show (XGBoost) | F1 of the no-show class | > 0.70 | 0.640 (not reached); average F1 of both classes 0.72 |
+| No-show (XGBoost) | Precision / Recall | - | 0.52 / 0.82 |
+| Forecast (Random Forest) | R2 | > 0.65 | 0.617 (not reached) |
+| Forecast (Random Forest) | MAPE | < 20% | 50% on days with 50+ appointments, 638% on all days (not reached) |
+| Forecast (Random Forest) | MAE / RMSE | - | 100 / 176 appointments per day |
 
-Classifier on the test set: precision 52%, recall 82%, threshold 0.36. The four models score within 0.03 AUC of each other (LightGBM 0.788 highest on its own);
-the final model is XGBoost (scale_pos_weight), picked on validation F1, then calibrated.
+Why the forecast targets are missed: the number of appointments changes between 1 and 1,500 per day, and some periods have almost no appointments
+(for example since 3 April 2021 there are only about 4 per day), so the percentage error is very large on these days. Why the F1 target is missed: all 3 models stop around 0.64.
 
-**Why the misses are real, not a bug.** Every model tried plateaued near F1 0.64 for the no-show class; the information in the data
-is limited (for example, SMS reminders show no effect). Daily demand at this clinic swings from near zero to several hundred
-appointments, so percentage error (MAPE) is dominated by quiet days; the total-volume error (WAPE) is about 43%. Forecast quality
-also depends on weather: with typical monthly weather instead of real weather, R² falls to about 0.2 (1 day) and 0.07 (7 days).
-The forecaster is therefore best used for the next few days, with a weather forecast.
-
-Per-specialty forecasts reach R² 0.63 to 0.66 for the six largest specialties; the small ones (social work, no specialty) are not reliable.
-
-## Business impact
-
-* The **top 49% of appointments by risk** contain **82% of all no-shows**: call those patients instead of everyone.
-* If outreach to flagged patients succeeds 10 / 20 / 30% of the time, no-shows fall by **8% / 16% / 25%**
-  (31.8% -> 29.2% / 26.6% / 24.0%) while 11,000 fewer calls are needed per 22,000 appointments.
-* A staffing planner using this forecast makes about half the daily error of a "last 7 days average" rule
-  (81 vs 165 appointments; assumes 10 appointments per specialist per day, which should be replaced with the clinic's real figure).
-* Strongest single pattern: appointments whose city is **not one of the 13 real cities miss ~50%** of the time against 9% otherwise.
-  This is probably a data-recording artifact and should be checked with the clinic.
-
-Full list of recommendations: `reports/recommendations.csv` and the app's Insights tab.
+**Business impact**
+* The top 30% risk group has 55% of all the no-shows (no-show rate of the groups: Low 8%, Medium 37%, High 58%).
+* If reminders work for 10% / 20% / 30% of the no-shows of that group, the no-shows go down by 5.5% / 11% / 16.5% (assumed success rates).
+* The forecast has 40% less error than the rule "average of the last 7 days" (about 10 specialists per day instead of 17, assuming 10 appointments per specialist).
 
 ## Streamlit app
+* **No-show risk:** form with validation (age 0 to 110), risk score, risk level and a suggested action, with a spinner while it calculates (the prediction takes a few milliseconds).
+* **Demand forecast:** choose the specialty, the start date and the number of days; chart, table, number of specialists and CSV download.
+* **Insights:** model results, top factors, risk groups and the charts of the notebook.
 
-* **No-Show Risk** – enter patient and appointment details (validated inputs) and get a calibrated risk %, risk band and suggested action.
-* **Demand Forecast** – choose a start date, number of days, specialty (or all) and weather assumption; get a chart, table,
-  staffing estimate and CSV download.
-* **Insights & Model Performance** – results vs targets, no-show drivers, demand patterns and recommendations.
+![App](charts/streamlit_app.jpg)
 
-## Limitations
+## Data dictionary (short)
 
-* One clinic, one period (data ends 2021-05-12); a model trained here should be re-checked before use elsewhere.
-* The data holds no patient identifier, so repeat no-show history (usually a strong signal) cannot be used.
-* Forecast accuracy drops quickly beyond a few days and without a weather forecast.
+| Column | Meaning |
+|---|---|
+| `no_show` | yes / no (target) |
+| `gender`, `age`, `under_12_years_old`, `over_60_years_old` | patient |
+| `disability`, `patient_needs_companion` | patient |
+| `specialty`, `appointment_time` (hour), `appointment_shift`, `appointment_date_continuous` | appointment |
+| `place` | city of the patient |
+| `Hipertension`, `Diabetes`, `Alcoholism`, `Handcap` | health conditions (0/1) |
+| `Scholarship`, `SMS_received` | social benefit, SMS reminder (0/1) |
+| `average_temp_day`, `max_temp_day`, `average_rain_day`, `max_rain_day` | weather of the day |
+| `rain_intensity`, `heat_intensity`, `rainy_day_before`, `storm_day_before` | weather groups |
+
+## Limits
+* The weather values are the same for the whole day, so they may also work as a "date label" for the model; I cannot say that the weather causes the change in demand.
+* The data has periods with almost no appointments, probably not recorded; this makes the forecast difficult.
+* The classifier uses a random split, and the success rates of the reminders and the number of appointments per specialist are my assumptions.
+* For real future days there is no weather forecast, so the app uses the typical weather of the month.

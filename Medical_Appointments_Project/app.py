@@ -1,347 +1,192 @@
-"""Clinic Appointment Assistant - Streamlit app
+# Streamlit app: Medical appointments (no-show risk + demand forecast)
+# Run the notebook first (it saves the models), then:  streamlit run app.py
 
-Module 1: No-show risk predictor (takes patient and appointment details, returns a risk score)
-Module 2: Demand forecaster (choose a period and a specialty, get expected daily appointments)
-Module 3: Insights and model performance
-
-Run from this folder:  streamlit run app.py   (run the notebook first so the models exist)
-"""
 import math
 import os
 import time
-from datetime import date, timedelta
+from datetime import date
 
 import joblib
 import numpy as np
 import pandas as pd
-import plotly.graph_objects as go
 import streamlit as st
 
-import medical_utils as mu
-
-MODEL_DIR, REPORT_DIR, CHART_DIR = "models", "reports", "charts"
-
-st.set_page_config(page_title="Clinic Appointment Assistant", page_icon="🏥", layout="wide")
+st.set_page_config(page_title="Clinic Appointments", layout="wide")
 
 
-# --------------------------------------------------------------------------------------
-# Loading
-# --------------------------------------------------------------------------------------
-@st.cache_resource(show_spinner=False)
+@st.cache_resource
 def load_models():
-    """Load the three saved models once per session."""
-    return {
-        "risk": joblib.load(f"{MODEL_DIR}/no_show_model.joblib"),
-        "overall": joblib.load(f"{MODEL_DIR}/demand_overall.joblib"),
-        "specialty": joblib.load(f"{MODEL_DIR}/demand_specialty.joblib"),
-    }
+    risk = joblib.load("models/no_show_model.joblib")
+    demand = joblib.load("models/demand_models.joblib")
+    return risk, demand
 
 
-@st.cache_data(show_spinner=False)
-def read_report(name):
-    path = f"{REPORT_DIR}/{name}"
-    return pd.read_csv(path) if os.path.exists(path) else None
+risk_info, demand_info = load_models()
+last_date = pd.Timestamp(demand_info["last_date"])
 
+st.title("Clinic Appointments Assistant")
+st.write("Module 1 predicts the **no-show risk** of an appointment. Module 2 **forecasts** the number of appointments per day.")
 
-def show_chart(name, caption=None):
-    path = f"{CHART_DIR}/{name}.png"
-    if os.path.exists(path):
-        st.image(path, caption=caption, width="stretch")
-    else:
-        st.info(f"Chart '{name}' not found. Run the notebook to create it.")
+tab1, tab2, tab3 = st.tabs(["No-show risk", "Demand forecast", "Insights"])
 
-
-try:
-    models = load_models()
-except FileNotFoundError as err:
-    st.error("The trained models were not found in the `models/` folder. Run the notebook first, then restart the app.")
-    st.caption(str(err))
-    st.stop()
-
-risk_bundle, overall, specialty = models["risk"], models["overall"], models["specialty"]
-last_date = pd.Timestamp(overall["last_date"])
-threshold = risk_bundle["threshold"]
-choices = risk_bundle["choices"]
-
-
-def pretty(value):
-    return str(value).replace("_", " ").title()
-
-
-PLACE_LABEL = {c: pretty(c) if c.isupper() is False else c.title() for c in mu.REAL_CITIES}
-PLACE_LABEL[mu.OTHER_PLACE] = "Other place (not one of the 13 cities)"
-PLACE_LABEL[mu.MISSING_PLACE] = "Not recorded"
-GENDER_LABEL = {"F": "Female", "M": "Male", "I": "Not specified"}
-DISABILITY_LABEL = {"intellectual": "Intellectual", "motor": "Motor", "blank": "Not recorded", "missing": "Not recorded"}
-ACTIONS = {
-    "High": "📞 Call the patient 48 hours before and send a reminder 24 hours before. Offer to reschedule or switch to a "
-            "tele-appointment, and consider overbooking this slot.",
-    "Medium": "💬 Send a reminder and ask the patient to confirm. Keep the slot, but watch for a late cancellation.",
-    "Low": "✅ A standard reminder is enough.",
-}
-BAND_COLOR = {"High": "#C44E52", "Medium": "#F2A900", "Low": "#2E9E6B"}
-
-# --------------------------------------------------------------------------------------
-# Header and sidebar
-# --------------------------------------------------------------------------------------
-st.title("🏥 Clinic Appointment Assistant")
-st.caption("Predict which appointments are likely to be missed, and forecast how many appointments to plan for.")
-
-with st.sidebar:
-    st.header("About")
-    st.write("Built for the CER rehabilitation clinic, where about **31.8%** of appointments end in a no-show.")
-    st.markdown(
-        f"**No-show model:** {risk_bundle['model_name']}  \n"
-        f"**Demand model:** {overall['model_name']}  \n"
-        f"**Data until:** {last_date.date()}"
-    )
-    st.divider()
-    st.caption("Risk scores are probabilities calibrated to the clinic's average no-show rate. Forecasts start after the last day "
-               "in the training data.")
-
-tab_risk, tab_forecast, tab_insights = st.tabs(["🩺 No-Show Risk", "📈 Demand Forecast", "📊 Insights & Model Performance"])
-
-# --------------------------------------------------------------------------------------
-# Tab 1: no-show risk
-# --------------------------------------------------------------------------------------
-with tab_risk:
-    st.subheader("How likely is this patient to miss the appointment?")
-    st.write("Fill in the details below and press **Calculate**. The result is a risk score, a risk band and a suggested action.")
-
+# ------------------------------------------------------------------ tab 1: no-show risk
+with tab1:
+    st.subheader("How likely is it that the patient will not come?")
+    choices = risk_info["choices"]
     with st.form("risk_form"):
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.markdown("**Patient**")
-            age = st.number_input("Age (years)", min_value=0, max_value=110, value=10, step=1)
-            gender = st.selectbox("Gender", choices["gender"], format_func=lambda g: GENDER_LABEL.get(g, g))
-            disability = st.selectbox("Disability", choices["disability"], format_func=lambda d: DISABILITY_LABEL.get(d, d))
-            place = st.selectbox("City", choices["place"], format_func=lambda p: PLACE_LABEL.get(p, p),
-                                 help="Choose 'Other place' for a city that is not one of the clinic's 13 cities. "
-                                      "In the training data such appointments are missed about half of the time.")
-            needs_companion = st.checkbox("Needs a companion", value=True)
+            age = st.number_input("Age", min_value=0, max_value=110, value=10)
+            gender = st.selectbox("Gender", choices["gender"], format_func=lambda g: {"F": "Female", "M": "Male", "I": "Other"}.get(g, g))
+            disability = st.selectbox("Disability", choices["disability"])
+            city = st.selectbox("City", choices["place"],
+                                format_func=lambda p: {"other place": "Other place (not one of the 13 cities)", "unknown": "Not known"}.get(p, p.title()))
+            companion = st.checkbox("Needs a companion", value=True)
         with c2:
-            st.markdown("**Appointment**")
-            appt_date = st.date_input("Appointment date", value=(last_date + timedelta(days=5)).date(),
-                                      min_value=date(2020, 1, 1), max_value=date(2035, 12, 31))
-            hmin, hmax = risk_bundle["hour_range"]
-            hour = st.slider("Hour of the day", min_value=hmin, max_value=hmax, value=9)
-            shift = st.selectbox("Shift", choices["appointment_shift"], format_func=pretty)
-            spec = st.selectbox("Specialty", choices["specialty"], format_func=pretty)
-            sms = st.checkbox("SMS reminder already sent")
+            specialty = st.selectbox("Specialty", choices["specialty"])
+            appointment_date = st.date_input("Appointment date", value=date(2021, 5, 20))
+            hour = st.slider("Hour of the appointment", 7, 18, 9)
+            sms = st.checkbox("SMS reminder sent")
+            scholarship = st.checkbox("Has a scholarship")
         with c3:
-            st.markdown("**Health and background**")
+            st.write("Health conditions")
             hypertension = st.checkbox("Hypertension")
             diabetes = st.checkbox("Diabetes")
             alcoholism = st.checkbox("Alcoholism")
-            handicap = st.checkbox("Handicap recorded")
-            scholarship = st.checkbox("Receives a social benefit (scholarship)")
-            st.markdown("**Weather on the day**")
-            rain = st.selectbox("Rain", choices["rain_intensity"], index=choices["rain_intensity"].index("no_rain"), format_func=pretty)
-            heat = st.selectbox("Temperature", choices["heat_intensity"], index=choices["heat_intensity"].index("mild"), format_func=pretty)
-            storm = st.checkbox("Rain/storm flag for the day before", value=True,
-                                help="In the training data this flag is 'yes' for 94% of appointments.")
-        submitted = st.form_submit_button("Calculate no-show risk", type="primary", width="stretch")
+            handicap = st.checkbox("Handicap")
+            rain = st.selectbox("Rain", list(risk_info["rain_values"]), index=list(risk_info["rain_values"]).index("no_rain"))
+            heat = st.selectbox("Temperature", list(risk_info["heat_values"]), index=list(risk_info["heat_values"]).index("mild"))
+            storm = st.checkbox("Storm or rain the day before", value=True)
+        submitted = st.form_submit_button("Calculate risk", type="primary")
 
     if submitted:
-        problems = []
-        if not 0 <= age <= 110:
-            problems.append("Age must be between 0 and 110.")
-        if appt_date.weekday() >= 5:
-            st.warning("This date is a weekend. The clinic's data has fewer appointments on weekends, so treat the score with care.")
-        if problems:
-            st.error(" ".join(problems))
-        else:
-            try:
-                with st.spinner("Calculating risk..."):
-                    t0 = time.perf_counter()
-                    row = mu.build_appointment_row({
-                        "date": pd.Timestamp(appt_date), "appointment_time": int(hour), "age": float(age), "gender": gender,
-                        "specialty": spec, "place": place, "disability": disability, "appointment_shift": shift,
-                        "hipertension": int(hypertension), "diabetes": int(diabetes), "alcoholism": int(alcoholism),
-                        "handcap": int(handicap), "scholarship": int(scholarship), "sms_received": int(sms),
-                        "patient_needs_companion": int(needs_companion), "storm_day_before": int(storm),
-                        "rain_intensity": rain, "heat_intensity": heat}, risk_bundle["weather_defaults"])
-                    prob = float(risk_bundle["model"].predict_proba(row[risk_bundle["cat_features"] + risk_bundle["num_features"]])[0, 1])
-                    elapsed_ms = (time.perf_counter() - t0) * 1000
-                band = mu.risk_band(prob, threshold)
+        try:
+            with st.spinner("Calculating..."):
+                start = time.time()
+                day = pd.Timestamp(appointment_date)
+                row = {"age": age, "age_missing": 0, "appointment_time": hour, "under_12_years_old": int(age < 12),
+                       "over_60_years_old": int(age >= 60), "patient_needs_companion": int(companion),
+                       "average_temp_day": risk_info["heat_values"][heat]["average_temp_day"],
+                       "max_temp_day": risk_info["heat_values"][heat]["max_temp_day"],
+                       "average_rain_day": risk_info["rain_values"][rain]["average_rain_day"],
+                       "max_rain_day": risk_info["rain_values"][rain]["max_rain_day"],
+                       "rainy_day_before": int(storm), "storm_day_before": int(storm),
+                       "Hipertension": int(hypertension), "Diabetes": int(diabetes), "Alcoholism": int(alcoholism), "Handcap": int(handicap),
+                       "health_score": int(hypertension) + int(diabetes) + int(alcoholism) + int(handicap),
+                       "Scholarship": int(scholarship), "SMS_received": int(sms), "month": day.month, "day_of_week": day.dayofweek,
+                       "is_weekend": int(day.dayofweek >= 5), "gender": gender, "specialty": specialty, "disability": disability,
+                       "place": city, "rain_intensity": rain, "heat_intensity": heat}
+                data = pd.get_dummies(pd.DataFrame([row]), columns=risk_info["text_columns"])
+                data = data.reindex(columns=risk_info["columns"], fill_value=0).astype(float)     # same columns as in the training
+                score = float(risk_info["model"].predict_proba(data)[0, 1])
+                seconds = time.time() - start
 
-                left, right = st.columns([1, 1])
-                with left:
-                    fig = go.Figure(go.Indicator(
-                        mode="gauge+number", value=prob * 100, number={"suffix": "%"},
-                        title={"text": f"No-show risk: {band}"},
-                        gauge={"axis": {"range": [0, 100]}, "bar": {"color": BAND_COLOR[band]},
-                               "steps": [{"range": [0, 0.6 * threshold * 100], "color": "#DDF0E6"},
-                                         {"range": [0.6 * threshold * 100, threshold * 100], "color": "#FCEFC7"},
-                                         {"range": [threshold * 100, 100], "color": "#F6D5D6"}],
-                               "threshold": {"line": {"color": "black", "width": 3}, "value": threshold * 100}}))
-                    fig.update_layout(height=300, margin=dict(l=20, r=20, t=60, b=10))
-                    st.plotly_chart(fig, width="stretch")
-                with right:
-                    st.metric("Risk score (probability of a no-show)", f"{prob:.1%}")
-                    st.metric("Clinic average", f"{risk_bundle['base_rate']:.1%}", delta=f"{(prob - risk_bundle['base_rate']) * 100:+.1f} points",
-                              delta_color="inverse")
-                    if band == "High":
-                        st.error(f"High risk. {ACTIONS[band]}")
-                    elif band == "Medium":
-                        st.warning(f"Medium risk. {ACTIONS[band]}")
-                    else:
-                        st.success(f"Low risk. {ACTIONS[band]}")
-                    st.caption(f"The black line marks the decision threshold ({threshold:.0%}): at or above it the model flags the appointment. "
-                               f"Computed in {elapsed_ms:.0f} ms.")
-                if place == mu.OTHER_PLACE:
-                    st.info("The city is not one of the clinic's 13 cities. These records carry a much higher no-show rate in the data; "
-                            "check the registration details with the patient.")
-                with st.expander("Show the values the model received"):
-                    st.dataframe(row.T.rename(columns={0: "value"}).astype(str), width="stretch")
-            except Exception as err:   # never show a raw traceback to clinic staff
-                st.error("The risk could not be calculated. Please check the inputs and try again.")
-                st.caption(f"Technical detail: {err}")
+            if score >= risk_info["high_limit"]:
+                level = "High"
+            elif score >= risk_info["low_limit"]:
+                level = "Medium"
+            else:
+                level = "Low"
 
-# --------------------------------------------------------------------------------------
-# Tab 2: demand forecast
-# --------------------------------------------------------------------------------------
-with tab_forecast:
-    st.subheader("How many appointments should we plan for?")
-    st.write(f"The forecast starts after the last recorded day (**{last_date.date()}**) and works day by day, "
-             "so accuracy is highest for the first few days.")
-    f1, f2, f3, f4 = st.columns([1.3, 1, 1, 1])
-    scope = f1.selectbox("Specialty", ["All specialties"] + specialty["specialties"], format_func=pretty)
-    start = f2.date_input("Forecast from", value=(last_date + timedelta(days=1)).date(),
-                          min_value=(last_date + timedelta(days=1)).date(), max_value=(last_date + timedelta(days=60)).date())
-    days = f3.slider("Days to forecast", 1, 28, 14)
-    capacity = f4.number_input("Appointments per specialist per day", min_value=1, max_value=60, value=10,
-                               help="An assumption used to turn appointments into specialists. Replace it with the clinic's real figure.")
+            left, right = st.columns(2)
+            with left:
+                st.metric("Risk score", str(round(score * 100)) + " %")
+                st.progress(score)
+                st.write("Risk level: **" + level + "**")
+                st.caption("Prediction time: " + str(round(seconds * 1000)) + " ms")
+            with right:
+                if level == "High":
+                    st.error("High risk. Call the patient, send a reminder and think about overbooking this slot.")
+                elif level == "Medium":
+                    st.warning("Medium risk. Send a reminder and ask the patient to confirm.")
+                else:
+                    st.success("Low risk. A normal reminder is enough.")
+                st.caption("The risk score is not exactly a probability (the model gives more weight to no-shows). "
+                           "In the past, about 8% of the Low, 37% of the Medium and 58% of the High risk appointments were no-shows.")
+            if day.dayofweek >= 5:
+                st.info("This date is a weekend. There are fewer appointments on weekends, so be careful with the result.")
+        except Exception as error:
+            st.error("The risk could not be calculated. Please check the inputs. (" + str(error) + ")")
 
-    w1, w2 = st.columns([1, 2])
-    weather_mode = w1.radio("Weather assumption", ["Typical for the month", "Custom"], horizontal=False)
-    custom = {}
-    if weather_mode == "Custom":
-        wc = w2.columns(4)
-        custom = {"average_temp_day": wc[0].slider("Average temperature (°C)", 8.0, 32.0, 21.0),
-                  "average_rain_day": wc[1].slider("Average rain (mm)", 0.0, 3.0, 0.2),
-                  "max_rain_day": wc[2].slider("Heaviest rain (mm)", 0.0, 40.0, 2.0),
-                  "storm_day_before": 1.0 if wc[3].checkbox("Rain/storm flag", value=True) else 0.0}
-    else:
-        w2.info("Typical monthly weather is used because no weather forecast is available. "
-                "Accuracy is lower than with real weather (see the Insights tab).")
+# ------------------------------------------------------------------ tab 2: demand forecast
+with tab2:
+    st.subheader("How many appointments will there be?")
+    st.write("The forecast uses the appointments of the days before, the calendar and the weather.")
+    c1, c2, c3, c4 = st.columns(4)
+    scope = c1.selectbox("Specialty", ["All specialties"] + list(demand_info["specialty_models"]))
+    start_after = c2.date_input("Forecast the days after", value=date(2021, 3, 1), min_value=date(2020, 2, 1), max_value=last_date.date())
+    days = c3.slider("Number of days", 1, 30, 14)
+    capacity = c4.number_input("Appointments per specialist per day", min_value=1, max_value=50, value=10,
+                               help="My assumption. The clinic should use its real number.")
 
-    if st.button("Generate forecast", type="primary"):
+    weather_choice = st.radio("Weather for the forecast days", ["Real weather of the data", "Typical weather of the month"], horizontal=True,
+                              help="There is no weather forecast in the project, so the real weather is only known for days inside the data.")
+
+    if pd.Timestamp(start_after) > last_date - pd.Timedelta(days=30):
+        st.warning("The data has almost no appointments after 2 April 2021 (about 4 per day), so a forecast that starts "
+                   "from these days is very low. Choose an earlier date to see a normal forecast.")
+
+    if st.button("Forecast", type="primary"):
         try:
             with st.spinner("Forecasting..."):
-                t0 = time.perf_counter()
-                end = pd.Timestamp(start) + timedelta(days=days - 1)
-                dates = pd.date_range(last_date + timedelta(days=1), end)
-                typical = overall["monthly_weather"]
-                weather = pd.DataFrame({c: typical.loc[dates.month, c].values for c in mu.WEATHER_COLS}, index=dates)
-                for c, v in custom.items():
-                    weather[c] = v
                 if scope == "All specialties":
-                    fc = mu.recursive_forecast(overall["model"], overall["history"], weather, overall["features"], log_target=overall["log_target"])
-                    history = overall["history"]["y"]
+                    model, history = demand_info["overall_model"], demand_info["history"]["all"]
                 else:
-                    fc = mu.recursive_forecast(specialty["model"], specialty["histories"][scope], weather, specialty["features"],
-                                               log_target=True, specialty=scope, specialty_columns=specialty["specialty_columns"])
-                    history = specialty["histories"][scope]["y"]
-                fc = fc.loc[pd.Timestamp(start):end]
-                elapsed = time.perf_counter() - t0
+                    model, history = demand_info["specialty_models"][scope], demand_info["history"][scope]
+                values = list(history[:pd.Timestamp(start_after)].values)      # appointments until the chosen date
+                day, rows = pd.Timestamp(start_after), []
+                for _ in range(days):
+                    day = day + pd.Timedelta(days=1)
+                    if weather_choice.startswith("Real") and day in demand_info["weather_history"].index:
+                        weather = demand_info["weather_history"].loc[day].to_dict()
+                    else:
+                        weather = demand_info["weather_by_month"].loc[day.month].to_dict()      # typical weather of the month
+                    features = {"day_of_week": day.dayofweek, "month": day.month, "day_of_month": day.day,
+                                "is_weekend": int(day.dayofweek >= 5), "lag_1": values[-1], "lag_7": values[-7],
+                                "rolling_7": float(np.mean(values[-7:])), **weather}
+                    prediction = max(float(model.predict(pd.DataFrame([features])[demand_info["features"]])[0]), 0)
+                    values.append(prediction)         # the prediction is used as "yesterday" for the next day
+                    rows.append({"Date": day, "Forecast": round(prediction)})
+            result = pd.DataFrame(rows).set_index("Date")
+            result["Actual (data)"] = history.reindex(result.index)
+            result.loc[result.index > last_date, "Actual (data)"] = np.nan
+            result["Weekday"] = result.index.day_name()
+            result["Specialists needed"] = [math.ceil(v / capacity) for v in result["Forecast"]]
 
-            table = pd.DataFrame({"Date": fc.index.date, "Weekday": fc.index.day_name(), "Expected appointments": fc.round(0).astype(int).values})
-            table["Specialists needed"] = [math.ceil(v / capacity) for v in table["Expected appointments"]]
-            m1, m2, m3, m4 = st.columns(4)
-            m1.metric("Total expected", f"{int(table['Expected appointments'].sum()):,}")
-            m2.metric("Daily average", f"{table['Expected appointments'].mean():.0f}")
-            peak = table.loc[table["Expected appointments"].idxmax()]
-            m3.metric("Busiest day", f"{peak['Weekday'][:3]} {peak['Date']}", f"{int(peak['Expected appointments'])} appointments", delta_color="off")
-            m4.metric("Specialists on the busiest day", int(peak["Specialists needed"]))
+            m1, m2, m3 = st.columns(3)
+            m1.metric("Total forecast", int(result["Forecast"].sum()))
+            m2.metric("Average per day", round(result["Forecast"].mean()))
+            m3.metric("Specialists needed on the busiest day", int(result["Specialists needed"].max()))
+            st.line_chart(result[["Forecast", "Actual (data)"]])
+            st.dataframe(result[["Weekday", "Forecast", "Actual (data)", "Specialists needed"]])
+            st.download_button("Download the forecast (CSV)", result.to_csv().encode("utf-8"), "forecast.csv", "text/csv")
+            st.caption("The final model was trained on all days of the data, so for dates inside the data the forecast looks better "
+                       "than it would in real use. For real future days there is no weather forecast, so the typical weather of the month is used.")
+        except Exception as error:
+            st.error("The forecast could not be made. Please change the inputs. (" + str(error) + ")")
 
-            hist = history.loc[last_date - timedelta(days=60):last_date]
-            fig = go.Figure()
-            fig.add_trace(go.Scatter(x=hist.index, y=hist.values, name="Actual (last 60 days)", line=dict(color="#4C72B0")))
-            fig.add_trace(go.Scatter(x=fc.index, y=fc.values, name="Forecast", line=dict(color="#C44E52", width=3), mode="lines+markers"))
-            fig.add_vline(x=last_date, line_dash="dash", line_color="grey")
-            fig.update_layout(title=f"Daily appointments: {pretty(scope) if scope != 'All specialties' else 'all specialties'}",
-                              height=420, margin=dict(l=10, r=10, t=50, b=10), yaxis_title="appointments per day",
-                              legend=dict(orientation="h", y=1.1))
-            st.plotly_chart(fig, width="stretch")
-            st.dataframe(table, width="stretch", hide_index=True)
-            st.download_button("Download forecast as CSV", table.to_csv(index=False).encode("utf-8"), "appointment_forecast.csv", "text/csv")
-            st.caption(f"Computed in {elapsed * 1000:.0f} ms. Daily volume at this clinic swings widely, so use the forecast as a planning guide, "
-                       "not an exact count.")
-        except Exception as err:
-            st.error("The forecast could not be generated. Please change the inputs and try again.")
-            st.caption(f"Technical detail: {err}")
+# ------------------------------------------------------------------ tab 3: insights
+with tab3:
+    st.subheader("Model results")
+    c1, c2 = st.columns(2)
+    if os.path.exists("reports/classification_results.csv"):
+        c1.write("No-show models (test data)")
+        c1.dataframe(pd.read_csv("reports/classification_results.csv", index_col=0))
+    if os.path.exists("reports/forecast_results.csv"):
+        c2.write("Forecast models (last 20% of the days)")
+        c2.dataframe(pd.read_csv("reports/forecast_results.csv", index_col=0))
 
-# --------------------------------------------------------------------------------------
-# Tab 3: insights
-# --------------------------------------------------------------------------------------
-with tab_insights:
-    sub_results, sub_drivers, sub_patterns, sub_reco = st.tabs(["Model results", "No-show drivers", "Demand patterns", "Recommendations"])
+    st.subheader("What matters for no-shows?")
+    if os.path.exists("charts/feature_importance.png"):
+        st.image("charts/feature_importance.png")
+    if os.path.exists("reports/risk_groups.csv"):
+        st.write("No-show rate of the risk groups (test data)")
+        st.dataframe(pd.read_csv("reports/risk_groups.csv", index_col=0))
+    if os.path.exists("reports/business_impact.csv"):
+        st.write("Possible reduction of no-shows if the High risk patients are contacted (assumed success rates)")
+        st.dataframe(pd.read_csv("reports/business_impact.csv", index_col=0))
 
-    with sub_results:
-        st.subheader("Results against the project targets")
-        targets = read_report("targets_vs_results.csv")
-        if targets is not None:
-            st.dataframe(targets.style.map(lambda v: "color: #2E9E6B; font-weight: bold" if v == "met" else ("color: #C44E52; font-weight: bold" if v == "NOT met" else ""),
-                                           subset=["Status"]), width="stretch", hide_index=True)
-        metrics = read_report("classification_metrics.csv")
-        if metrics is not None:
-            m = metrics.set_index(metrics.columns[0])["Test set"]
-            k1, k2, k3, k4 = st.columns(4)
-            k1.metric("ROC-AUC", f"{m['ROC-AUC']:.3f}")
-            k2.metric("F1 (no-show class)", f"{m['F1 (no-show class)']:.2f}")
-            k3.metric("Recall", f"{m['Recall']:.0%}")
-            k4.metric("Precision", f"{m['Precision']:.0%}")
-        st.markdown("**No-show classifier**")
-        show_chart("classification_evaluation", "Confusion matrix, ROC, precision-recall, threshold and calibration (test set)")
-        comp = read_report("classification_model_comparison.csv")
-        if comp is not None:
-            st.dataframe(comp, width="stretch", hide_index=True)
-        st.markdown("**Demand forecaster**")
-        show_chart("forecast_evaluation", "Forecast vs actual on the last 20% of days")
-        for name in ("forecast_model_comparison.csv", "forecast_horizon_accuracy.csv", "specialty_forecast_accuracy.csv"):
-            df = read_report(name)
-            if df is not None:
-                st.caption(name.replace(".csv", "").replace("_", " ").capitalize())
-                st.dataframe(df, width="stretch", hide_index=True)
-
-    with sub_drivers:
-        st.subheader("What drives no-shows?")
-        imp = read_report("feature_importance.csv")
-        if imp is not None:
-            top = imp.head(12).iloc[::-1]
-            fig = go.Figure(go.Bar(x=top["importance"], y=top["feature"], orientation="h", marker_color="#C44E52"))
-            fig.update_layout(title="Top factors (drop in ROC-AUC when shuffled)", height=420, margin=dict(l=10, r=10, t=50, b=10))
-            st.plotly_chart(fig, width="stretch")
-        c1, c2 = st.columns(2)
-        for col, name, title in ((c1, "no_show_by_city.csv", "No-show rate by city group"), (c2, "no_show_by_specialty.csv", "No-show rate by specialty")):
-            df = read_report(name)
-            if df is not None:
-                df = df.sort_values("no_show_rate")
-                fig = go.Figure(go.Bar(x=df["no_show_rate"], y=df.iloc[:, 0], orientation="h", marker_color="#4C72B0"))
-                fig.update_layout(title=title, height=420, margin=dict(l=10, r=10, t=50, b=10), xaxis_tickformat=".0%")
-                col.plotly_chart(fig, width="stretch")
-        scen = read_report("impact_scenarios.csv")
-        if scen is not None:
-            st.markdown("**Estimated no-show reduction from targeting high-risk patients**")
-            st.dataframe(scen, width="stretch", hide_index=True)
-            st.caption("Assumption: the outreach success rate is the share of flagged patients who would have missed the visit but attend after a call.")
-        deciles = read_report("risk_deciles.csv")
-        if deciles is not None:
-            st.markdown("**No-show rate by risk decile**")
-            st.dataframe(deciles.iloc[::-1], width="stretch", hide_index=True)
-
-    with sub_patterns:
-        st.subheader("Demand patterns")
-        show_chart("eda_daily_demand", "Daily appointments and monthly averages")
-        show_chart("eda_demand_patterns", "By weekday, specialty and city")
-        show_chart("forecast_by_specialty", "Specialty forecasts on the test period")
-
-    with sub_reco:
-        st.subheader("Recommended interventions")
-        rec = read_report("recommendations.csv")
-        if rec is not None:
-            for i, r in rec.iterrows():
-                st.markdown(f"**{i + 1}. {r['Recommendation']}**  \n{r['Why (from the data)']}")
-        else:
-            st.info("Run the notebook to create the recommendations.")
+    st.subheader("Patterns in the data")
+    for image in ["eda_no_show_groups", "eda_daily_demand", "forecast_vs_actual"]:
+        if os.path.exists("charts/" + image + ".png"):
+            st.image("charts/" + image + ".png")
