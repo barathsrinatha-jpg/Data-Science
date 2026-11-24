@@ -1,16 +1,16 @@
 ,importance
-place_other place,0.209
-average_temp_day,0.0847
-place_ITAJAÍ,0.0809
-max_temp_day,0.0654
-age,0.0549
-max_rain_day,0.0443
-appointment_time,0.0423
+place_other place,0.2034
+average_temp_day,0.0855
+place_ITAJAÍ,0.074
+max_temp_day,0.0666
+age,0.0544
+max_rain_day,0.0439
+appointment_time,0.0416
 place_unknown,0.0415
-average_rain_day,0.0405
-month,0.0379
-day_of_week,0.0301
-place_CAMBORIU,0.0222
-place_B. CAMBORIU,0.0213
-disability_unknown,0.0158
-age_missing,0.0115
+average_rain_day,0.0397
+month,0.0386
+day_of_week,0.0295
+place_B. CAMBORIU,0.0214
+place_CAMBORIU,0.0211
+disability_unknown,0.0164
+weekend_x_hour,0.0149

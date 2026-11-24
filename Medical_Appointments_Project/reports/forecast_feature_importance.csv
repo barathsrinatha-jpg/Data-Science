@@ -1,0 +1,14 @@
+,importance
+lag_7,0.263
+storm_day_before,0.195
+average_rain_day,0.152
+lag_1,0.134
+rolling_7,0.093
+max_rain_day,0.066
+average_temp_day,0.033
+month,0.02
+day_of_month,0.019
+day_of_week,0.018
+weekend_x_rolling_7,0.004
+weekend_x_lag_1,0.004
+is_weekend,0.0

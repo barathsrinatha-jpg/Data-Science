@@ -76,6 +76,10 @@ with tab1:
                        "Scholarship": int(scholarship), "SMS_received": int(sms), "month": day.month, "day_of_week": day.dayofweek,
                        "is_weekend": int(day.dayofweek >= 5), "gender": gender, "specialty": specialty, "disability": disability,
                        "place": city, "rain_intensity": rain, "heat_intensity": heat}
+                # interaction features (the same as in the notebook)
+                row["weekend_x_hour"] = row["is_weekend"] * hour
+                row["age_x_health_score"] = age * row["health_score"]
+                row["child_x_companion"] = row["under_12_years_old"] * int(companion)
                 data = pd.get_dummies(pd.DataFrame([row]), columns=risk_info["text_columns"])
                 data = data.reindex(columns=risk_info["columns"], fill_value=0).astype(float)     # same columns as in the training
                 score = float(risk_info["model"].predict_proba(data)[0, 1])
@@ -144,6 +148,8 @@ with tab2:
                     features = {"day_of_week": day.dayofweek, "month": day.month, "day_of_month": day.day,
                                 "is_weekend": int(day.dayofweek >= 5), "lag_1": values[-1], "lag_7": values[-7],
                                 "rolling_7": float(np.mean(values[-7:])), **weather}
+                    features["weekend_x_rolling_7"] = features["is_weekend"] * features["rolling_7"]      # interaction features
+                    features["weekend_x_lag_1"] = features["is_weekend"] * features["lag_1"]
                     prediction = max(float(model.predict(pd.DataFrame([features])[demand_info["features"]])[0]), 0)
                     values.append(prediction)         # the prediction is used as "yesterday" for the next day
                     rows.append({"Date": day, "Forecast": round(prediction)})
@@ -187,6 +193,6 @@ with tab3:
         st.dataframe(pd.read_csv("reports/business_impact.csv", index_col=0))
 
     st.subheader("Patterns in the data")
-    for image in ["eda_no_show_groups", "eda_daily_demand", "forecast_vs_actual"]:
+    for image in ["eda_no_show_groups", "eda_daily_demand", "forecast_vs_actual", "forecast_feature_importance", "demand_by_city"]:
         if os.path.exists("charts/" + image + ".png"):
             st.image("charts/" + image + ".png")

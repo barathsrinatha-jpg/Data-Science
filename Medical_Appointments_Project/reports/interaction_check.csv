@@ -1,0 +1,5 @@
+,without interactions,with interactions
+F1,0.64,0.639
+ROC-AUC,0.788,0.788
+Recall,0.823,0.822
+Precision,0.524,0.523

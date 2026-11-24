@@ -1,7 +1,7 @@
 Specialty,Average per day,MAE,R2
-psychotherapy,53.55,26.48,0.61
-speech therapy,41.27,20.0,0.62
-physiotherapy,39.73,20.03,0.6
-occupational therapy,21.01,10.25,0.61
+psychotherapy,53.55,26.58,0.61
+speech therapy,41.27,19.95,0.62
+physiotherapy,39.73,20.07,0.6
+occupational therapy,21.01,10.33,0.6
 pedagogy,6.49,3.58,0.56
-nursing,3.0,1.74,0.58
+nursing,3.0,1.74,0.57

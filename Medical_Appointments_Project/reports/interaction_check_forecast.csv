@@ -1,0 +1,4 @@
+,without interactions,with interactions
+MAE,99.749,99.227
+RMSE,175.934,176.277
+R2,0.617,0.615
